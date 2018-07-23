@@ -1,0 +1,122 @@
+// Create something awesome
+$themecolor:#b51700;
+$themedark:#aa071f;
+body,html{
+  font-family: 微软雅黑;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 微软雅黑;
+}
+p{
+  font-size: 20px;
+  line-height: 1.5em;
+  color:#0f0f0f;
+}
+
+ul li{
+  font-size: 16px;
+  line-height: 1.5em;
+ }
+.fs-16{
+  font-size: 16px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-20{
+  font-size: 20px;
+}
+.bg-special{
+  background-color: $themedark;
+}
+.bg-normal{
+  background: $themecolor;
+}
+.logo a,.fixed .logo a{
+  height: 84px;
+}
+.content-carousel .owl-controls .owl-buttons .owl-prev,
+.content-carousel .owl-controls .owl-buttons .owl-next{
+
+}
+
+.nav-menu > ul > li > a{
+  font-size: 18px;
+}
+
+footer .qrcode-wrap {
+  width: 50%;
+  float: left;
+  font-size: 12px;
+  img{
+    width: 100px;
+  }
+}
+
+.text-bg{
+  padding:0.2em 1em;
+  background-color:$themecolor;
+}
+.bg-moving{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.footer{
+  background-color: #232121;
+  & .link-title{
+    font-size: 16px;
+    color: #e4e4e4;
+  }
+  & .footer-info p{
+    color: #e4e4e4;
+  }
+  ul li{
+  color: #e4e4e4;
+  }
+}
+.win-list{
+  ul li{
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+  ul{
+    margin: 0;
+    padding:0;
+  }
+}
+.special-list{
+  li::before  {
+    content: "•";
+    color: $themecolor;
+    display: inline-block; width: 1em;
+    margin-left: -1em;
+  }
+  li{
+    list-style: none;
+  }
+}
+.whr{
+  width: 100%;
+  margin:1em auto;
+  border-top:solid 2px $themecolor;
+  border-bottom:solid 2px $themecolor;
+  max-width: 100px;
+  height: 5px;
+  display: block;
+}
+
+.career-info{
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border:solid 2px $themecolor ;
+  h3{
+    display: block;
+    padding: 12px;
+    margin: 0;
+    background-color: #d4d4d463;
+  }
+}
