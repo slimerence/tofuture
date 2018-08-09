@@ -7,8 +7,8 @@
                 <div class="logo mr-auto">
                     <!--logo-->
                     <a href="{{url('/')}}">
-                        <img class="logo-dark" src="{{ asset('images/tofuture/logo-large.png') }}" alt="Mazel" />
-                        <img class="logo-light" src="{{ asset('images/tofuture/logo-large.png') }}" alt="Mazel" />
+                        <img class="logo-dark" src="{{ asset('images/tofuture/logo-dark.png') }}" alt="Mazel" />
+                        <img class="logo-light" src="{{ asset('images/tofuture/logo-light.png') }}" alt="Mazel" />
                     </a>
                     <!--End logo-->
                 </div>
@@ -16,14 +16,14 @@
                 <div class="nav-menu ml-auto">
                     <ul class="">
                         <li class="nav-menu-item">
-                            <a href="#">首页</a>
+                            <a href="{{ url('/') }}">首页</a>
                         </li>
                         <li class="nav-menu-item">
                             <a href="#">海归求职</a>
                             <div class="nav-dropdown">
                                 <ul>
-                                    <li><a href="#">名企实习</a></li>
-                                    <li><a href="#">名企直通</a></li>
+                                    <li><a href="{{ url('/shixi') }}">名企实习</a></li>
+                                    <li><a href="{{ url('/zhitong') }}">名企直通</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -51,17 +51,19 @@
                             <a href="#">专业师资</a>
                         </li>
                         <li class="nav-menu-item">
-                            <a href="#">关于我们</a>
-                            <div class="nav-dropdown">
-                                <ul>
-                                    <li><a href="#">WinCareer简介</a></li>
-                                    <li><a href="#">合作伙伴</a></li>
-                                    <li><a href="#">联系我们</a></li>
-                                </ul>
-                            </div>
+                            <a href="{{ url('about') }}">关于我们</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="{{ url('contact-us') }}">联系我们</a>
                         </li>
                     </ul>
                 </div>
+                <div class="nav-icons">
+                    <div class="nav-icon-item d-lg-none">
+                        <span class="nav-icon-trigger menu-mobile-btn align-middle"><i class="ion"></i></span>
+                    </div>
+                </div>
+            </div>
 
             </div>
         </div>

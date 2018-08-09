@@ -1,8 +1,11 @@
 <!-- Team Grid Box Section -->
-<section class="ptb ptb-sm-80">
+<section class="pb-80">
     <div class="container">
         <div class="row text-center">
-            <h3 class="col">Team Grid Box</h3>
+            <div class="col-md-8 offset-md-2 mb-3">
+                <h2>师资力量</h2>
+                <div class="whr"></div>
+            </div>
         </div>
         <div class="spacer-60"></div>
         <div class="row">
@@ -25,10 +28,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="team-item-info">
-                        <h5>Mitchell KAPPOS</h5>
-                        <p class="">Designer</p>
-                    </div>
+
                 </div>
             </div>
 
@@ -50,10 +50,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="team-item-info">
-                        <h5>Leonardo da Vinci</h5>
-                        <p class="">Artist</p>
-                    </div>
+
                 </div>
             </div>
 
@@ -75,10 +72,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="team-item-info">
-                        <h5>John Doe</h5>
-                        <p class="">Project Manager</p>
-                    </div>
+
                 </div>
             </div>
 
@@ -100,10 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="team-item-info">
-                        <h5>Michael Lee</h5>
-                        <p class="">Photographer</p>
-                    </div>
+
                 </div>
             </div>
 

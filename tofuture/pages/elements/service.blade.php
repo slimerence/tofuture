@@ -1,5 +1,5 @@
 <!-- Service Section -->
-<section id="service" class="ptb ptb-sm-80">
+<section id="service" class="pt-80">
     <div class="wow fadeInLeft container text-center">
         <h2>CFA保过计划</h2>
         <div class="whr"></div>

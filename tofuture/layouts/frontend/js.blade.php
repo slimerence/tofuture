@@ -20,3 +20,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelement-and-player.min.js"></script>
 <script src="{{ url('js/revolution-slider.js') }}" type="text/javascript"></script>
 <script src="{{ url('js/theme.js') }}" type="text/javascript"></script>
+<script src="{{ url('js/all.js') }}" type="text/javascript"></script>

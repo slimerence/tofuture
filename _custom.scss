@@ -1,11 +1,14 @@
 // Create something awesome
 $themecolor:#b51700;
 $themedark:#aa071f;
+
+@import "tofuture/assets/css/shixi";
+
 body,html{
-  font-family: 微软雅黑;
+  font-family: Helvetica,宋体;
 }
 h1, h2, h3, h4, h5, h6{
-  font-family: 微软雅黑;
+  font-family: Helvetica,宋体;
 }
 p{
   font-size: 20px;
@@ -32,8 +35,16 @@ ul li{
 .bg-normal{
   background: $themecolor;
 }
-.logo a,.fixed .logo a{
-  height: 84px;
+.no-list-style{
+    margin: 0;
+    padding-left:0;
+    li{
+      list-style-type: none;
+    }
+}
+
+.d-xs-none{
+
 }
 .content-carousel .owl-controls .owl-buttons .owl-prev,
 .content-carousel .owl-controls .owl-buttons .owl-next{
@@ -45,7 +56,7 @@ ul li{
 }
 
 footer .qrcode-wrap {
-  width: 50%;
+  width: 100%;
   float: left;
   font-size: 12px;
   img{
@@ -61,6 +72,11 @@ footer .qrcode-wrap {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.bg-image{
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .footer{
@@ -119,4 +135,8 @@ footer .qrcode-wrap {
     margin: 0;
     background-color: #d4d4d463;
   }
+}
+.ptb-150{
+  padding-top: 150px;
+  padding-bottom: 150px;
 }

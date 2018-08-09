@@ -1,0 +1,66 @@
+.service-content{
+  .card-header{
+    background-color: #b517005c;
+  }
+  .card{
+    margin-bottom:3em;
+  }
+  span{
+    font-weight: bold;
+  }
+}
+
+.student-list{
+  img{
+    width: 100%;
+  }
+}
+
+.zhitong-count{
+  text-shadow: 3px 3px 10px #ff7b824a;
+  span{
+    font-size: 50px;
+  }
+  h6{
+    letter-spacing: unset;
+    font-weight: normal;
+  }
+  @media (min-width: 768px){
+    h6{
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.stu-example{
+  padding: 1em;
+  p{
+    font-size: 14px;
+    span{
+      color:$themecolor;
+    }
+  }
+  .stu-info{
+    height: 80px;
+    background-color: #f37461;
+    padding: 0 1em;
+    p,span{
+      color:white;
+    }
+    .info{
+      margin-left: 2em;
+    }
+    .name{
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+  .stu-detail{
+    margin-top: 18px;
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 320px;
+  }
+}

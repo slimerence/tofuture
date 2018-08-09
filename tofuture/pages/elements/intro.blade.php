@@ -93,18 +93,18 @@
                     </h2>
 
                     <!-- LAYER NR. 3 -->
-                    <h2 class="tp-caption customin customout sfb lead mtb-0"
-                       data-x="center"
-                       data-hoffset="0"
-                       data-y="center"
-                       data-voffset="80"
-                       data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
-                       data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                       data-speed="800"
-                       data-start="2000"
-                       data-endspeed="500"
-                       data-easing="Linear.easeNone"
-                       data-elementdelay="0.1">
+                    <h2 class="tp-caption customin customout sfb scroll-down"
+                        data-x="center"
+                        data-hoffset="0"
+                        data-y="center"
+                        data-voffset="80"
+                        data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                        data-speed="800"
+                        data-start="2000"
+                        data-endspeed="500"
+                        data-easing="Linear.easeNone"
+                        data-elementdelay="0.1">
                         职业培训 就业规划 国内外名企一步到位
                     </h2>
 
