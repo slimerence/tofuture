@@ -1,18 +1,17 @@
 <!-- Contant Slider Section -->
-<section id="contant" class="wow fadeIn ptb ptb-sm-80">
+<section id="contant" class="ptb ptb-sm-80 bg-image" style="background-image: url({{ asset('images/tofuture/full/tbg.jpg') }}); background-size: cover;">
     <div class="owl-carousel content-carousel content-slider">
         <div class="item">
             <div class="container">
+                <div class="text-center">
+                    <h2>海归求职</h2>
+                    <div class="whr"></div>
+                </div>
                 <div class="row text-center">
-                    <div class="col-md-8 offset-md-2 mb-3">
-                        <h2>海归求职</h2>
-                        <div class="whr"></div>
-                    </div>
                     <div class="col-6">
-                        <div class="px-5 ">
-                            <div class="career-info text-center mb-3">
-                                <h3>名企实习</h3>
-                            </div>
+                        <div class="px-5 home-text">
+                            <h3><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>名企实习</h3>
+                            <hr class="mtb-15">
                             <div class="win-list">
                                 <ul>
                                     <li>职业评估行业探索</li>
@@ -24,10 +23,9 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="px-5">
-                            <div class="career-info text-center mb-3">
-                                <h3>名企直通</h3>
-                            </div>
+                        <div class="px-5 home-text">
+                            <h3><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>名企直通</h3>
+                            <hr class="mtb-15">
                             <div class="win-list">
                                 <ul>
                                     <li>精准定位目标企业和目标岗位</li>
@@ -43,16 +41,16 @@
         </div>
         <div class="item">
             <div class="container">
+                <div class="text-center">
+                    <h2>本地就业</h2>
+                    <div class="whr"></div>
+                </div>
                 <div class="row text-center">
-                    <div class="col-md-8 offset-md-2 mb-3">
-                        <h2>本地就业</h2>
-                        <div class="whr"></div>
-                    </div>
                     <div class="col-6">
-                        <div class="px-5 ">
-                            <div class="career-info text-center mb-3">
-                                <h3>会计训练营</h3>
-                            </div>
+                        <div class="px-5 home-text">
+                            <h3><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>会计训练营</h3>
+                            <hr class="mtb-15">
+
                             <div class="win-list">
                                 <ul>
                                     <li>核心会计技能</li>
@@ -64,10 +62,10 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="px-5">
-                            <div class="career-info text-center mb-3">
-                                <h3>金融训练营</h3>
-                            </div>
+                        <div class="px-5 home-text">
+                            <h3><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>金融训练营</h3>
+                            <hr class="mtb-15">
+
                             <div class="win-list">
                                 <ul>
                                     <li>澳洲金融行业知识</li>

@@ -1388,7 +1388,7 @@ form label.error {
                 font-size: 12px;
                 line-height: 1;
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: 300;
                 transition: all .3s ease-out;
                 -moz-transition: all .3s ease-out;
                 -o-transition: all .3s ease-out;

@@ -98,7 +98,7 @@ footer .qrcode-wrap {
 .win-list{
   ul li{
     list-style: none;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5em;
   }
   ul{
@@ -152,4 +152,12 @@ footer .qrcode-wrap {
   ul li{
     font-size: 20px;
   }
+}
+.home-text{
+  i{
+    color:$themecolor;
+  }
+  margin: 2em;
+  padding: 2em;
+  border: 1px solid #e0e0e0;
 }

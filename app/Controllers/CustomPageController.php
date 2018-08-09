@@ -10,6 +10,9 @@ namespace Smartbro\Controllers;
 
 
 use App\Http\Controllers\Controller;
+use App\Models\Page;
+use Illuminate\Http\Request;
+
 
 class CustomPageController extends Controller
 {
@@ -37,5 +40,34 @@ class CustomPageController extends Controller
             _get_frontend_theme_path('pages.about'),
             $this->dataForView
         );
+    }
+    public function kuaiji(){
+        return view(
+            _get_frontend_theme_path('pages.404'),
+            $this->dataForView
+        );
+    }
+    public function jinrong(){
+        return view(
+            _get_frontend_theme_path('pages.404'),
+            $this->dataForView
+        );
+    }
+    public function cfa($pageUri){
+        $page = Page::where('uri',$pageUri)->orWhere('uri', '/'.$pageUri)->first();
+        if(!$page){
+            // 404 Error
+            return view(_get_frontend_theme_path('pages.404'), $this->dataForView);
+        }
+        $this->dataForView['page'] = $page;
+        $this->dataForView['pageTitle'] = app()->getLocale()=='cn' ? $page->title_cn : $page->title;
+        $this->dataForView['metaKeywords'] = $page->seo_keyword;
+        $this->dataForView['metaDescription'] = $page->seo_description;
+
+        return view(_get_frontend_theme_path('templates.static'), $this->dataForView);
+    }
+
+    public function teachers(){
+        return view(_get_frontend_theme_path('pages.teachers'), $this->dataForView);
     }
 }

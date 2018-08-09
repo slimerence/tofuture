@@ -31,8 +31,8 @@
                             <a href="#">本地就业</a>
                             <div class="nav-dropdown">
                                 <ul>
-                                    <li><a href="#">会计训练营</a></li>
-                                    <li><a href="#">金融训练营</a></li>
+                                    <li><a href="{{ Route('kuaiji') }}">会计训练营</a></li>
+                                    <li><a href="{{ Route('jinrong') }}">金融训练营</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -40,23 +40,23 @@
                             <a href="#">CFA</a>
                             <div class="nav-dropdown">
                                 <ul>
-                                    <li><a href="#">CFA科普</a></li>
-                                    <li><a href="#">CFA报名指南</a></li>
-                                    <li><a href="#">CFA保过计划</a></li>
-                                    <li><a href="#">试听讲堂</a></li>
+                                    <li><a href="{{ url('/cfa/kepu') }}">CFA科普</a></li>
+                                    <li><a href="{{ url('/cfa/baoming') }}">CFA报名指南</a></li>
+                                    <li><a href="{{ url('/cfa/baoguo') }}">CFA保过计划</a></li>
+                                    <li><a href="{{ url('/cfa/shitin') }}">试听讲堂</a></li>
                                 </ul>
                             </div>
 
 
                         </li>
                         <li class="nav-menu-item">
-                            <a href="#">专业师资</a>
+                            <a href="{{ url('/teachers') }}">专业师资</a>
                         </li>
                         <li class="nav-menu-item">
-                            <a href="{{ url('about') }}">关于我们</a>
+                            <a href="{{ url('/about') }}">关于我们</a>
                         </li>
                         <li class="nav-menu-item">
-                            <a href="{{ url('contact-us') }}">联系我们</a>
+                            <a href="{{ url('/contact-us') }}">联系我们</a>
                         </li>
                     </ul>
                 </div>

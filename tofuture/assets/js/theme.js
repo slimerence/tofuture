@@ -558,7 +558,7 @@ $(function () {
             autoHeight: true,
             stopOnHover: true,
             singleItem: true,
-            slideSpeed: 500,
+            slideSpeed: 1500,
             pagination: false,  // Hide pagination buttons
             navigation: true,   // Show next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],

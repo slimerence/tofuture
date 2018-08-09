@@ -57,7 +57,7 @@
                 </li>
 
                 <!-- SLIDE  -->
-                <li class="light-color" data-transition="fade" data-slotamount="7" data-masterspeed="500" data-slide="light-slide">
+                <li class="light-color" data-transition="fade" data-slotamount="7" data-masterspeed="500" data-slide="dark-slide">
                     <!-- MAIN IMAGE -->
                     <img src="{{ asset('images/tofuture/full/home02.jpg') }}" alt="slidebg2" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat">
 
@@ -113,7 +113,7 @@
                 <!-- SLIDE  -->
                 <li class="light-color" data-transition="fade" data-slotamount="7" data-masterspeed="500" data-slide="dark-slide">
                     <!-- MAIN IMAGE -->
-                    <img src="{{ asset('images/tofuture/full/home01.jpg') }}" alt="slidebg3" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat">
+                    <img src="{{ asset('images/tofuture/full/banner2.jpg') }}" alt="slidebg3" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat">
 
                     <!-- LAYER NR. 1 -->
                     <h1 class="tp-caption customin customout sfb alt-title mtb-0"
