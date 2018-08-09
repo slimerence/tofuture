@@ -5,15 +5,18 @@ $themedark:#aa071f;
 @import "tofuture/assets/css/shixi";
 
 body,html{
-  font-family: Helvetica,宋体;
+  font-family: myFirstFont,lucida grande,lucida sans unicode,lucida,helvetica,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+  font-weight: unset;
 }
-h1, h2, h3, h4, h5, h6{
-  font-family: Helvetica,宋体;
+h1, h2, h3, h4, h5, h6,p{
+  font-family: myFirstFont,lucida grande,lucida sans unicode,lucida,helvetica,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+  font-weight: unset;
 }
 p{
   font-size: 20px;
   line-height: 1.5em;
   color:#0f0f0f;
+  font-weight: unset;
 }
 
 ul li{
@@ -35,6 +38,9 @@ ul li{
 .bg-normal{
   background: $themecolor;
 }
+.bg-lt{
+  background-color: #eaeaea42;
+}
 .no-list-style{
     margin: 0;
     padding-left:0;
@@ -43,9 +49,6 @@ ul li{
     }
 }
 
-.d-xs-none{
-
-}
 .content-carousel .owl-controls .owl-buttons .owl-prev,
 .content-carousel .owl-controls .owl-buttons .owl-next{
 
@@ -139,4 +142,14 @@ footer .qrcode-wrap {
 .ptb-150{
   padding-top: 150px;
   padding-bottom: 150px;
+}
+.about-item{
+  h3{
+    i{
+      color: $themecolor;
+    }
+  }
+  ul li{
+    font-size: 20px;
+  }
 }
