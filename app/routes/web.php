@@ -13,3 +13,6 @@ Route::get('/jinrong', '\Smartbro\Controllers\CustomPageController@jinrong')->na
 
 Route::get('/cfa/{uri}', '\Smartbro\Controllers\CustomPageController@cfa');
 Route::get('/teachers', '\Smartbro\Controllers\CustomPageController@teachers');
+
+Route::get('/listen', '\Smartbro\Controllers\OnlineClassController@listen');
+Route::post('/listen/login', '\Smartbro\Controllers\OnlineClassController@login_check');

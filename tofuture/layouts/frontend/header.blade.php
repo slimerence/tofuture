@@ -43,7 +43,7 @@
                                     <li><a href="{{ url('/cfa/kepu') }}">CFA科普</a></li>
                                     <li><a href="{{ url('/cfa/baoming') }}">CFA报名指南</a></li>
                                     <li><a href="{{ url('/cfa/baoguo') }}">CFA保过计划</a></li>
-                                    <li><a href="{{ url('/cfa/shitin') }}">试听讲堂</a></li>
+                                    <li><a href="{{ url('/listen') }}">试听讲堂</a></li>
                                 </ul>
                             </div>
 

@@ -6,7 +6,7 @@
         <p class="fs-16">CFA全称 Chartered Financial Analyst （特许金融分析师），1947年成立，CFA协会一直在全球范围内建立并倡导遵守⾄高行业准则，是全球投资业⾥较为严格与含金量高的资格认证，被业界称为“华尔街的入场券”。</p>
         <div class="spacer-60"></div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 mb-45">
                         <div class="page-icon-top"><i class="ion ion-ios-compose-outline"></i></div>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <h3>CFA保过计划提供</h3>
                 <div class="special-list text-left mx-4">
                     <ul>

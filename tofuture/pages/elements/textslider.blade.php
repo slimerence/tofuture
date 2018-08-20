@@ -8,7 +8,7 @@
                     <div class="whr"></div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12">
                         <div class="px-5 home-text">
                             <h3><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>名企实习</h3>
                             <hr class="mtb-15">
@@ -22,7 +22,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12">
                         <div class="px-5 home-text">
                             <h3><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>名企直通</h3>
                             <hr class="mtb-15">
@@ -46,7 +46,7 @@
                     <div class="whr"></div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12">
                         <div class="px-5 home-text">
                             <h3><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>会计训练营</h3>
                             <hr class="mtb-15">
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12">
                         <div class="px-5 home-text">
                             <h3><i class="fa fa-caret-right fa-fw" aria-hidden="true"></i>金融训练营</h3>
                             <hr class="mtb-15">
