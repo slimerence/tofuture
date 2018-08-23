@@ -29,9 +29,20 @@
                     <a href="{{ url('admin/home') }}"><i class="fa fa-dashboard fa-fw"></i> Overview</a>
                 </li>
                 <li>
-                    <a href="{{ url('admin/reservations/create') }}"><i class="fa fa-plus fa-fw"></i> Create</a>
+                    <a href="#"><i class="fa fa-video-camera fa-fw"></i> Videos<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{{ url('admin/cats') }}">Category Management</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('admin/videos/upload') }}">Video Upload</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('admin/videos') }}">Video View</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
                 </li>
-
                 <li>
                     <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Customers<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">

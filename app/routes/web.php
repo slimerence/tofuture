@@ -27,4 +27,14 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::get('/customers/edit/{id}', '\Smartbro\Controllers\backend\AdminController@customerUpdate');
     Route::post('/customers/edit/{id}', '\Smartbro\Controllers\backend\AdminController@customerEdit');
     Route::post('/customers/create', '\Smartbro\Controllers\backend\AdminController@save');
+
+    Route::get('/cats', '\Smartbro\Controllers\backend\VideoController@cat');
+    Route::post('/cats/create', '\Smartbro\Controllers\backend\VideoController@catCreate');
+    Route::get('/cats/delete/{id}', '\Smartbro\Controllers\backend\VideoController@catDelete');
+
+    Route::get('/videos', '\Smartbro\Controllers\backend\VideoController@video');
+    Route::get('/videos/delete/{id}', '\Smartbro\Controllers\backend\VideoController@videoDelete');
+    Route::get('/videos/upload', '\Smartbro\Controllers\backend\VideoController@videoUploadView');
+    Route::post('/videos/upload', '\Smartbro\Controllers\backend\VideoController@videoUpload');
+
 });

@@ -28,6 +28,8 @@ use App\Events\UserCreated;
 use App\Models\Newsletter\UserSubscribe;
 use App\Http\Controllers\Frontend\CustomersController;
 use Ramsey\Uuid\Uuid;
+use Smartbro\Models\Cat;
+use Smartbro\Models\Video;
 
 class AdminController extends CustomersController
 {
@@ -43,7 +45,8 @@ class AdminController extends CustomersController
         $this->dataForView['users'] = User::where('group_id','1')->orderBy('id','desc')->get();
         $this->dataForView['leads'] = Lead::orderBy('id','desc')
             ->paginate(config('system.PAGE_SIZE'));
-
+        $this->dataForView['videos'] = Video::orderby('id','asc')->get();
+        $this->dataForView['cats'] = Cat::orderby('id','asc')->get();
         return view(_get_frontend_theme_path('admin.index'), $this->dataForView);
     }
 

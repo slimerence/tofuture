@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>The One Room Escape</title>
-
+    <title>Tofuture</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.css" />
@@ -46,9 +46,7 @@
 <!-- Morris Charts JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.0/raphael-min.js"></script>
 
-@if($menuName == 'tables')
-    <script src="{{ url('js/dataTable.js') }}"></script>
-@endif
+<script src="{{ url('js/dataTable.js') }}"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="{{ url('js/admin.js') }}"></script>

@@ -4,15 +4,15 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-comments fa-5x"></i>
+                        <i class="fa fa-vimeo-square fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge">0</div>
-                        <div>Total Reservations!</div>
+                        <div class="huge">{{ count($videos) }}</div>
+                        <div>Total Videos!</div>
                     </div>
                 </div>
             </div>
-            <a href="{{ url('admin/reservations/all') }}">
+            <a href="{{ url('admin/videos') }}">
                 <div class="panel-footer">
                     <span class="pull-left">View Details</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -29,12 +29,12 @@
                         <i class="fa fa-tasks fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge">0</div>
-                        <div>Coming Reservations!</div>
+                        <div class="huge">{{ count($cats) }}</div>
+                        <div>Categories!</div>
                     </div>
                 </div>
             </div>
-            <a href="{{ url('admin/reservations/coming') }}">
+            <a href="{{ url('admin/cats') }}">
                 <div class="panel-footer">
                     <span class="pull-left">View Details</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -52,11 +52,11 @@
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge">0</div>
-                        <div>Finished Reservations!</div>
+                        <div>Active Users!</div>
                     </div>
                 </div>
             </div>
-            <a href="{{ url('admin/reservations/finished') }}">
+            <a href="{{ url('admin/customers') }}">
                 <div class="panel-footer">
                     <span class="pull-left">View Details</span>
                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -70,7 +70,7 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-support fa-5x"></i>
+                        <i class="fa fa-users fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge">{{ count($users) }}</div>
