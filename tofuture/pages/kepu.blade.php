@@ -3,7 +3,7 @@
     <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner.jpg') }}">
         <div class="container">
             <div class="row title">
-                <h2 class="h2">澳洲未来教育介绍</h2>
+                <h2 class="h2">CFA科普</h2>
             </div>
         </div>
     </section>
@@ -11,16 +11,14 @@
     <section class="pt-80 pb-5">
         <div class="container">
             <div class="about-item">
-                <h2 class="text-center">澳洲未来教育集团</h2>
+                <h2 class="text-center">人民日报为啥力荐CFA? </h2>
                 <div class="whr"></div>
-                <p>澳洲未来教育集团，成立于2006年，是澳大利亚首家留学生服务教育咨询公司。我们专注于留学生的各方培训与教育，以及留学移民咨询领域。在大学辅导，语言培训，留学移民，就业指导，生活求助等领域表现优异，致力于全方位服务于在澳洲的中国留学生。</p>
+                <h3><i class="fa fa-caret-right" aria-hidden="true"></i>“华尔街金融第一考”</h3>
                 <div class="d-flex">
-                    <div class="info-img d-none d-sm-flex align-self-center">
-                        <img src="{{ asset('images/tofuture/logo.png') }}" alt="win" style="max-width: 200px;" class="d-xs-none">
-                    </div>
-                    <div class="info-text align-self-center px-lg-5">
-                        <p>WinCareer是澳洲未来教育集团旗下专注于职业培训的子品牌，致力于为澳洲高校毕业生提供一站式求职教育解决方案，依托数百家澳洲本地企业资源，以及新东方海威时代连接国内千家顶级企业，为留学生提供商科培训，实习生计划和职业规划等专业指导，全方位提升求职竞争力。</p>
-                    </div>
+                    <p>CFA持证人，更受金融机构雇主青睐。<br/><br/>
+                        CFA以实用性为基础的考纲，聚焦投资决策必备知识与技能，课程涵盖定量分析、经济学、财报分析、公司理财、公司金融、证券市场、权益投资、固定收益、另类投资、衍生品、债券、组合管理等等，以其全面的科目考核，检验每一位考生金融、经济领域的知识掌握程度。<br/><br/>
+                        世界金融市场的成长产生了对合格投资专业人员前所未有的需求。投资人和雇主之间比以往任何时候更需要一个统一的标准来衡量金融分析人员的知识、诚信和专业化程度，从而信赖他们管理资产。CFA特许金融分析师就是这样一个标准。<br/><br/>
+                        凭着如此广泛的认同，CFA特许资格认证持证人在国际职场上享有明显的竞争优势，因此，赢得CFA称号标志着赢得全球、全行业的尊重与青睐!</p>
                 </div>
             </div>
         </div>
@@ -91,7 +89,6 @@
                         <img src="{{ asset('images/tofuture/full/cos.png') }}" class="img-fluid" alt="服务流程">
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

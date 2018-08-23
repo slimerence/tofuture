@@ -17,6 +17,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .js('resources/views/frontend/custom/tofuture/assets/js/plugin/jquery.fs.tipper.min.js', 'public/js')
     .js('resources/views/frontend/custom/tofuture/assets/js/revolution-slider.js', 'public/js')
     .js('resources/views/frontend/custom/tofuture/assets/js/theme.js', 'public/js')
+    .sass('resources/views/frontend/custom/tofuture/admin/css/customadmin.scss','public/css')
+    .sass('resources/views/frontend/custom/tofuture/admin/css/dataTables.responsive.scss','public/css')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .sass('resources/views/frontend/custom/_custom.scss', 'public/css');
 //
@@ -33,6 +35,11 @@ mix.scripts([
     'public/js/_custom.js',
 ], 'public/js/all.js');
 // 最终加载两个文件， all.css 和 all.js
+mix.scripts([
+    'resources/views/frontend/custom/tofuture/admin/js/jquery.dataTables.min.js',
+    'resources/views/frontend/custom/tofuture/admin/js/dataTables.bootstrap.min.js',
+    'resources/views/frontend/custom/tofuture/admin/js/dataTables.responsive.js',
+], 'public/js/dataTable.js');
 
 // 后台
 mix.js('resources/assets/js/backend.js', 'public/js')

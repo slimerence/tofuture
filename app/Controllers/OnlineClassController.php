@@ -47,6 +47,7 @@ class OnlineClassController extends Controller
 
         $user = User::where('email',$request->get('email'))
             ->where('role',UserGroupTool::$GENERAL_CUSTOMER)
+            ->where('status',1)
             ->first();
 
         if($user && Hash::check($request->get('password'), $user->password)){

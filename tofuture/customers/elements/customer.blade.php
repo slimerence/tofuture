@@ -4,7 +4,7 @@
         <form method="post" action="{{ url('/listen/login') }}">
             {{ csrf_field() }}
             <input type="hidden" name="the_referer" value="{{ $the_referer }}">
-            <div class="field mt">
+            <div class="field">
                 <label for="staticEmail" class="label">Email</label>
                 <div class="control">
                     <input type="text" class="input w-100" id="staticEmail" name="email" placeholder="email@example.com">
@@ -18,7 +18,7 @@
                     </div>
                 @endif
             </div>
-            <div class="field mt">
+            <div class="field">
                 <label for="inputPassword" class="label">Password</label>
                 <div class="control">
                     <input type="password" class="input w-100" id="Password" name="password" placeholder="Password">

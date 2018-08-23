@@ -16,3 +16,15 @@ Route::get('/teachers', '\Smartbro\Controllers\CustomPageController@teachers');
 
 Route::get('/listen', '\Smartbro\Controllers\OnlineClassController@listen');
 Route::post('/listen/login', '\Smartbro\Controllers\OnlineClassController@login_check');
+
+
+Route::prefix('admin')->middleware('auth')->group(function(){
+
+    Route::get('/home','\Smartbro\Controllers\backend\AdminController@index');
+    Route::get('/customers', '\Smartbro\Controllers\backend\AdminController@customer');
+    Route::get('/customers/create', '\Smartbro\Controllers\backend\AdminController@customerCreateView');
+    Route::get('/customers/delete/{id}', '\Smartbro\Controllers\backend\AdminController@customerDelete');
+    Route::get('/customers/edit/{id}', '\Smartbro\Controllers\backend\AdminController@customerUpdate');
+    Route::post('/customers/edit/{id}', '\Smartbro\Controllers\backend\AdminController@customerEdit');
+    Route::post('/customers/create', '\Smartbro\Controllers\backend\AdminController@save');
+});

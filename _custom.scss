@@ -102,7 +102,7 @@ footer .qrcode-wrap {
     }
   }
   ul li{
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .home-text{
@@ -155,5 +155,11 @@ footer .qrcode-wrap {
   line-height: 3em;
   &:active,&:focus{
     text-decoration: none;
+  }
+}
+@media (min-width: 992px){
+  .img-container{
+    width: 60%;
+    margin: auto;
   }
 }

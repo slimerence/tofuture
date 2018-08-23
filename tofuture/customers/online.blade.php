@@ -13,7 +13,7 @@
             @if(session('user_data.id'))
             <div class="box">
                 <h3>欢迎, {{ session('user_data.name') }}</h3>
-            </div>
+                <iframe src="https://player.vimeo.com/video/284469173" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             @else
             <div class="row">
                 <div class="col-md-6 mx-auto">
