@@ -51,7 +51,9 @@
                         <i class="fa fa-shopping-cart fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge">0</div>
+                        <?php $active_user = \App\User::where('role',5)->where('status',1)->get();
+                        ?>
+                        <div class="huge">{{ count($active_user) }}</div>
                         <div>Active Users!</div>
                     </div>
                 </div>
