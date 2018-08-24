@@ -15,6 +15,7 @@ Route::get('/cfa/{uri}', '\Smartbro\Controllers\CustomPageController@cfa');
 Route::get('/teachers', '\Smartbro\Controllers\CustomPageController@teachers');
 
 Route::get('/listen', '\Smartbro\Controllers\OnlineClassController@listen');
+Route::get('/listen/{uri}', '\Smartbro\Controllers\OnlineClassController@listencat');
 Route::post('/listen/login', '\Smartbro\Controllers\OnlineClassController@login_check');
 
 

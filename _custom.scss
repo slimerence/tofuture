@@ -163,3 +163,18 @@ footer .qrcode-wrap {
     margin: auto;
   }
 }
+
+.online-class{
+  .panel-title{
+    margin: 0;
+  }
+  .cats{
+    ul{
+      padding: 0;
+      li{
+        padding:0.3em 0 0.3em 1em;
+        list-style:none;
+      }
+    }
+  }
+}

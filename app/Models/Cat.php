@@ -42,7 +42,6 @@ class Cat extends Model
      */
     public static function LoadFirstLevelCatsInMenu(){
         return self::where('parent_id',1)
-            ->orderBy('position','asc')
             ->get();
     }
 
