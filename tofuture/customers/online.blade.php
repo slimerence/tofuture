@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-md-9">
                             <div class="d-inline-block w-100">
-                                <span>欢迎, {{ session('user_data.name') }}</span>
+                                <span style="font-size: 21px;">欢迎, {{ session('user_data.name') }}</span>
                                 <a class="float-right" style="right: 0;" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                                     <i class="fa fa-sign-out" aria-hidden="true"></i></i>
                                     <span> Logout</span>
