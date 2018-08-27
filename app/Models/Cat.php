@@ -9,6 +9,8 @@
 namespace Smartbro\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
+use Smartbro\Models\UserCat;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Cat extends Model
@@ -45,6 +47,11 @@ class Cat extends Model
             ->get();
     }
 
+    public static function LoadChildCat(){
+        return self::where('parent_id',2)->orderby('id','asc')
+            ->get();
+    }
+
     public static function GetCatLevel($id){
         $cat = self::where('id',$id)->first();
         if($cat->id == 1){
@@ -63,4 +70,5 @@ class Cat extends Model
     public static function Persistent($data){
         return self::create($data);
     }
+
 }

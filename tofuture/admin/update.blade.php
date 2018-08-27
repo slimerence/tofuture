@@ -51,6 +51,12 @@
                                             <option value="2">Disabled</option>
                                         </select>
                                     </div>
+                                    <div class="form-group  col-md-12 col-sm-12">
+                                        <label >文件夹权限</label>
+                                        @foreach($cats as $cat)
+                                            <input type="checkbox" name="cat[]" value="{{$cat->id}}">{{ $cat->name }}<br />
+                                        @endforeach
+                                    </div>
                                 </div>
                                 <button type="submit" class="btn btn-default btn-primary">Submit Button</button>
                             </form>

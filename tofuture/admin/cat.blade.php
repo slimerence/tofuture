@@ -68,7 +68,7 @@
                     </div>
                     <div class="form-group">
                         <label for="inputParent">Parent<span class="text-danger">*</span></label>
-                        <select id="inputParent" name="cat[parent_id]">
+                        <select id="inputParent" name="cat[parent_id]" multiple>
                             @foreach($cats as $cat)
                                 <option value="{{ $cat->id }}">{{ $cat->name }}</option>
                             @endforeach

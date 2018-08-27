@@ -54,9 +54,15 @@
                                             <label for="inputPassword2">Re-enter Password&nbsp;<span class="text-danger">*</span></label>
                                             <input required type="password" class="input" id="inputPassword2" name="password_confirmation" placeholder="To Confirm Your Password">
                                         </div>
-                                        <div class="form-group  col-md-6 col-sm-12">
+                                        <div class="form-group  col-md-12 col-sm-12">
                                             <label for="phone" >Phone&nbsp;<span class="text-danger">*</span></label>
                                             <input required type="text" class="input {{ $errors->has('phone') ? 'text-danger' : '' }}" id="inputPhone" value="{{ old('phone') }}" name="phone" placeholder="0123458512">
+                                        </div>
+                                        <div class="form-group  col-md-12 col-sm-12">
+                                            <label >文件夹权限</label>
+                                                @foreach($cats as $cat)
+                                                <input type="checkbox" name="cat[]" value="{{$cat->id}}" />{{ $cat->name }}<br />
+                                                @endforeach
                                         </div>
                                     </div>
                                     <button type="submit" id="general-customer-register-btn" class="btn-primary">

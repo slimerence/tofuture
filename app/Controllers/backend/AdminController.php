@@ -30,6 +30,7 @@ use App\Http\Controllers\Frontend\CustomersController;
 use Ramsey\Uuid\Uuid;
 use Smartbro\Models\Cat;
 use Smartbro\Models\Video;
+use Smartbro\Models\UserCat;
 
 class AdminController extends CustomersController
 {
@@ -65,24 +66,7 @@ class AdminController extends CustomersController
         $this->dataForView['reservations']=  Reservation::GetComingReservations();
         return view(_get_frontend_theme_path('admin.tables'), $this->dataForView);
     }
-    public function tablespast(){
-        $this->dataForView['menuName'] = 'tables';
-        $this->dataForView['pageTitle'] = 'Finished Reservations';
-        $this->dataForView['config'] = Configuration::find(1);
-        $this->dataForView['reservations']=  Reservation::GetPastReservations();
-        return view(_get_frontend_theme_path('admin.tables'), $this->dataForView);
-    }
 
-    public function delete($id){
-        Reservation::where('id',$id)->delete();
-        return redirect('admin/reservations/all');
-    }
-
-    public function edit($id){
-        $this->dataForView['pageTitle'] = 'Reservation Update';
-        $this->dataForView['reservation']=Reservation::find($id);
-        return view(_get_frontend_theme_path('admin.update'),$this->dataForView);
-    }
 
     public function update($id,Request $request){
         $reservation = $request->get('reservation');
@@ -104,24 +88,28 @@ class AdminController extends CustomersController
         $this->dataForView['menuName'] = 'tables';
         $this->dataForView['config'] = Configuration::find(1);
         $this->dataForView['users'] = User::where('group_id','1')->orderBy('id','desc')->get();
+        $this->dataForView['cats'] = Cat::LoadChildCat();
         return view(_get_frontend_theme_path('admin.create'), $this->dataForView);
     }
 
     public function customerDelete($id){
         User::where('id',$id)->forcedelete();
-
+        UserCat::where('user_id',$id)->forcedelete();
         return redirect('admin/customers');
     }
 
     public function customerUpdate($id){
         $this->dataForView['pageTitle'] = 'User Update';
         $this->dataForView['customer']= User::find($id);
+        $this->dataForView['cats'] = Cat::LoadChildCat();
         return view(_get_frontend_theme_path('admin.update'),$this->dataForView);
     }
 
     public function customerEdit($id,Request $request){
         $data = $request->all();
         User::find($id)->update($data);
+        $user =  User::where('id',$id)->first();
+        UserCat::Persistent($user,$data['cat']);
         return redirect('admin/customers');
     }
 
@@ -174,7 +162,11 @@ class AdminController extends CustomersController
         $data['uuid'] = $userData['uuid'];
         $data['password'] = $userData['password'];
         $data['role'] = UserGroup::$GENERAL_CUSTOMER;
-        User::create($data);
+        $user=User::create($data);
+        if($user){
+            $cats = $data['cat'];
+            UserCat::Persistent($user,$cats);
+        }
         return redirect('admin/customers');
     }
 

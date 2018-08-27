@@ -31,7 +31,7 @@ class OnlineClassController extends Controller
     use CustomizedAuthenticatesUsers;
 
     public function listen(){
-        $this->dataForView['menuName'] = 'customer';
+        $this->dataForView['menuName'] = 'listen';
         $this->dataForView['videos'] = Video::orderby('id','asc')->get();
         $this->dataForView['cats'] = Cat::orderby('id','asc')->get();
         return view(

@@ -18,40 +18,47 @@
             </div>
             @else
                 <div class="row">
+                    <?php
+                    $user = \App\User::where('id',session('user_data.id'))->first();
+                    $maincats = \Smartbro\Models\UserCat::GetOwnCat($user);
+                    ?>
+                    @if($menuName == 'listen')
+                        <div class="col-12">
+                            <div class="d-inline-block w-100">
+                                <span style="font-size: 21px;">欢迎, {{ session('user_data.name') }}</span>
+                                <a class="float-right" style="right: 0;" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i></i>
+                                    <span> Logout</span>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                                        @csrf
+                                    </form>
+                                </a>
+                            </div>
+                            <hr class="mtb-15">
+                        </div>
+
+                        @foreach($maincats as $key=>$cat)
+                        <div class="col-md-6 col-lg-6 text-center">
+                            <div class="card text-center" style="padding: 2em;max-width: 300px;margin: 0 auto;" >
+                                <img class="card-img-top" style="max-width: 150px;margin: 0 auto;" src="{{ asset('images/tofuture/vfolder.png') }}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{$cat->cat->name}}</h5>
+                                    <a href="{{ url('listen/'.$cat->cat->name )}}" style="min-width: 100px;" class="btn btn-primary">浏览</a>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    @else
                     <div class="col-md-3">
-                        <?php
-                            $maincats = \Smartbro\Models\Cat::LoadFirstLevelCatsInMenu();
-                        ?>
-                        <h3>课程分类</h3>
+                        <h3>授权课程</h3>
                             <hr class="mb-15">
                         <div class="online-class">
-                    @foreach($maincats as $key=>$maincat)
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="{{ '#col'.$maincat->id }}">
-                                        {{$maincat->name}}
-                                    </a><i class="indicator fa fa-angle-right pull-right"></i>
-                                </h4>
-                            </div>
-                            <?php $childcats = $maincat->children()->get();
-                            ?>
-                            @if(count($childcats)>0)
-                                <div id="{{ 'col'.$maincat->id }}" class="panel-collapse collapse {{ $key==0 ? 'show':'' }}">
-                                    <div class="panel-body">
-                                        <div class="cats">
-                                            <ul>
-                                                @foreach($childcats as $childcat)
-                                                    <li><a href="{{ url('listen/'.$childcat->name )}}">{{$childcat->name}}</a></li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endif
+                            <ul>
+                                @foreach($maincats as $key=>$cat)
+                                    <li><a href="{{ url('listen/'.$cat->cat->name )}}">{{$cat->cat->name}}</a></li>
+                                @endforeach
+                            </ul>
                         </div>
-                    @endforeach
-                            </div>
                     </div>
                     <div class="col-md-9">
                             <div class="d-inline-block w-100">
@@ -67,17 +74,18 @@
                         <hr class="mtb-15">
 
                         <div class="row">
-                            @foreach($videos as $video)
-                                <div class="col-lg-6 col-md-12">
-                                    {!! $video->code !!}
-                                    <h4 class="text-center">{{ $video->name }}</h4>
-                                </div>
-                            @endforeach
+                                @foreach($videos as $video)
+                                    <div class="col-lg-6 col-md-12">
+                                        {!! $video->code !!}
+                                        <h4 class="text-center">{{ $video->name }}</h4>
+                                    </div>
+                                @endforeach
                         </div>
                         @endif
                     </div>
-                    </div>
+                    @endif
                 </div>
+        </div>
 
     </section>
 @endsection
