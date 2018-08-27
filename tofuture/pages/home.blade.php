@@ -16,7 +16,7 @@
         </div>
     </section>
     @include(_get_frontend_theme_path('pages.elements.service'))
-    <hr>
+    <hr class="mb-30">
     @include(_get_frontend_theme_path('pages.elements.teamgrid'))
 
     @include(_get_frontend_theme_path('pages.elements.count'))
