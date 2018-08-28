@@ -49,7 +49,7 @@ class CustomPageController extends Controller
     }
     public function jinrong(){
         return view(
-            _get_frontend_theme_path('pages.404'),
+            _get_frontend_theme_path('pages.jinrong'),
             $this->dataForView
         );
     }

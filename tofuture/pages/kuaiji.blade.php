@@ -9,7 +9,8 @@
     </section>
     <section>
         <div class="container" style="padding: 0 10%;">
-            <img src="{{ asset('images/tofuture/xunlian.jpg') }}" alt="kuaiji" class="img-fluid w-100">
+            <img src="{{ asset('images/tofuture/k1.jpg') }}" alt="kuaiji" class="img-fluid w-100">
+            <img src="{{ asset('images/tofuture/k2.jpg') }}" alt="kuaiji" class="img-fluid w-100">
         </div>
     </section>
 
