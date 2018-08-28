@@ -8,7 +8,7 @@
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container" style="padding: 0 10%;">
             <img src="{{ asset('images/tofuture/xunlian.jpg') }}" alt="kuaiji" class="img-fluid w-100">
         </div>
     </section>
