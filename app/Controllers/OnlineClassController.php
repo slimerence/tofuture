@@ -42,7 +42,7 @@ class OnlineClassController extends Controller
 
     public function listencat($uri){
         $this->dataForView['menuName'] = 'customer';
-        $this->dataForView['videos'] = Video::where('name',$uri)->orderby('id','asc')->get();
+        $this->dataForView['videos'] = Video::GetByCat($uri);
         $this->dataForView['cats'] = Cat::orderby('id','asc')->get();
         return view(
             _get_frontend_theme_path('customers.online'),
