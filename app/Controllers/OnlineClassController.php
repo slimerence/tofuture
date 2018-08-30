@@ -32,7 +32,7 @@ class OnlineClassController extends Controller
 
     public function listen(){
         $this->dataForView['menuName'] = 'listen';
-        $this->dataForView['videos'] = Video::orderby('id','asc')->get();
+        $this->dataForView['videos'] = Video::orderby('id','asc')->paginate(20);
         $this->dataForView['cats'] = Cat::orderby('id','asc')->get();
         return view(
             _get_frontend_theme_path('customers.online'),
@@ -42,7 +42,7 @@ class OnlineClassController extends Controller
 
     public function listencat($uri){
         $this->dataForView['menuName'] = 'customer';
-        $this->dataForView['videos'] = Video::GetByCat($uri);
+        $this->dataForView['videos'] = Video::GetByCat($uri)->paginate(20);
         $this->dataForView['cats'] = Cat::orderby('id','asc')->get();
         return view(
             _get_frontend_theme_path('customers.online'),
