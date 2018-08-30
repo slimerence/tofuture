@@ -80,8 +80,10 @@
                                         <h4 class="text-center">{{ $video->name }}</h4>
                                     </div>
                                 @endforeach
-                                {{ $videos->links() }}
+
                         </div>
+                        <hr class="mtb-15">
+                        {{ $videos->links() }}
                         @endif
                     </div>
                     @endif
