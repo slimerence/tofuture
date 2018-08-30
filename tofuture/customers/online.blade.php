@@ -80,6 +80,7 @@
                                         <h4 class="text-center">{{ $video->name }}</h4>
                                     </div>
                                 @endforeach
+                                {{ $videos->links() }}
                         </div>
                         @endif
                     </div>
