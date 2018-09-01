@@ -542,7 +542,7 @@ $(function () {
         $('.client-carousel').owlCarousel({
             autoPlay: 2500,
             stopOnHover: true,
-            items: 5,
+            items: 2,
             itemsDesktop: [1170, 4],
             itemsDesktopSmall: [1024, 3],
             itemsTabletSmall: [768, 2],

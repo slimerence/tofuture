@@ -9,27 +9,28 @@
             <div class="col-lg-6 col-sm-12">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-ios-compose-outline"></i></div>
+                        <div class="page-icon-top"><i class="fas fa-chalkboard-teacher"></i></div>
                         <h5>40人精品授课</h5>
                     </div>
                     <div class="col-md-4 col-sm-6 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-ios-gear-outline"></i></div>
+                        <div class="page-icon-top"><i class="fas fa-user-friends"></i>
+                        </div>
                         <h5>小组学习互帮互助</h5>
                     </div>
                     <div class="col-md-4 col-sm-6 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-social-apple-outline"></i></div>
+                        <div class="page-icon-top"><i class="far fa-thumbs-up"></i></div>
                         <h5>班主任监督辅导</h5>
                     </div>
                     <div class="col-md-4 col-sm-6 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-ios-compose-outline"></i></div>
+                        <div class="page-icon-top"><i class="fas fa-globe"></i></div>
                         <h5>导师网络答疑</h5>
                     </div>
                     <div class="col-md-4 col-sm-6 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-ios-gear-outline"></i></div>
+                        <div class="page-icon-top"><i class="far fa-file-video"></i></div>
                         <h5>上课视频无限看</h5>
                     </div>
                     <div class="col-md-4 col-sm-6 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-social-apple-outline"></i></div>
+                        <div class="page-icon-top"><i class="fas fa-award"></i></div>
                         <h5>优秀学员内推</h5>
                     </div>
                 </div>

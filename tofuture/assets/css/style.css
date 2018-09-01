@@ -1390,7 +1390,8 @@ form label.error {
 @media all and (min-width: 992px) {
     .nav-menu > ul > li.dd-menu-dropdown-icon > a::after {
         content: "\f107";
-        font-family: FontAwesome;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
         margin-left: 6px;
         font-size: 12px;
     }
@@ -2552,7 +2553,7 @@ form label.error {
     line-height: 50px;
     padding-bottom: 20px;
     width: 100%;
-    color: #323232;
+    color: #2f2d4a;
 }
 
 .white .page-icon-top, .white .page-icon-left, .white .features-icon-left, .white .features-icon-right {

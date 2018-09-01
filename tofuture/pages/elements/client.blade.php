@@ -14,20 +14,14 @@
         <div class="owl-carousel client-carousel nf-carousel-theme ">
             <div class="item">
                 <div class="client-logo">
-                    <img src="{{ asset('images/tofuture/logos/01.png') }}" alt="" />
+                    <img src="{{ asset('images/tofuture/logos/logo.jpeg') }}" alt="xdf" />
                 </div>
             </div>
             <div class="item">
                 <div class="client-logo">
-                    <img src="{{ asset('images/tofuture/logos/02.png') }}" alt="" />
+                    <img src="{{ asset('images/tofuture/logos/logo2.jpg') }}" alt="gdjj" />
                 </div>
             </div>
-            <div class="item">
-                <div class="client-logo">
-                    <img src="{{ asset('images/tofuture/logos/03.png') }}" alt="" />
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
