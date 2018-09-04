@@ -17,11 +17,13 @@
                     <div class="contact-box-left mb-45">
                         <div class="contact-icon-left"><i class="ion ion-ios-location"></i></div>
                         <h6>联系方式</h6>
-                        <ul class="no-list-style">
-                            <li class="fs-14">墨尔本：Suite A, 140 Burwood Hwy, Burwood VIC 3125<br/>
-                                Level 7, 168 Lonsdale Street, Melbourne VIC 3000</li>
-                            <li class="fs-14">广州：广州市天河区海海乐路路12号合景睿峰3707</li>
-                        </ul>
+                        <div class="no-list-style">
+                            <ul>
+                                <li class="fs-14">墨尔本：Suite A, 140 Burwood Hwy, Burwood VIC 3125<br/>
+                                    Level 7, 168 Lonsdale Street, Melbourne VIC 3000</li>
+                                <li class="fs-14">广州：广州市天河区海海乐路路12号合景睿峰3707</li>
+                            </ul>
+                        </div>
                         <a href="mailto:yourname@domain.com"><i class="fa fa-envelope-o left"></i>admin@tofuture.org</a><br />
                         <a><i class="fa fa-phone left"></i>+61 3 9890 8535</a>
                     </div>
@@ -44,7 +46,7 @@
                 </div>
                 <div class="col-md-6 offset-md-1">
                     <!-- Contact FORM -->
-                    <form action="{{ url('contact-us') }}" method="post" id="contact-us-form">
+                    {{--<form action="{{ url('contact-us') }}" method="post" id="contact-us-form">
                         {{ csrf_field() }}
                         <input type="hidden" name="user" value="{{ session('user_data.uuid') }}">
                         <!-- IF MAIL SENT SUCCESSFULLY -->
@@ -64,7 +66,7 @@
                         </div>
 
                         <div class="form-field-wrapper">
-                            <input class="input-sm form-full" id="input-phone" type="text" name="mobile" placeholder="Your Name" required>
+                            <input class="input-sm form-full" id="input-phone" type="text" name="mobile" placeholder="Your Mobile" required>
                         </div>
 
                         <div class="form-field-wrapper">
@@ -76,8 +78,25 @@
                         </div>
 
                         <button class="btn btn-md btn-black form-full" type="submit" id="submit-contact-us-btn" name="message">Send Message</button>
-                    </form>
+                    </form>--}}
                     <!-- END Contact FORM -->
+                    <div class="contact-box-left mb-45">
+                        <div class="contact-icon-left"><i class="fa fa-wechat fa-fw"></i></div>
+                        <h6>微信公众号</h6>
+                        <div class="qrcode-wrap">
+                            <div class="row" style="margin-top: 3em;">
+                                <div class="col-lg-6 col-sm-12 text-center">
+                                    <img style="box-shadow: 1px 2px 20px #9a9a9a54;max-width: 160px;" src="{{ asset('images/tofuture/qrcode1.jpg') }}" alt="">
+                                    <p class="fs-14">官方微信</p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 text-center">
+                                    <img style="box-shadow: 1px 2px 20px #9a9a9a54;max-width: 160px;" src="{{ asset('images/tofuture/qrcode2.png') }}" alt="">
+                                    <p class="fs-14">公众号</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

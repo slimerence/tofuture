@@ -53,7 +53,23 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="item">
+                        <div class="team-item">
+                            <div class="team-item-img">
+                                <img src="{{ asset('images/tofuture/team/tony.jpg') }}" alt="" />
+                                <div class="team-item-detail">
+                                    <div class="team-item-detail-inner light-color">
+                                        <p>ToFuture联合创始人之一，WinCareer CFA项目教研负责人，Finance金牌讲师，零差评高通过率</p>
+                                        <p>教学科目：金融</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-item-info">
+                                <h5>Tony</h5>
+                                <p class="">金融 市场</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="item">
                         <div class="team-item">
                             <div class="team-item-img">

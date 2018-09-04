@@ -124,7 +124,7 @@
                 <div class="d-flex mb-3 text-center">
                     <section style="text-align: center;font-size: 13px;color: rgb(110, 110, 110);">
                         <p style=""><span style="color: rgb(0, 0, 0);">根据CFA特许金融分析师协会的要求，报考不限定专业，如果你对资产管理、投资研究、咨询服务或投行感兴趣，<span style="color: rgb(223, 75, 75);"><strong>只要符合下列条件任意一项就能报名参加CFA考试：</strong></span><br>&nbsp;</span></p>
-                        <p style=""><span style="color: rgb(0, 0, 0);">① 4年制本科或以上学历者可直接报名参加考试</span></p>
+                        <p style=""><span style="color: rgb(0, 0, 0);">① 本科或以上学历者可直接报名参加考试</span></p>
                         <p style=""><span style="color: rgb(0, 0, 0);">② 或者，本科在校学生，报名时间到毕业时间在12月之内即可参加CFA报名考试；</span></p>
                         <p style=""><span style="color: rgb(0, 0, 0);">③ 或者，3年制大专学历加上1年全职工作经验</span></p>
                         <p style=""><span style="color: rgb(0, 0, 0);">④ 或者，2年制大专学历加上2年全职工作经验</span></p>

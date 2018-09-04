@@ -14,7 +14,7 @@
         <div class="owl-carousel client-carousel nf-carousel-theme ">
             <div class="item">
                 <div class="client-logo">
-                    <img src="{{ asset('images/tofuture/logos/logo.jpeg') }}" alt="xdf" />
+                    <img src="{{ asset('images/tofuture/logos/hwlg.png') }}" alt="xdf" />
                 </div>
             </div>
             <div class="item">

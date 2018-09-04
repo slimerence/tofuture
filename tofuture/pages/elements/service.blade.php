@@ -39,7 +39,7 @@
                 <h3>CFA保过计划提供</h3>
                 <div class="special-list text-left mx-4">
                     <ul>
-                        <li>CFA Notes，道德和计算器</li>
+                        <li>CFA，道德和计算器</li>
                         <li>CFA知识梳理，重难点⼀⽹打尽</li>
                         <li>CFA课堂讲义，名师整理教案，知识点扫盲</li>
                         <li>CFA习题练习，精选习题，冲刺阶段刷题复习</li>

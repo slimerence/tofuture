@@ -59,9 +59,6 @@
                     <li>模拟面试和反馈</li>
                 </ul>
                 </div>
-                <hr class="mtb-15">
-
-                <img src="{{ asset('images/tofuture/jr1.png') }}" alt="">
 
             </div>
 
