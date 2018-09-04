@@ -13,15 +13,39 @@
             <div class="about-item">
                 <h2 class="text-center">澳洲未来教育集团</h2>
                 <div class="whr"></div>
-                <p>澳洲未来教育集团，成立于2006年，是澳大利亚首家留学生服务教育咨询公司。我们专注于留学生的各方培训与教育，以及留学移民咨询领域。在大学辅导，语言培训，留学移民，就业指导，生活求助等领域表现优异，致力于全方位服务于在澳洲的中国留学生。</p>
-                <div class="d-flex">
-                    <div class="info-img d-none d-sm-block align-self-center">
-                        <img src="{{ asset('images/tofuture/logo.png') }}" alt="win" style="max-width: 90px;" class="d-xs-none">
+                <p>澳洲未来教育集团ToFuture Education Pty Ltd ，成立于2006年，是澳大利亚首家后留学生服务教育咨询公司。我们的业务专注留学生培训与教育咨询领域，在大学辅导，语言培训，留学移民、就业指导，生活求助等领域构筑了全方位留学服务生态优势！在澳大利亚拥有丰富的教育资源（大学，中学，小学）和市场份额。</p>
+                <hr class="mtb-15">
+                <h3><i class="fa fa-caret-right" aria-hidden="true"></i>大学培训</h3>
+                <p>墨尔本“补习天王”领衔，数十位行业精英导师匠心打造。12年近3万学生口碑见证，墨尔本最强大学培训课程！<br/>首创习题课，视频课，班长学习助手，助力极致课程体验。最多学生选择的教育培训机构！一学期单科报名人数纪录220人！</p>
+
+                <hr class="mtb-15">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <h3><i class="fa fa-caret-right" aria-hidden="true"></i>移民留学</h3>
+                        <p>数十位留学顾问与移民顾问为你排难：</p>
+                        <ul>
+                            <li>学校申诉</li>
+                            <li>免费升学学校申请</li>
+                            <li>免费转学</li>
+                            <li>各类签证办理</li>
+                            <li>不定期移民知识讲座</li>
+                        </ul>
                     </div>
-                    <div class="info-text align-self-center px-lg-3">
-                        <p style="margin: 0;">WinCareer是澳洲未来教育集团旗下专注于职业培训的子品牌，致力于为澳洲高校毕业生提供一站式求职教育解决方案，依托数百家澳洲本地企业资源，以及新东方海威时代连接国内千家顶级企业，为留学生提供商科培训，实习生计划和职业规划等专业指导，全方位提升求职竞争力。</p>
+                    <div class="col-lg-6 col-sm-12">
+                        <h3><i class="fa fa-caret-right" aria-hidden="true"></i>职业培训</h3>
+                        <p>WinCareer拥有数千家中澳企业内推资源为你解忧：</p>
+                        <ul>
+                            <li>面试、简历技巧</li>
+                            <li>精准定位求职规划</li>
+                            <li>升职培训计划</li>
+                            <li>金融、会计职业培训</li>
+                        </ul>
                     </div>
                 </div>
+                <hr class="mtb-15">
+                <h3><i class="fa fa-caret-right" aria-hidden="true"></i>PTE培训：</h3>
+                <p>PTE王牌导师，Jennifer，英语语言与文学专业，Monash大学英语教育硕士学位、应用语言学副教授；前环球雅思教师，雅思满分；前中国农业部同声传译；前CET4，6级口语考官; 曾任RMIT大学翻译学院讲师。</p>
+
             </div>
         </div>
     </section>
@@ -30,6 +54,14 @@
             <div class="about-item">
                 <h2 class="text-center">WINCAREER</h2>
                 <div class="whr"></div>
+                <div class="d-flex">
+                    <div class="info-img d-none d-sm-block align-self-center">
+                        <img src="{{ asset('images/tofuture/logo.png') }}" alt="win" style="max-width: 90px;" class="d-xs-none">
+                    </div>
+                    <div class="info-text align-self-center px-lg-3">
+                        <p style="margin: 0;">WinCareer是澳洲未来教育集团旗下专注于职业培训的子品牌，致力于为澳洲高校毕业生提供一站式求职教育解决方案，依托数百家澳洲本地企业资源，以及新东方海威时代连接国内千家顶级企业，为留学生提供商科培训，实习生计划和职业规划等专业指导，全方位提升求职竞争力。</p>
+                    </div>
+                </div>
                 <p>WinCareer业务由本地就业和海归求职两部分组成：</p>
                 <hr class="mtb-15">
                 <h3><i class="fa fa-caret-right" aria-hidden="true"></i>本地就业</h3>

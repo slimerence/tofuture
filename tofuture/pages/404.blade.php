@@ -27,10 +27,10 @@
             <div class="full-screen-intro container" style="min-height: 400px;">
                 <div class="intro-content">
                     <div class="intro-content-inner">
-                        <h1 class="large mb-25">404 Error</h1>
+                        <h1 class="large mb-25">COMING SOON</h1>
                         <p class="lead content-wd650">
-                            We're sorry but the page you Looking for can not be found.<br />
-                            Here are some other pages.
+                            The site is still in pre-launch.<br />
+                            We are actively working on it, so check back soon!
                         </p>
                         <br />
                         <a href="{{ url('/') }}" class="btn btn-md btn-white"><i class="fa fa-angle-left left"></i>Back To Home</a>

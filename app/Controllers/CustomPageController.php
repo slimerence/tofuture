@@ -43,7 +43,7 @@ class CustomPageController extends Controller
     }
     public function kuaiji(){
         return view(
-            _get_frontend_theme_path('pages.kuaiji'),
+            _get_frontend_theme_path('pages.404'),
             $this->dataForView
         );
     }
