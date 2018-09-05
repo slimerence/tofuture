@@ -119,6 +119,31 @@ $(document).ready(function(){
         });
     }
 
+    if($('#verify').length >0 ){
+        $('#verify').codeVerify({
+            //常规验证码type=1， 运算验证码type=2
+            type : 1,
+            //验证码宽度
+            width : '50%',
+            //验证码高度
+            height : '40px',
+            fontSize : '20px',
+            codeLength : 4,
+            //......更多参数设置请查阅文档
+            //提交按钮的id名称
+            btnId : 'online',
+            //验证成功以后的回调
+            success : function() {
+                $('#login-check-success').css('display','block');
+            },
+            error : function() {
+                $('#online-login').submit(function (e) {
+                    e.preventDefault();
+                });
+                $('#login-check-false').css('display','block');
+            }
+        });
+    }
 
 
 });

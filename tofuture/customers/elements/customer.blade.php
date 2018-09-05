@@ -1,7 +1,7 @@
 <div class="box content">
     <h3 class="text-center">用户登录</h3>
     <div class="content-detail-wrap">
-        <form method="post" action="{{ url('/listen/login') }}">
+        <form method="post" action="{{ url('/listen/login') }}" id="online-login">
             {{ csrf_field() }}
             <input type="hidden" name="the_referer" value="{{ $the_referer }}">
             <div class="field">
@@ -32,12 +32,23 @@
                     </div>
                 @endif
             </div>
+            <div class="field" id="verify">
+
+            </div>
+            <div class="field">
+                <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="login-check-false" role="alert">
+                    验证码不匹配！
+                </div>
+                <div class="alert alert-success alert-dismissible fade show" style="display: none;" id="login-check-success" role="alert">
+                    验证成功！
+                </div>
+            </div>
             <div class="row" style="margin-top: 20px;">
                 <div class="col-6">
                     <a class="customer-btn cancel text-center" href="{{ url('frontend/customers/forget-password') }}">Forget Password</a>
                 </div>
                 <div class="col-6">
-                    <button type="submit" class="customer-btn confirm">Log Me In</button>
+                    <button type="submit" class="customer-btn confirm" id="online">Log Me In</button>
                 </div>
             </div>
         </form>
