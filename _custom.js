@@ -131,16 +131,19 @@ $(document).ready(function(){
             codeLength : 4,
             //......更多参数设置请查阅文档
             //提交按钮的id名称
-            btnId : 'online',
+            btnId : 'online-btn',
             //验证成功以后的回调
             success : function() {
+                $('#login-check-false').css('display','none');
                 $('#login-check-success').css('display','block');
+                $('#online-login-form').off('submit').submit();
             },
             error : function() {
-                $('#online-login').submit(function (e) {
+                $('#online-login-form').submit(function (e) {
                     e.preventDefault();
                 });
                 $('#login-check-false').css('display','block');
+
             }
         });
     }

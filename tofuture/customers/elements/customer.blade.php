@@ -1,13 +1,13 @@
 <div class="box content">
     <h3 class="text-center">用户登录</h3>
     <div class="content-detail-wrap">
-        <form method="post" action="{{ url('/listen/login') }}" id="online-login">
+        <form method="post" action="{{ url('/listen/login') }}" id="online-login-form">
             {{ csrf_field() }}
             <input type="hidden" name="the_referer" value="{{ $the_referer }}">
             <div class="field">
                 <label for="staticEmail" class="label">Email</label>
                 <div class="control">
-                    <input type="text" class="input w-100" id="staticEmail" name="email" placeholder="email@example.com">
+                    <input type="text" class="input w-100" id="staticEmail" name="email" placeholder="email@example.com" required>
                 </div>
                 @if ($errors->has('email'))
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -21,7 +21,7 @@
             <div class="field">
                 <label for="inputPassword" class="label">Password</label>
                 <div class="control">
-                    <input type="password" class="input w-100" id="Password" name="password" placeholder="Password">
+                    <input type="password" class="input w-100" id="Password" name="password" placeholder="Password" required>
                 </div>
                 @if ($errors->has('password'))
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -48,7 +48,7 @@
                     <a class="customer-btn cancel text-center" href="{{ url('frontend/customers/forget-password') }}">Forget Password</a>
                 </div>
                 <div class="col-6">
-                    <button type="submit" class="customer-btn confirm" id="online">Log Me In</button>
+                    <button type="submit" class="customer-btn confirm" id="online-btn">Log Me In</button>
                 </div>
             </div>
         </form>
