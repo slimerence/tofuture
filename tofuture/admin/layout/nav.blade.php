@@ -65,7 +65,13 @@
                             <a href="{{ url('admin/home') }}"><i class="fa fa-gear fa-fw"></i>Update Password</a>
                         </li>
                         <li>
-                            <a href="{{ url('logout') }}"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                            <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                <i class="fa fa-sign-out fa-fw"></i>
+                                <span> Logout</span>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                                    @csrf
+                                </form>
+                            </a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->
