@@ -57,7 +57,7 @@
                                         $maincats = \Smartbro\Models\UserCat::GetOwnCat($customer);
                                         $catId = [];
                                         foreach ($maincats as $maincat){
-                                            $catId[] = $maincat->id;
+                                            $catId[] = $maincat->cat_id;
                                         }
                                         ?>
                                         @foreach($cats as $cat)
