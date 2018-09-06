@@ -53,8 +53,19 @@
                                     </div>
                                     <div class="form-group  col-md-12 col-sm-12">
                                         <label >文件夹权限</label>
+                                        <?php
+                                        $maincats = \Smartbro\Models\UserCat::GetOwnCat($customer);
+                                        $catId = [];
+                                        foreach ($maincats as $maincat){
+                                            $catId[] = $maincat->id;
+                                        }
+                                        ?>
                                         @foreach($cats as $cat)
-                                            <input type="checkbox" name="cat[]" value="{{$cat->id}}">{{ $cat->name }}<br />
+                                            @if(in_array($cat->id,$catId))
+                                                <input type="checkbox" name="cat[]" value="{{$cat->id}}" checked>{{ $cat->name }}<br />
+                                            @else
+                                                <input type="checkbox" name="cat[]" value="{{$cat->id}}">{{ $cat->name }}<br />
+                                            @endif
                                         @endforeach
                                     </div>
                                 </div>

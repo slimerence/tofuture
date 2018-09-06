@@ -30,14 +30,16 @@ class UserCat extends Model
         self::where('user_id',$user->id)->delete();
 
         $cats = [];
-        foreach ($data as $key=>$cat){
-            $cats[]=self::create(
-                [
-                    'user_id'=>$user->id,
-                    'cat_id'=>$cat,
-                ]
-            );
-        };
+        if(!($data==[''])) {
+            foreach ($data as $key => $cat) {
+                $cats[] = self::create(
+                    [
+                        'user_id' => $user->id,
+                        'cat_id' => $cat,
+                    ]
+                );
+            };
+        }
         return $cats;
     }
 

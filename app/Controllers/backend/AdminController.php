@@ -109,6 +109,10 @@ class AdminController extends CustomersController
         $data = $request->all();
         User::find($id)->update($data);
         $user =  User::where('id',$id)->first();
+        if (!isset($data['cat'])) {
+            $data['cat'] = [''];
+        }
+
         UserCat::Persistent($user,$data['cat']);
         return redirect('admin/customers');
     }

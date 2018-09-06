@@ -52,7 +52,7 @@
                     <div class="col-md-3">
                         <h3>授权课程</h3>
                             <hr class="mb-15">
-                        <div class="online-class">
+                        <div class="online-class no-list-style">
                             <ul>
                                 @foreach($maincats as $key=>$cat)
                                     <li><a href="{{ url('listen/'.$cat->cat->name )}}">{{$cat->cat->name}}</a></li>
@@ -75,7 +75,7 @@
 
                         <div class="row">
                                 @foreach($videos as $video)
-                                    <div class="col-lg-6 col-md-12">
+                                    <div class="col-lg-6 col-md-12 mt-3">
                                         {!! $video->code !!}
                                         <h4 class="text-center">{{ $video->name }}</h4>
                                     </div>
