@@ -86,10 +86,12 @@
                         <div class="qrcode-wrap">
                             <div class="row" style="margin-top: 3em;">
                                 <div class="col-lg-6 col-sm-12 text-center">
+                                    <p class="fs-14">请扫码咨询详情</p>
                                     <img style="box-shadow: 1px 2px 20px #9a9a9a54;max-width: 160px;" src="{{ asset('images/tofuture/qrcode1.jpg') }}" alt="">
                                     <p class="fs-14">官方微信</p>
                                 </div>
                                 <div class="col-lg-6 col-sm-12 text-center">
+                                    <p class="fs-14">关注公众号订阅最新职场信息</p>
                                     <img style="box-shadow: 1px 2px 20px #9a9a9a54;max-width: 160px;" src="{{ asset('images/tofuture/qrcode2.png') }}" alt="">
                                     <p class="fs-14">公众号</p>
                                 </div>

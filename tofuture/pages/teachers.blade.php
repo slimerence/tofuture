@@ -89,23 +89,6 @@
                     </div>
 
                     <div class="item">
-                        <div class="team-item">
-                            <div class="team-item-img">
-                                <img src="{{ asset('images/tofuture/team/mp.jpg') }}" alt="" />
-                                <div class="team-item-detail">
-                                    <div class="team-item-detail-inner light-color">
-                                        <p>人大金融本科，墨大会计研究生，曾任Deloitte的Senior Auditor</p>
-                                        <p>教学科目：Fixed Income, Equity, Portfolio, Derivative, AI</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-item-info">
-                                <h5>Charlene</h5>
-                                <p class="">金融 审计</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
                     <div class="team-item">
                         <div class="team-item-img">
                             <img src="{{ asset('images/tofuture/team/mp.jpg') }}" alt="" />
