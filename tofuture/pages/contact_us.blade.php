@@ -93,7 +93,7 @@
                                 <div class="col-lg-6 col-sm-12 text-center">
                                     <p class="fs-14">订阅公众号获得职场资讯</p>
                                     <img style="box-shadow: 1px 2px 20px #9a9a9a54;max-width: 160px;" src="{{ asset('images/tofuture/qrcode2.png') }}" alt="">
-                                    <p class="fs-14">公众号</p>
+                                    <p class="fs-14">公众号微信</p>
                                 </div>
                             </div>
                         </div>
