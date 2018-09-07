@@ -4,7 +4,7 @@
     <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner.jpg') }}">
         <div class="container">
             <div class="row title">
-                <h2 class="h2">试听讲堂</h2>
+                <h2 class="h2">线上讲堂</h2>
             </div>
         </div>
     </section>
