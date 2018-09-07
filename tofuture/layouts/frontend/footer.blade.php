@@ -28,7 +28,7 @@
                                     <p class="fs-14">官方微信</p>
                                 </div>
                                 <div class="col-lg-6 col-sm-12 text-center">
-                                    <img src="{{ asset('images/tofuture/qrcode2.png') }}" alt="">
+                                    <img src="{{ asset('images/tofuture/qrcode2.jpg') }}" alt="">
                                     <p class="fs-14">公众号</p>
                                 </div>
                             </div>
