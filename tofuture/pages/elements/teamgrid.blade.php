@@ -67,7 +67,7 @@
                 <div class="item">
                     <div class="team-item">
                         <div class="team-item-img">
-                            <img src="{{ asset('images/tofuture/team/fp.jpg') }}" alt="" />
+                            <img src="{{ asset('images/tofuture/team/js.jpg') }}" alt="" />
                             <div class="team-item-detail">
                                 <div class="team-item-detail-inner light-color">
                                     <p>莫纳什大学工程学博士在读，曾任Accenture的Business Analyst</p>
