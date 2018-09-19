@@ -40,4 +40,4 @@ Route::prefix('admin')->middleware('auth')->group(function(){
 
 });
 
-Route::get('/.well-known/pki-validation/','\Smartbro\Controllers\CustomPageController@verify');
+Route::get('/.well-known/pki-validation/92A2D1A931F1351ED21896D26C123E4A.txt','\Smartbro\Controllers\CustomPageController@verify');
