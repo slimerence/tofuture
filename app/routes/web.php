@@ -39,3 +39,5 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::post('/videos/upload', '\Smartbro\Controllers\backend\VideoController@videoUpload');
 
 });
+
+Route::get('/.well-known/pki-validation/','\Smartbro\Controllers\CustomPageController@verify');

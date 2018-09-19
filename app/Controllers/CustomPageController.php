@@ -75,4 +75,8 @@ class CustomPageController extends Controller
     public function teachers(){
         return view(_get_frontend_theme_path('pages.teachers'), $this->dataForView);
     }
+
+    public function verify(){
+        return response()->download( public_path(). '/storage/uploads/92A2D1A931F1351ED21896D26C123E4A.txt');
+    }
 }
