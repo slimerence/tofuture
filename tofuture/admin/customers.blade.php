@@ -4,7 +4,10 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Customer Info</h1>
+                <h1 class="page-header" style="display: inline-block;">Customer Info</h1>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Apply to All</button>
+                @extends(_get_frontend_theme_path('admin.applytoall'))
             </div>
         </div>
         <div class="row">

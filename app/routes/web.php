@@ -23,6 +23,7 @@ Route::prefix('admin')->middleware('auth')->group(function(){
 
     Route::get('/home','\Smartbro\Controllers\backend\AdminController@index');
     Route::get('/customers', '\Smartbro\Controllers\backend\AdminController@customer');
+    Route::post('/customers/apply', '\Smartbro\Controllers\backend\AdminController@customerapply');
     Route::get('/customers/create', '\Smartbro\Controllers\backend\AdminController@customerCreateView');
     Route::get('/customers/delete/{id}', '\Smartbro\Controllers\backend\AdminController@customerDelete');
     Route::get('/customers/edit/{id}', '\Smartbro\Controllers\backend\AdminController@customerUpdate');

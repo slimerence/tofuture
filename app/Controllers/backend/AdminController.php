@@ -104,6 +104,18 @@ class AdminController extends CustomersController
         $this->dataForView['cats'] = Cat::LoadChildCat();
         return view(_get_frontend_theme_path('admin.update'),$this->dataForView);
     }
+    public function customerApply(Request $request){
+        $data = $request->all();
+        if (!isset($data['cat'])) {
+            $data['cat'] = [''];
+        }
+        $users = User::orderby('id','desc')->get();
+        foreach ($users as $user){
+            UserCat::Persistent($user,$data['cat']);
+        }
+        return redirect('admin/customers');
+    }
+
 
     public function customerEdit($id,Request $request){
         $data = $request->all();
