@@ -9,9 +9,10 @@
                         <h6 class="link-title">联系我们</h6>
                         <p class="fs-14">澳洲未来教育集团 WinCareer职业培训</p>
                         <ul>
-                            <li class="fs-14">墨尔本：Suite A, 140 Burwood Hwy, Burwood VIC 3125<br/>
-                                &nbsp&nbsp&nbsp&nbspLevel 7, 168 Lonsdale Street, Melbourne VIC 3000</li>
-                            <li class="fs-14">广州：广州市天河区海海乐路路12号合景睿峰3707</li>
+                            <li class="fs-14">墨尔本：<br/>
+                                &nbsp&nbsp Burwood Office: Suite A, 140 Burwood Hwy, Burwood VIC 3125<br/>
+                                &nbsp&nbsp City Office: Level 7, 168 Lonsdale Street, Melbourne VIC 3000</li>
+                            <li class="fs-14">广州：广州市天河区海乐路路12号合景睿峰3707</li>
                             <li class="fs-14">服务电话：+61 3 9890 8535</li>
                             <li class="fs-14">咨询邮箱：admin@tofuture.org</li>
                         </ul>
