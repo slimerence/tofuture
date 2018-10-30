@@ -97,4 +97,17 @@ class VideoController extends Controller
         }
         return back()->with('error','Failed!');
     }
+
+    public function bugfix(){
+        $data = Video::orderby('id','asc')->get();
+        foreach ($data as $video){
+            $emba = $video->code;
+            if (strpos($emba,'<div style') !==0){
+                $embaid = substr($emba,44,9);
+                $newcode = '<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/'.$embaid.'?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>';
+                Video::where('id',$video->id)->update(['code'=>$newcode]);
+            };
+        }
+
+    }
 }
