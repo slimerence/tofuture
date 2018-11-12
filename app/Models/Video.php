@@ -27,6 +27,6 @@ class Video extends Model
 
     public static function GetByCat($caturi){
         $cat = Cat::where('name',$caturi)->first();
-        return Video::where('cat_id',$cat->id)->orderBy('id','asc');
+        return Video::where('cat_id',$cat->id)->orderBy('name','asc');
     }
 }

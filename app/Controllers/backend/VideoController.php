@@ -64,7 +64,7 @@ class VideoController extends Controller
     public function video(){
         $this->dataForView['menuName'] = 'Video';
         $this->dataForView['pageTitle'] = 'Video';
-        $this->dataForView['videos'] = Video::orderby('id','asc')->get();
+        $this->dataForView['videos'] = Video::orderby('name','asc')->get();
         $this->dataForView['cats'] = Cat::orderby('id','asc')->get();
         return view(_get_frontend_theme_path('admin.video'),$this->dataForView);
     }
