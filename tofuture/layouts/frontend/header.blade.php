@@ -56,6 +56,9 @@
                             <a href="{{ url('/about') }}">关于我们</a>
                         </li>
                         <li class="nav-menu-item">
+                            <a href="{{ url('/page/blog') }}">新闻博客</a>
+                        </li>
+                        <li class="nav-menu-item">
                             <a href="{{ url('/contact-us') }}">联系我们</a>
                         </li>
                     </ul>

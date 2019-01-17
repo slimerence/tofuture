@@ -31,6 +31,9 @@ class OnlineClassController extends Controller
     use CustomizedAuthenticatesUsers;
 
     public function listen(){
+        $this->dataForView['pageTitle'] = 'WIN CAREER - 线上讲堂';
+        $this->dataForView['metaKeywords'] = '';
+        $this->dataForView['metaDescription'] = '';
         $this->dataForView['menuName'] = 'listen';
         $this->dataForView['videos'] = Video::orderby('name','asc')->paginate(12);
         $this->dataForView['cats'] = Cat::orderby('id','asc')->get();
@@ -41,6 +44,9 @@ class OnlineClassController extends Controller
     }
 
     public function listencat($uri){
+        $this->dataForView['pageTitle'] = 'WIN CAREER - 线上讲堂';
+        $this->dataForView['metaKeywords'] = '';
+        $this->dataForView['metaDescription'] = '';
         $this->dataForView['menuName'] = 'customer';
         $this->dataForView['videos'] = Video::GetByCat($uri)->paginate(12);
         $this->dataForView['cats'] = Cat::orderby('id','asc')->get();

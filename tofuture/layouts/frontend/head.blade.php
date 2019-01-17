@@ -1,8 +1,8 @@
 <head>
     <meta charset="utf-8" />
-    <title>WinCareer</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <?php
+    echo \App\Models\Utils\AMP\HeadUtil::getInstance()->output($pageTitle,$metaKeywords,$metaDescription );
+    ?>
     <meta name="author" content="nileforest">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
