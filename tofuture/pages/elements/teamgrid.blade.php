@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-8 offset-md-2 mb-3">
-                <h2>师资力量</h2>
+                <h3>师资力量</h3>
                 <div class="whr"></div>
             </div>
         </div>

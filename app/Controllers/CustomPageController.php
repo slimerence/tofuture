@@ -49,18 +49,18 @@ class CustomPageController extends Controller
         );
     }
     public function kuaiji(){
-        $this->dataForView['pageTitle'] = 'WIN CAREER - 会计训练营';
-        $this->dataForView['metaKeywords'] = '';
-        $this->dataForView['metaDescription'] = '';
+        $this->dataForView['pageTitle'] = '会计训练营 | CPA 证书培训 | 注册会计师';
+        $this->dataForView['metaKeywords'] = '会计训练营 | CPA 证书培训 | 注册会计师';
+        $this->dataForView['metaDescription'] = 'WinCareer 提供CPA证书培训，帮助想要获得注册会计师资格的同学们通过考试。Tofuture的本地会计训练营提供全面的培训服务，帮助同学们进入会计职场。';
         return view(
             _get_frontend_theme_path('pages.kuaiji'),
             $this->dataForView
         );
     }
     public function jinrong(){
-        $this->dataForView['pageTitle'] = 'WIN CAREER - 金融训练营';
-        $this->dataForView['metaKeywords'] = '';
-        $this->dataForView['metaDescription'] = '';
+        $this->dataForView['pageTitle'] = '金融训练营 | CFA 考证 | 回国金融就业必备';
+        $this->dataForView['metaKeywords'] = '金融训练营 | CFA 考证 | 回国金融就业必备';
+        $this->dataForView['metaDescription'] = 'WinCareer 为商科毕业生及想要在金融行业就业的同学们准备了金融训练营，帮助大家CFA考证，了解金融行业内知识，以及面试准备。CFA及FRM不光在澳洲金融行业的敲门砖，同时也是回国金融就业必备证书。';
         return view(
             _get_frontend_theme_path('pages.jinrong'),
             $this->dataForView
@@ -69,9 +69,28 @@ class CustomPageController extends Controller
     public function cfa($pageUri){
         $filename = resource_path('views/frontend/').str_replace('.','/',_get_frontend_theme_prefix()).'/pages/'.str_replace('.','/',$pageUri).'.blade.php';
         if(file_exists($filename)){
-            $this->dataForView['pageTitle'] = 'WIN CAREER';
-            $this->dataForView['metaKeywords'] = '';
-            $this->dataForView['metaDescription'] = '';
+            switch ($pageUri){
+                case 'kepu':
+                    $this->dataForView['pageTitle'] = 'CFA 考试 | 商科就业 | FINTECH';
+                    $this->dataForView['metaKeywords'] = 'CFA 考试 | 商科就业 | FINTECH';
+                    $this->dataForView['metaDescription'] = '通过CFA考试获得cfa资格有利于商科就业，尤其是海外留学生，更加收到各金融雇主的青睐。现在大热的Fintech也是CFA考试中重要的一项指标。';
+                    break;
+                case 'baoguo':
+                    $this->dataForView['pageTitle'] = 'CFA保过计划 | CFA 补习班 | CFA 课程';
+                    $this->dataForView['metaKeywords'] = 'CFA保过计划 | CFA 补习班 | CFA 课程';
+                    $this->dataForView['metaDescription'] = '参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA补习班领航者。';
+                    break;
+                case 'baoming':
+                    $this->dataForView['pageTitle'] = 'CFA 报名 | CFA考证 | CFA代报名';
+                    $this->dataForView['metaKeywords'] = 'CFA 报名 | CFA考证 | CFA代报名';
+                    $this->dataForView['metaDescription'] = '想了解CFA考证各项事宜，请参阅CFA报名流程详解。如果在WinCareer报名CFA保过班，我们免费提供CFA代报名服务。';
+                    break;
+                default:
+                    $this->dataForView['pageTitle'] = 'WIN CAREER';
+                    $this->dataForView['metaKeywords'] = '';
+                    $this->dataForView['metaDescription'] = '';
+                    break;
+            }
             return view(_get_frontend_theme_path('pages.'.$pageUri),$this->dataForView);
         }else {
             $page = Page::where('uri', $pageUri)->orWhere('uri', '/' . $pageUri)->first();

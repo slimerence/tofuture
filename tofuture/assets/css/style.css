@@ -275,22 +275,21 @@ h1 {
 }
 
 
-
 h2 {
+    font-size: 43px;
+    line-height: 40px;
+}
+
+h3 {
     font-size: 27px;
     line-height: 37px;
     margin-bottom: 20px;
     padding-top: 10px;
 }
 
-h3 {
+h4 {
     font-size: 21px;
     line-height: 32px;
-}
-
-h4 {
-    font-size: 17px;
-    line-height: 28px;
 }
 
 
@@ -307,6 +306,10 @@ h6 {
 }
 
 h1.large {
+    font-size: 50px;
+}
+
+h2.large {
     font-size: 50px;
 }
 
@@ -2011,8 +2014,7 @@ form label.error {
 }
 
     .inner-intro h1 {
-        font-size: 54px;
-        margin-top: 30px;
+        font-size: 2rem;
     }
 
 /*#intro .bg-image, #intro.bg-image, #inner-intro .bg-image, #inner-intro.bg-image {
@@ -4002,7 +4004,7 @@ ul.project-detail-block, .project-detail-block ul {
                 padding-right: 25px;
             }
 
-.caption-hero h1 {
+.caption-hero h1,.caption-hero h2 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -4088,7 +4090,9 @@ ul.project-detail-block, .project-detail-block ul {
     .fullscreen-carousel .caption-hero h1 {
         font-size: 25px;
     }
-
+    .fullscreen-carousel .caption-hero h2 {
+        font-size: 25px;
+    }
     .fullscreen-carousel .overlay-hero .caption-hero {
         padding-left: 15px;
         padding-right: 15px;
@@ -4102,7 +4106,10 @@ ul.project-detail-block, .project-detail-block ul {
         font-size: 20px;
         margin: 0;
     }
-
+    .fullscreen-carousel .caption-hero h2 {
+        font-size: 20px;
+        margin: 0;
+    }
     .fullscreen-carousel .caption-hero h5 {
         margin: 0;
         font-size: 12px;

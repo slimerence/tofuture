@@ -3,7 +3,7 @@
     <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner.jpg') }}">
         <div class="container">
             <div class="row title">
-                <h2 class="h2">金融训练营</h2>
+                <h1 class="h2">金融训练营 | CFA 考证 | 回国金融就业必备</h1>
             </div>
         </div>
     </section>
@@ -12,6 +12,8 @@
             <div class="about-item jinrong">
                 <h2 class="text-center">ToFuture本地金融就业集训营课表</h2>
                 <div class="whr"></div>
+                <p>WinCareer 为商科毕业生及想要在金融行业就业的同学们准备了金融训练营，帮助大家CFA考证，了解金融行业内知识，以及面试准备。CFA及FRM不光在澳洲金融行业的敲门砖，同时也是回国金融就业必备证书。</p>
+
                 <div class="box">
                     <h3><i class="fa fa-caret-right" aria-hidden="true"></i>第一天 深度分析澳洲金融行业，精细制定个人职业规划</h3>
                     <ul>

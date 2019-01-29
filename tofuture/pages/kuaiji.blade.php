@@ -3,7 +3,7 @@
     <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner.jpg') }}">
         <div class="container">
             <div class="row title">
-                <h2 class="h2">会计训练营</h2>
+                <h1 class="h2">会计训练营 | CPA 证书培训 | 注册会计师</h1>
             </div>
         </div>
     </section>
@@ -12,6 +12,7 @@
             <div class="about-item jinrong">
                 <h2 class="text-center">ToFuture本地会计就业集训营 课表</h2>
                 <div class="whr"></div>
+                <p>WinCareer 提供CPA证书培训，帮助想要获得注册会计师资格的同学们通过考试。Tofuture的本地会计训练营提供全面的培训服务，帮助同学们进入会计职场。</p>
                 <div class="box">
                     <h3><i class="fa fa-caret-right" aria-hidden="true"></i>第一天 深度分析澳洲会计行业，精细制定个人职业规划</h3>
                     <ul>

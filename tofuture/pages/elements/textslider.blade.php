@@ -4,7 +4,7 @@
         <div class="item">
             <div class="container">
                 <div class="text-center">
-                    <h2>海归求职</h2>
+                    <h3>海归求职</h3>
                     <div class="whr"></div>
                 </div>
                 <div class="row text-center">
@@ -42,7 +42,7 @@
         <div class="item">
             <div class="container">
                 <div class="text-center">
-                    <h2>本地就业</h2>
+                    <h3>本地就业</h3>
                     <div class="whr"></div>
                 </div>
                 <div class="row text-center">

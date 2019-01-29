@@ -1,5 +1,4 @@
 <head>
-    <meta charset="utf-8" />
     <?php
     echo \App\Models\Utils\AMP\HeadUtil::getInstance()->output($pageTitle,$metaKeywords,$metaDescription );
     ?>

@@ -10,7 +10,7 @@
                     <img src="{{ asset('images/tofuture/full/home01.jpg') }}" alt="slidebg1" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat">
 
                     <!-- LAYER NR. 1 -->
-                    <h1 class="tp-caption customin customout sfb alt-title mtb-0 "
+                    <h2 class="tp-caption customin customout sfb alt-title mtb-0 "
                         data-x="center"
                         data-hoffset="0"
                         data-y="center"
@@ -22,10 +22,10 @@
                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
                         data-easing="Linear.easeNone"
                         data-elementdelay="0.1">WinCareer职业培训平台 全面升级
-                    </h1>
+                    </h2>
 
                     <!-- LAYER NR. 2 -->
-                    <h2 class="tp-caption customin customout sfb mtb-0 text-bg"
+                    <h3 class="tp-caption customin customout sfb mtb-0 text-bg"
                         data-x="center"
                         data-hoffset="0"
                         data-y="center"
@@ -38,10 +38,10 @@
                         data-easing="Linear.easeNone"
                         data-elementdelay="0.1"
                         data-endeasing="Linear.easeNone">新东方海威时代合作伙伴
-                    </h2>
+                    </h3>
 
                     <!-- LAYER NR. 3 -->
-                    <h2 class="tp-caption customin customout sfb scroll-down"
+                    <h3 class="tp-caption customin customout sfb scroll-down"
                        data-x="center"
                        data-hoffset="0"
                        data-y="center"
@@ -53,7 +53,7 @@
                        data-endspeed="500"
                        data-easing="Linear.easeNone"
                        data-elementdelay="0.1">为澳洲留学生搭建求职平台<br>为海归精英提供数百家国内名企外企实习与全职岗位
-                    </h2>
+                    </h3>
                 </li>
 
                 <!-- SLIDE  -->
@@ -62,7 +62,7 @@
                     <img src="{{ asset('images/tofuture/full/home02.jpg') }}" alt="slidebg2" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat">
 
                     <!-- LAYER NR. 1 -->
-                    <h1 class="tp-caption customin customout sfb alt-title mtb-0"
+                    <h2 class="tp-caption customin customout sfb alt-title mtb-0"
                         data-x="center"
                         data-hoffset="0"
                         data-y="center"
@@ -74,10 +74,10 @@
                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
                         data-easing="Linear.easeNone"
                         data-elementdelay="0.1">澳洲中国留学生最值得信赖的职业培训平台- WinCareer
-                    </h1>
+                    </h2>
 
                     <!-- LAYER NR. 2 -->
-                    <h2 class="tp-caption customin customout sfb mtb-0 text-bg"
+                    <h3 class="tp-caption customin customout sfb mtb-0 text-bg"
                         data-x="center"
                         data-hoffset="0"
                         data-y="center"
@@ -90,10 +90,10 @@
                         data-easing="Linear.easeNone"
                         data-elementdelay="0.1"
                         data-endeasing="Linear.easeNone">本地就业 海归求职 ⼀网打尽
-                    </h2>
+                    </h3>
 
                     <!-- LAYER NR. 3 -->
-                    <h2 class="tp-caption customin customout sfb scroll-down"
+                    <h3 class="tp-caption customin customout sfb scroll-down"
                         data-x="center"
                         data-hoffset="0"
                         data-y="center"
@@ -106,7 +106,7 @@
                         data-easing="Linear.easeNone"
                         data-elementdelay="0.1">
                         职业培训 就业规划 国内外名企一步到位
-                    </h2>
+                    </h3>
 
                 </li>
 
@@ -116,7 +116,7 @@
                     <img src="{{ asset('images/tofuture/full/banner2.jpg') }}" alt="slidebg3" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat">
 
                     <!-- LAYER NR. 1 -->
-                    <h1 class="tp-caption customin customout sfb alt-title mtb-0"
+                    <h2 class="tp-caption customin customout sfb alt-title mtb-0"
                         data-x="center"
                         data-hoffset="0"
                         data-y="center"
@@ -128,7 +128,7 @@
                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
                         data-easing="Linear.easeNone"
                         data-elementdelay="0.1">海量行业资讯 实习内推资源
-                    </h1>
+                    </h2>
 
                     <!-- LAYER NR. 2 -->
                     <h3 class="tp-caption customin customout sfb mtb-0"

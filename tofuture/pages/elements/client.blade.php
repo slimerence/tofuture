@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
         <div class="col-12 mb-5 text-center">
-            <h2>合作伙伴</h2>
+            <h3>合作伙伴</h3>
             <div class="whr"></div>
             <p class="fs-14">WinCareer是专属服务于澳大利利亚中国留学生群体的职场技能提升平台，帮助求职者
                 获取最新的行业动态，依托数百家澳洲本地企业资源，以及新东方海威时代连接国内

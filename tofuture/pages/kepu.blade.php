@@ -3,7 +3,7 @@
     <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner.jpg') }}">
         <div class="container">
             <div class="row title">
-                <h2 class="h2">CFA科普</h2>
+                <h1 class="h2">CFA 考试 | 商科就业 | Fintech</h1>
             </div>
         </div>
     </section>
@@ -13,6 +13,7 @@
             <div class="about-item">
                 <h2 class="text-center">人民日报为啥力荐CFA? </h2>
                 <div class="whr"></div>
+                <p>通过CFA考试获得cfa资格有利于商科就业，尤其是海外留学生，更加收到各金融雇主的青睐。现在大热的Fintech也是CFA考试中重要的一项指标。</p>
                 <h3><i class="fa fa-caret-right" aria-hidden="true"></i>“华尔街金融第一考”</h3>
                 <hr class="mtb-15">
                 <div class="d-flex mb-3">
