@@ -47,12 +47,12 @@
         <div class="container">
             <div class="about-item course">
                 <div class="row">
-                    <div class="col-12 col-md-6 d-none d-md-block d-lg-block">
+                    {{--<div class="col-12 col-md-6 d-none d-md-block d-lg-block">
                         <img src="{{ asset('images/tofuture/course-bg.jpeg') }}" style="width: 100%;opacity: 0.85;" alt="">
-                    </div>
-                    <div class="col-12 col-md-6 align-self-center">
+                    </div>--}}
+                    <div class="col-12 align-self-center">
                         <h2 class="text-center">课程安排</h2>
-                        <div class="owl-carousel item1-carousel o-flow-hidden">
+                        <div class="owl-carousel client-carousel o-flow-hidden">
                             <div class="item">
                                 <div class="course-item">
                                     <h3><i class="fa fa-caret-right" aria-hidden="true"></i>知识精讲</h3>
@@ -79,8 +79,7 @@
                                 <div class="course-item">
                                     <h3><i class="fa fa-caret-right" aria-hidden="true"></i>全真模拟班</h3>
                                     <ul>
-                                        <li>多次全真模拟</li>
-                                        <li>考试高度还原真实考场</li>
+                                        <li>多次全真模拟，考试高度还原真实考场</li>
                                         <li>12年全真题目分享</li>
                                         <li>多次测评找出自身的薄弱的环节</li>
                                         <li>体验考试过程便于考生调整至最佳考试状态</li>
@@ -122,7 +121,7 @@
         </div>
     </section>
     @endif
-    <section class="pt-80 pb-5">
+    <section class="pt-80">
         <div class="container">
             <div class="about-item">
                 <h2 class="text-center">Wincareer最强师资团队</h2>
@@ -155,6 +154,22 @@
 
 
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="ptb-60">
+        <div class="container">
+            <div class="about-item">
+                <h2 class="text-center">Wincareer课程展示</h2>
+                <div class="whr"></div>
+                <div class="row mt-5">
+                    @for($i=1;$i<4;$i++)
+                        <div class="col-12 col-md-4 col-lg-4 mb-3">
+                            <img src="{{ asset('images/tofuture/'.$i.'.jpg') }}" alt="{{ $i }}">
+                        </div>
+                    @endfor
                 </div>
 
             </div>
