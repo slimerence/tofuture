@@ -79,6 +79,9 @@ class CustomPageController extends Controller
                     $this->dataForView['pageTitle'] = 'CFA保过计划 | CFA 补习班 | CFA 课程';
                     $this->dataForView['metaKeywords'] = 'CFA保过计划 | CFA 补习班 | CFA 课程';
                     $this->dataForView['metaDescription'] = '参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA补习班领航者。';
+                    $posts = Page::where('type',Page::$TYPE_BLOG)->orderBy('id','asc')->take(5)->get();
+                    $this->dataForView['posts'] = $posts;
+                    //dd($posts);
                     break;
                 case 'baoming':
                     $this->dataForView['pageTitle'] = 'CFA 报名 | CFA考证 | CFA代报名';

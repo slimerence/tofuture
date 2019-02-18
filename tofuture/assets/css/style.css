@@ -2867,14 +2867,13 @@ form label.error {
         height: 100%;
         display: table;
     }
-
-        .inner-intro .container .title {
-            padding-bottom: 65px;
-            padding-top: 65px;
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-        }
+    .inner-intro .container .title {
+        padding-bottom: 65px;
+        padding-top: 65px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
 
 .full-intro .inner-intro .container .title h2 {
     margin-top: 65px;

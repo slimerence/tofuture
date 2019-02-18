@@ -2,13 +2,61 @@
 @section('content')
     <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner.jpg') }}">
         <div class="container">
-            <div class="row title">
+            <div class="title">
                 <h1 class="h2">CFA保过计划 | CFA 补习班 | CFA 课程</h1>
+                <div class="row mt-5 mx-auto" style="max-width: 720px;">
+                    <div class="col-12 col-md-4 mt-20">
+                        <a class="btn-theme" href="https://wincareer.com.au/cfa/kepu">CFA科普</a>
+                    </div>
+                    <div class="col-12 col-md-4 mt-20">
+                        <a class="btn-theme" id="single_image" href="{{ asset('images/tofuture/qrcode1.jpg') }}">免费资料</a>
+                    </div>
+                    <div class="col-12 col-md-4 mt-20">
+                        <a class="btn-theme" href="https://wincareer.com.au/cfa/baoming">报名指南</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- End Intro Section -->
     <section class="pt-80 pb-5">
+        <div class="container">
+            <div class="about-item">
+                <h2 class="text-center">CFA- 特许金融分析师</h2>
+                <div class="whr"></div>
+                <p>
+                    CFA全称 Chartered Financial Analyst （特许⾦融分析师），是全球投资业⾥较为严格与含⾦量⾼的
+                    资格认证，被⼈民⽇报⼒荐，被业界称为“华尔街的⼊场券”。通过CFA考试获得cfa资格有利于商科
+                    就业，尤其是海外留学⽣，更加收到各⾦融雇主的青睐。据相关统计全球拥有CFA认证的约10万
+                    ⼈，中国内地仅约3000余⼈，作为紧缺⼈才，CFA有着令⼈羡慕的高收入。⾦融机构的雇主愿意支
+                    付给CFA考⽣和通过者高额的薪酬。
+                </p>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 mt-30">
+                        <img src="{{ asset('/images/tofuture/baoguo.jpg') }}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 mt-30 align-self-center">
+                        <div class="dontai box">
+                        <h3 class="text-center">CFA最新动态</h3>
+                        <div class="whr"></div>
+                        @if(isset($posts))
+                            <ul>
+                                @foreach($posts as $post)
+                                 <li>
+                                     <i class="fa fa-caret-right fa-fw color-t" aria-hidden="true"></i><a href="{{ url('/page/'.$post->uri) }}">{{ $post->title }}</a>
+                                 </li>
+                                @endforeach
+                            </ul>
+                        @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-40 pb-5">
         <div class="container">
             <div class="about-item">
                 <h2 class="text-center">WinCareer CFA</h2>
@@ -37,6 +85,12 @@
                                 <span>扫描二维码</span>
                             </div>
                         </div>
+                        <div class="col-12 col-md-6">
+
+                        </div>
+                        <div class="col-12 col-md-6">
+
+                        </div>
                     </div>
 
             </div>
@@ -50,9 +104,9 @@
                     {{--<div class="col-12 col-md-6 d-none d-md-block d-lg-block">
                         <img src="{{ asset('images/tofuture/course-bg.jpeg') }}" style="width: 100%;opacity: 0.85;" alt="">
                     </div>--}}
-                    <div class="col-12 align-self-center">
+                    <div class="col-12 align-self-center text-center">
                         <h2 class="text-center">课程安排</h2>
-                        <div class="owl-carousel client-carousel o-flow-hidden">
+                        <div class="owl-carousel client-carousel o-flow-hidden text-left">
                             <div class="item">
                                 <div class="course-item">
                                     <h3><i class="fa fa-caret-right" aria-hidden="true"></i>知识精讲</h3>
@@ -102,6 +156,7 @@
                                 </div>
                             </div>
                         </div>
+                        <a class="btn-theme mx-auto mb-5" target="_blank" href="https://wincareer.com.au/cfa/kepu">下载CFA培训时间表</a>
                     </div>
                 </div>
 
@@ -138,7 +193,6 @@
                                 <p><strong>擅长科目：</strong>FRA，Economics, Quantitative</p>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <h3><i class="fa fa-caret-right" aria-hidden="true"></i>金牌导师Tony</h3>
@@ -151,8 +205,6 @@
                                 <p><strong>擅长科目：</strong>Corporate Finance, Fixed Income, Equity Investment, Derivatives, Portfolio Management</p>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 

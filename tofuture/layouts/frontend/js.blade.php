@@ -22,3 +22,4 @@
 <script src="{{ url('js/theme.js') }}" type="text/javascript"></script>
 <script src="{{ url('js/verify.js') }}" type="text/javascript"></script>
 <script src="{{ url('js/all.js') }}" type="text/javascript"></script>
+

@@ -11,6 +11,9 @@ import 'element-ui/lib/theme-chalk/index.css';
 // import { Loading } from 'element-ui';
 Vue.use(ElementUI);
 
+require('!style-loader!css-loader!@fancyapps/fancybox/dist/jquery.fancybox.css')
+require('@fancyapps/fancybox');
+
 /**
  * Next we will register the CSRF Token as a common header with Axios so that
  * all outgoing HTTP requests automatically have it attached. This is just
@@ -80,6 +83,10 @@ $(document).ready(function(){
                 }
             });
         });
+    }
+
+    if($('#single_image').length>0){
+        $("a#single_image").fancybox();
     }
 
     if($('.slick-img').length > 0) {

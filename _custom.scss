@@ -9,7 +9,9 @@ $themedark:#aa071f;
 .nav-menu > ul > li > a{
   font-size: 18px;
 }
-
+.color-t{
+  color:$themecolor;
+}
 footer .qrcode-wrap {
   width: 100%;
   float: left;
@@ -164,6 +166,12 @@ footer .qrcode-wrap {
   }
 }
 
+@media (max-width: 450px){
+  .inner-intro .container .title {
+    padding-top: unset;
+  }
+}
+
 .online-class{
   .panel-title{
     margin: 0;
@@ -279,5 +287,29 @@ footer .qrcode-wrap {
   .course-item{
     padding-left: 2em;
     padding-right: 2em;
+  }
+}
+
+.btn-theme{
+
+  color: #ffffff;
+  background-color: $themecolor;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-size: 20px;
+  border-radius: 0.2em;
+}
+
+.dontai{
+  width: 100%;
+  position: relative;
+  ul{
+    margin-top: 2em;
+    margin-left:0;
+    padding:0;
+    li{
+      margin-top: 0.5em;
+      list-style:none;
+    }
   }
 }
