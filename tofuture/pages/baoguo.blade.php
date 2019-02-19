@@ -55,14 +55,44 @@
             </div>
         </div>
     </section>
-    <hr>
-    <section class="pt-40 pb-5">
+    @if(true)
+        <section id="action-box" class="dark-bg ptb-150 bg-moving" style="background-image:url({{ asset('images/tofuture/bag-3.jpg') }});background-size: cover">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12 col-sm-12">
+                        <h4 class="ps-20" style="color: #000;text-shadow: 1px 1px 3px #c3c3c3;">参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    @endif
+    <section class="pt-60 pb-5">
         <div class="container">
             <div class="about-item">
                 <h2 class="text-center">WinCareer CFA</h2>
                 <div class="whr"></div>
                 <p>WinCareer是澳洲未来教育集团旗下专注于职业培训的子品牌，未来教育作为墨尔本第一老牌商科辅导培训机构，累计服务超过50000名留学生，而WinCareer CFA正是整合了未来教育最强金融师资团队，根据各大高校商科课程以及澳洲考生特别编写了独家教材，结合最新考纲整理详细讲义，设置最科学的课程结构，推出了全澳最专业最负责的CFA一级保过课程。参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA补习班领航者。</p>
-
+                <div class="about-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="img-ctn">
+                                <div class="img-over">
+                                    <span>⽹络课程随时随地看</span>
+                                </div>
+                                <img src="{{ asset('images/tofuture/bag1.jpg') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="img-ctn">
+                                <div class="img-over">
+                                    <span>完美结合澳洲⼤学课程</span>
+                                </div>
+                                <img src="{{ asset('images/tofuture/bag2.jpg') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                     <div class="row">
                         <div class="col-12 col-md-9">
                             <div class="box">
@@ -85,15 +115,9 @@
                                 <span>扫描二维码</span>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-
-                        </div>
-                        <div class="col-12 col-md-6">
-
-                        </div>
                     </div>
-
             </div>
+
         </div>
     </section>
 
@@ -164,18 +188,7 @@
             </div>
         </div>
     </section>
-    @if(false)
-    <section id="action-box" class="dark-bg ptb-150 bg-moving" style="background-image:url({{ asset('images/tofuture/full/home01.jpg') }});background-size: cover">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12 col-sm-12">
-                    <h4 class="ps-20">参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。</h4>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    @endif
     <section class="pt-80">
         <div class="container">
             <div class="about-item">
@@ -216,7 +229,25 @@
             <div class="about-item">
                 <h2 class="text-center">Wincareer课程展示</h2>
                 <div class="whr"></div>
-                <div class="row mt-5">
+                <div class="s-box">
+                    <div class="s-title">
+                        试听视频
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    @foreach($videos as $video)
+                        <div class="col-lg-6 col-md-12">
+                            {!! $video->code !!}
+                        </div>
+                    @endforeach
+                </div>
+
+                <div class="s-box mt-3">
+                    <div class="s-title">
+                        课堂实况
+                    </div>
+                </div>
+                <div class="row mt-3">
                     @for($i=1;$i<4;$i++)
                         <div class="col-12 col-md-4 col-lg-4 mb-3">
                             <img src="{{ asset('images/tofuture/'.$i.'.jpg') }}" alt="{{ $i }}">

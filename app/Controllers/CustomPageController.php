@@ -12,6 +12,7 @@ namespace Smartbro\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Page;
 use Illuminate\Http\Request;
+use Smartbro\Models\Video;
 
 
 class CustomPageController extends Controller
@@ -80,6 +81,7 @@ class CustomPageController extends Controller
                     $this->dataForView['metaKeywords'] = 'CFA保过计划 | CFA 补习班 | CFA 课程';
                     $this->dataForView['metaDescription'] = '参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA补习班领航者。';
                     $posts = Page::where('type',Page::$TYPE_BLOG)->orderBy('id','asc')->take(5)->get();
+                    $this->dataForView['videos'] = Video::orderby('id','asc')->take(2)->get();
                     $this->dataForView['posts'] = $posts;
                     //dd($posts);
                     break;
