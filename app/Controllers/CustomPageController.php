@@ -71,9 +71,9 @@ class CustomPageController extends Controller
         $filename = resource_path('views/frontend/').str_replace('.','/',_get_frontend_theme_prefix()).'/pages/'.str_replace('.','/',$pageUri).'.blade.php';
         if(file_exists($filename)){
             switch ($pageUri){
-                case 'kepu':
-                    $this->dataForView['pageTitle'] = 'CFA 考试 | 商科就业 | FINTECH';
-                    $this->dataForView['metaKeywords'] = 'CFA 考试 | 商科就业 | FINTECH';
+                case 'cfa考试':
+                    $this->dataForView['pageTitle'] = 'CFA考试 | 商科就业 | FINTECH';
+                    $this->dataForView['metaKeywords'] = 'CFA考试 | 商科就业 | FINTECH';
                     $this->dataForView['metaDescription'] = '通过CFA考试获得cfa资格有利于商科就业，尤其是海外留学生，更加收到各金融雇主的青睐。现在大热的Fintech也是CFA考试中重要的一项指标。';
                     break;
                 case 'baoguo':
