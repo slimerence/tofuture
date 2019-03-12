@@ -34,6 +34,7 @@
                                         if($cat->id ==1){
                                             $parentname = 'Root';
                                         }else{
+                                            dump($cat->parent_id);
                                             $parent = \Smartbro\Models\Cat::where('id',$cat->parent_id)->first();
                                             if($parent && !is_null($parent)){
                                                 $parentname = $parent->name;
