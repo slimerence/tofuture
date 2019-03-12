@@ -45,9 +45,12 @@
                                     <td>{{ $user->name }}</td>
                                     <td>{{ $user->email }}</td>
                                     <td>{{ $user->phone }}</td>
-                                    <td><?php $owncats= \Smartbro\Models\UserCat::GetOwnCat($user)?>
+                                    <td>
+                                        <?php $owncats= \Smartbro\Models\UserCat::GetOwnCat($user)?>
                                         @foreach($owncats as $owncat)
+                                            @if($owncat->cat !== null)
                                             {{ $owncat->cat->name }}&nbsp;
+                                            @endif
                                         @endforeach
                                     </td>
                                     <td>{{ $userstatus }}</td>
