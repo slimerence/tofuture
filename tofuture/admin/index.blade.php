@@ -40,7 +40,8 @@
                                     </td>
                                     <td>{!! $video->code !!} </td>
                                     <td>
-                                        <a href="{{ url('admin/videos/delete/'.$video->id) }}"><i class="fa fa-trash-o"></i></a>
+                                        <a class="btn btn-danger" href="{{ url('admin/videos/delete/'.$video->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
+                                        <a class="btn btn-primary" href="{{ url('admin/videos/update/'.$video->id) }}"><i class="fa fa-trash-o"></i> Update</a>
                                     </td>
                                 </tr>
                             @endforeach
