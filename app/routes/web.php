@@ -32,12 +32,17 @@ Route::prefix('admin')->middleware('auth')->group(function(){
 
     Route::get('/cats', '\Smartbro\Controllers\backend\VideoController@cat');
     Route::post('/cats/create', '\Smartbro\Controllers\backend\VideoController@catCreate');
+    Route::get('/cats/update/{id}', '\Smartbro\Controllers\backend\VideoController@catupview');
+    Route::post('/cats/update', '\Smartbro\Controllers\backend\VideoController@catup');
+
     Route::get('/cats/delete/{id}', '\Smartbro\Controllers\backend\VideoController@catDelete');
 
     Route::get('/videos', '\Smartbro\Controllers\backend\VideoController@video');
     Route::get('/videos/delete/{id}', '\Smartbro\Controllers\backend\VideoController@videoDelete');
     Route::get('/videos/upload', '\Smartbro\Controllers\backend\VideoController@videoUploadView');
     Route::post('/videos/upload', '\Smartbro\Controllers\backend\VideoController@videoUpload');
+    Route::get('/videos/update/{id}', '\Smartbro\Controllers\backend\VideoController@videoUpdateView');
+    Route::post('/videos/update', '\Smartbro\Controllers\backend\VideoController@videoUpdate');
     Route::get('/videos/bugfix', '\Smartbro\Controllers\backend\VideoController@bugfix');
 });
 

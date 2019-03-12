@@ -34,7 +34,6 @@
                                         if($cat->id ==1){
                                             $parentname = 'Root';
                                         }else{
-                                            dump($cat->parent_id);
                                             $parent = \Smartbro\Models\Cat::where('id',$cat->parent_id)->first();
                                             if($parent && !is_null($parent)){
                                                 $parentname = $parent->name;
@@ -50,8 +49,8 @@
                                         {{ $parentname }}
                                     </td>
                                     <td>
-                                        <a class="btn-danger" href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i></a>
-                                        <a class="btn-primary" href="{{ url('admin/cats/update/'.$cat->id) }}"><i class="fa fa-trash-o"></i></a>
+                                        <a class="btn btn-danger" href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
+                                        <a class="btn btn-primary" href="{{ url('admin/cats/update/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Update</a>
                                     </td>
                                 </tr>
                                 @endif

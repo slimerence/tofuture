@@ -56,8 +56,25 @@ class VideoController extends Controller
         return back()->with('error','Failed!');
     }
 
+    public function catupview($id){
+        $this->dataForView['menuName'] = 'Video Category';
+        $this->dataForView['pageTitle'] = 'Video Category';
+        $this->dataForView['cats'] = Cat::orderby('id','asc')->get();
+        $this->dataForView['cat'] = Cat::find($id);
+        return view(_get_frontend_theme_path('admin.catup'),$this->dataForView);
+    }
+
+    public function catup(Request $request){
+        $id = $request->get('cat_id');
+        $data= $request->get('cat');
+        Cat::where('id',$id)->update($data);
+        return redirect('admin/cats');
+    }
+
     public function catDelete($id){
         Cat::where('id',$id)->forcedelete();
+        Cat::where('parent_id',$id)->update(['parent_id'=>1]);
+
         return redirect('admin/cats');
     }
 
@@ -96,6 +113,21 @@ class VideoController extends Controller
             return redirect('admin/videos');
         }
         return back()->with('error','Failed!');
+    }
+
+    public function videoUpdateView($id){
+        $this->dataForView['menuName'] = 'Video';
+        $this->dataForView['pageTitle'] = 'Video';
+        $this->dataForView['cats'] = Cat::orderby('id','asc')->get();
+        $this->dataForView['video'] = Video::find($id);
+        return view(_get_frontend_theme_path('admin.videofix'),$this->dataForView);
+    }
+
+    public function videoUpdate(Request $request){
+        $data = $request->get('video');
+        $id = $request->get('id');
+        Video::where('id',$id)->update($data);
+        return redirect('admin/videos');
     }
 
     public function bugfix(){
