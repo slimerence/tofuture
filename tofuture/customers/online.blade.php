@@ -38,6 +38,7 @@
                         </div>
 
                         @foreach($maincats as $key=>$cat)
+                            @if($cat->cat !==Null)
                         <div class="col-md-6 col-lg-6 text-center">
                             <div class="card text-center" style="padding: 2em;max-width: 300px;margin: 0 auto;" >
                                 <img class="card-img-top" style="max-width: 150px;margin: 0 auto;" src="{{ asset('images/tofuture/vfolder.png') }}" alt="Card image cap">
@@ -47,6 +48,7 @@
                                 </div>
                             </div>
                         </div>
+                                @endif
                         @endforeach
                     @else
                     <div class="col-md-3">
@@ -55,7 +57,9 @@
                         <div class="online-class no-list-style">
                             <ul>
                                 @foreach($maincats as $key=>$cat)
+                                    @if($cat->cat !==Null)
                                     <li><a href="{{ url('listen/'.$cat->cat->name )}}">{{$cat->cat->name}}</a></li>
+                                    @endif
                                 @endforeach
                             </ul>
                         </div>
