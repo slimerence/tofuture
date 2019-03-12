@@ -48,8 +48,13 @@ class Cat extends Model
     }
 
     public static function LoadChildCat(){
-        return self::where('parent_id',2)->orderby('id','asc')
+        $cats = self::where('parent_id',1)->orderby('id','asc')
             ->get();
+        $id=[];
+        foreach ($cats as $cat){
+            $id[]= $cat->id;
+        }
+        return self::wherein('parent_id',$id)->get();
     }
 
     public static function GetCatLevel($id){
