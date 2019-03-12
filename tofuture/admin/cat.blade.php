@@ -40,7 +40,12 @@
                                     $level = \Smartbro\Models\Cat::GetCatLevel($cat->id);
                                     ?>
                                     <td>{{ $level }}</td>
-                                    <td>{{ $parentname }}</td>
+                                    <td>@if(isset($parentname) && !is_null($parentname))
+                                        {{ $parentname }}
+                                        @else
+                                        Parent Category Not Found
+                                        @endif
+                                    </td>
                                     <td>
                                         <a href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i></a>
                                     </td>
