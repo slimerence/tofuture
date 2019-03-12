@@ -62,7 +62,7 @@
                     <a href="#"><i class="fa fa-user fa-fw"></i> Admin<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="{{ url('admin/home') }}"><i class="fa fa-gear fa-fw"></i>Update Password</a>
+                            <a href="{{ url('backend/update-password') }}"><i class="fa fa-gear fa-fw"></i>Update Password</a>
                         </li>
                         <li>
                             <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
