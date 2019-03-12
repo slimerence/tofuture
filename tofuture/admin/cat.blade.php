@@ -35,16 +35,18 @@
                                             $parentname = 'Root';
                                         }else{
                                             $parent = \Smartbro\Models\Cat::where('id',$cat->parent_id)->first();
-                                            $parentname = $parent->name;
+                                            if($parent){
+                                                $parentname = $parent->name;
+                                            }else{
+                                                $parentname = 'Parent Category Not Found';
+                                            }
+
                                         }
                                     $level = \Smartbro\Models\Cat::GetCatLevel($cat->id);
                                     ?>
                                     <td>{{ $level }}</td>
-                                    <td>@if(isset($parentname) && !is_null($parentname))
+                                    <td>
                                         {{ $parentname }}
-                                        @else
-                                        Parent Category Not Found
-                                        @endif
                                     </td>
                                     <td>
                                         <a href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i></a>
