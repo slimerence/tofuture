@@ -35,7 +35,7 @@
                                             $parentname = 'Root';
                                         }else{
                                             $parent = \Smartbro\Models\Cat::where('id',$cat->parent_id)->first();
-                                            if($parent){
+                                            if($parent && !is_null($parent)){
                                                 $parentname = $parent->name;
                                             }else{
                                                 $parentname = 'Parent Category Not Found';
@@ -49,7 +49,8 @@
                                         {{ $parentname }}
                                     </td>
                                     <td>
-                                        <a href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i></a>
+                                        <a class="btn-danger" href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i></a>
+                                        <a class="btn-primary" href="{{ url('admin/cats/update/'.$cat->id) }}"><i class="fa fa-trash-o"></i></a>
                                     </td>
                                 </tr>
                                 @endif
