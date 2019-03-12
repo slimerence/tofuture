@@ -34,7 +34,10 @@
                                     <?php
                                     $cat= \Smartbro\Models\Cat::where('id',$video->cat_id)->first();
                                     ?>
-                                    <td>{{ $cat->name }}</td>
+                                    <td>@if(isset($cat)&& !is_null($cat)){{ $cat->name }}
+                                            @else Cat Not Found
+                                        @endif
+                                    </td>
                                     <td>{!! $video->code !!} </td>
                                     <td>
                                         <a href="{{ url('admin/videos/delete/'.$video->id) }}"><i class="fa fa-trash-o"></i></a>

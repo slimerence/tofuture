@@ -13,7 +13,6 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Video Management
-
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
