@@ -56,7 +56,7 @@
                                     <td>{{ $userstatus }}</td>
                                     <td class="center">{{ $user->created_at->format('F d, Y') }}</td>
                                     <td>
-                                        <a class="btn btn-danger need-confirm" href="{{ url('admin/customers/delete/'.$user->id) }}"><i class="fa fa-trash-o"></i>Delete</a>
+                                        <a class="btn btn-danger" onclick="return confirm('Are you sure ?')" href="{{ url('admin/customers/delete/'.$user->id) }}"><i class="fa fa-trash-o"></i>Delete</a>
                                         <a class="btn btn-success" href="{{ url('admin/customers/edit/'.$user->id) }}"><i class="fa fa-pencil-square-o"></i>Update</a>
                                     </td>
                                 </tr>

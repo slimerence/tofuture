@@ -40,7 +40,7 @@
                                     </td>
                                     <td>{!! $video->code !!} </td>
                                     <td>
-                                        <a class="btn btn-danger need-confirm" href="{{ url('admin/videos/delete/'.$video->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
+                                        <a class="btn btn-danger" onclick="return confirm('Are you sure ?')" href="{{ url('admin/videos/delete/'.$video->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
                                         <a class="btn btn-primary" href="{{ url('admin/videos/update/'.$video->id) }}"><i class="fa fa-trash-o"></i> Update</a>
                                     </td>
                                 </tr>
