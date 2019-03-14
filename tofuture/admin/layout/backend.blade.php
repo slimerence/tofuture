@@ -84,6 +84,11 @@
         }
 
     });
+    jQuery(document).ready(function($){
+        $('.need-confirm').on('click',function(){
+            return confirm('Are you sure you want to delete it?');
+        });
+    });
 </script>
 </body>
 

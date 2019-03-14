@@ -72,9 +72,10 @@ class VideoController extends Controller
     }
 
     public function catDelete($id){
+
         Cat::where('id',$id)->forcedelete();
         Cat::where('parent_id',$id)->update(['parent_id'=>1]);
-
+        Video::where('cat_id',$id)->forcedelete();
         return redirect('admin/cats');
     }
 

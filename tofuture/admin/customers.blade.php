@@ -56,8 +56,8 @@
                                     <td>{{ $userstatus }}</td>
                                     <td class="center">{{ $user->created_at->format('F d, Y') }}</td>
                                     <td>
-                                        <a href="{{ url('admin/customers/delete/'.$user->id) }}"><i class="fa fa-trash-o"></i></a>
-                                        <a href="{{ url('admin/customers/edit/'.$user->id) }}"><i class="fa fa-pencil-square-o"></i></a>
+                                        <a class="btn btn-danger need-confirm" href="{{ url('admin/customers/delete/'.$user->id) }}"><i class="fa fa-trash-o"></i>Delete</a>
+                                        <a class="btn btn-success" href="{{ url('admin/customers/edit/'.$user->id) }}"><i class="fa fa-pencil-square-o"></i>Update</a>
                                     </td>
                                 </tr>
                             @endforeach

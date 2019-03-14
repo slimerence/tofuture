@@ -76,4 +76,9 @@ class Cat extends Model
         return self::create($data);
     }
 
+    public static function GetVideo($id){
+        $videos = Video::where('cat_id',$id)->get();
+        return $videos;
+    }
+
 }

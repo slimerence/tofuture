@@ -22,6 +22,7 @@
                                 <th>Root Name</th>
                                 <th>Level</th>
                                 <th>Parent</th>
+                                <th>Videos</th>
                                 <th>Operate</th>
                             </tr>
                             </thead>
@@ -49,7 +50,10 @@
                                         {{ $parentname }}
                                     </td>
                                     <td>
-                                        <a class="btn btn-danger" href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
+                                        {{ count(\Smartbro\Models\Cat::GetVideo($cat->id)) }}
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-danger need-confirm" href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
                                         <a class="btn btn-primary" href="{{ url('admin/cats/update/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Update</a>
                                     </td>
                                 </tr>
