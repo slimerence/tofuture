@@ -53,7 +53,7 @@
                                         {{ count(\Smartbro\Models\Cat::GetVideo($cat->id)) }}
                                     </td>
                                     <td>
-                                        <a class="btn btn-danger" onclick="return confirm('Are you sure ?')" href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
+                                        <a class="btn btn-danger" onclick="return confirm('确认删除此分类以及分类下的视频么?')" href="{{ url('admin/cats/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
                                         <a class="btn btn-primary" href="{{ url('admin/cats/update/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Update</a>
                                     </td>
                                 </tr>
