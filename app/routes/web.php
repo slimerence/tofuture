@@ -37,6 +37,12 @@ Route::prefix('admin')->middleware('auth')->group(function(){
 
     Route::get('/cats/delete/{id}', '\Smartbro\Controllers\backend\VideoController@catDelete');
 
+    Route::get('/team', '\Smartbro\Controllers\backend\UserGroupController@team');
+    Route::post('/team/create', '\Smartbro\Controllers\backend\UserGroupController@newteam');
+    Route::get('/team/update/{id}', '\Smartbro\Controllers\backend\UserGroupController@teamupview');
+    Route::post('/team/update', '\Smartbro\Controllers\backend\UserGroupController@teamup');
+    Route::get('/team/delete/{id}', '\Smartbro\Controllers\backend\UserGroupController@teamd');
+
     Route::get('/videos', '\Smartbro\Controllers\backend\VideoController@video');
     Route::get('/videos/delete/{id}', '\Smartbro\Controllers\backend\VideoController@videoDelete');
     Route::get('/videos/upload', '\Smartbro\Controllers\backend\VideoController@videoUploadView');

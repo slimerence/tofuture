@@ -47,6 +47,9 @@
                     <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Customers<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
+                            <a href="{{ url('admin/team') }}">User Group</a>
+                        </li>
+                        <li>
                             <a href="{{ url('admin/customers') }}">Manage</a>
                         </li>
                         <li>
