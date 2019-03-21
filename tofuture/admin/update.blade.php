@@ -44,29 +44,22 @@
                                         <label for="phone" >Phone&nbsp;<span class="text-danger">*</span></label>
                                         <input required type="text" class="input {{ $errors->has('phone') ? 'text-danger' : '' }}" id="inputPhone" value="{{ $customer->phone }}" name="phone" placeholder="0123458512">
                                     </div>
+
                                     <div class="form-group  col-md-12 col-sm-12">
                                         <label for="status" >Status&nbsp;<span class="text-danger">*</span></label>
                                         <select name="status" id="change">
-                                            <option value="1">Normal</option>
-                                            <option value="2">Disabled</option>
+                                            <option value="1" {{ $customer->status ==1? 'selected':'' }}>Normal</option>
+                                            <option value="2" {{ $customer->status ==2? 'selected':'' }}>Disabled</option>
                                         </select>
                                     </div>
+
                                     <div class="form-group  col-md-12 col-sm-12">
-                                        <label >文件夹权限</label>
-                                        <?php
-                                        $maincats = \Smartbro\Models\UserCat::GetOwnCat($customer);
-                                        $catId = [];
-                                        foreach ($maincats as $maincat){
-                                            $catId[] = $maincat->cat_id;
-                                        }
-                                        ?>
-                                        @foreach($cats as $cat)
-                                            @if(in_array($cat->id,$catId))
-                                                <input type="checkbox" name="cat[]" value="{{$cat->id}}" checked>{{ $cat->name }}<br />
-                                            @else
-                                                <input type="checkbox" name="cat[]" value="{{$cat->id}}">{{ $cat->name }}<br />
-                                            @endif
-                                        @endforeach
+                                        <label for="team">User Group</label>
+                                        <select name="team" id="team">
+                                            @foreach($teams as $team)
+                                                <option value="{{ $team->id }}" {{ $customer->group_id == $team->id ? 'selected':'' }}>{{ $team->name.' expire at '.$team->expire->format('Y-m-d') }}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-default btn-primary">Submit Button</button>

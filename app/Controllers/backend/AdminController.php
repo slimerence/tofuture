@@ -29,6 +29,7 @@ use App\Models\Newsletter\UserSubscribe;
 use App\Http\Controllers\Frontend\CustomersController;
 use Ramsey\Uuid\Uuid;
 use Smartbro\Models\Cat;
+use Smartbro\Models\Team;
 use Smartbro\Models\Video;
 use Smartbro\Models\UserCat;
 
@@ -80,15 +81,16 @@ class AdminController extends CustomersController
     public function customer(){
         $this->dataForView['menuName'] = 'tables';
         $this->dataForView['config'] = Configuration::find(1);
-        $this->dataForView['users'] = User::where('group_id','1')->orderBy('id','desc')->get();
+        $this->dataForView['users'] = User::where('role','5')->orderBy('id','desc')->get();
         return view(_get_frontend_theme_path('admin.customers'), $this->dataForView);
     }
 
     public function customerCreateView(){
         $this->dataForView['menuName'] = 'tables';
         $this->dataForView['config'] = Configuration::find(1);
-        $this->dataForView['users'] = User::where('group_id','1')->orderBy('id','desc')->get();
+        $this->dataForView['users'] = User::where('role','5')->orderBy('id','desc')->get();
         $this->dataForView['cats'] = Cat::LoadChildCat();
+        $this->dataForView['teams'] = Team::orderby('id','asc')->get();
         return view(_get_frontend_theme_path('admin.create'), $this->dataForView);
     }
 
@@ -102,6 +104,7 @@ class AdminController extends CustomersController
         $this->dataForView['pageTitle'] = 'User Update';
         $this->dataForView['customer']= User::find($id);
         $this->dataForView['cats'] = Cat::LoadChildCat();
+        $this->dataForView['teams'] = Team::orderby('id','asc')->get();
         return view(_get_frontend_theme_path('admin.update'),$this->dataForView);
     }
     public function customerApply(Request $request){
@@ -119,41 +122,23 @@ class AdminController extends CustomersController
 
     public function customerEdit($id,Request $request){
         $data = $request->all();
+        $data['group_id'] = $data['team'];
         User::find($id)->update($data);
-        $user =  User::where('id',$id)->first();
+       /* $user =  User::where('id',$id)->first();
         if (!isset($data['cat'])) {
             $data['cat'] = [''];
         }
 
-        UserCat::Persistent($user,$data['cat']);
+        UserCat::Persistent($user,$data['cat']);*/
         return redirect('admin/customers');
     }
 
-    public function createview(){
-        $this->dataForView['pageTitle'] = 'Reservation Create';
-        $this->dataForView['config'] = Configuration::find(1);
-        $this->dataForView['promotionProducts'] = Category::LoadPromotionProducts();
-        return view(_get_frontend_theme_path('admin.create'), $this->dataForView);
-    }
 
-    public function create(Request $request){
-        $reservation = $request->get('reservation');
-        if($reservation = Reservation::Persistent($reservation)){
-            return back()->with('success','Your reservation has been sent!');
-        }
-        return back()->with('error','Something wrong with the server!');
-    }
-
-    public function block(){
-        $this->dataForView['pageTitle'] = 'New Schedule';
-        $this->dataForView['menuName'] = 'tables';
-        $this->dataForView['config'] = Configuration::find(1);
-        $this->dataForView['maintains'] = Maintain::orderBy('created_at','asc')->get();
-        $this->dataForView['promotionProducts'] = Category::LoadPromotionProducts();
-        return view(_get_frontend_theme_path('admin.block'), $this->dataForView);
-    }
-
-
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @throws \Exception
+     */
     public function save(Request $request){
         $data=$request->all();
         // 获取Referer
@@ -178,13 +163,12 @@ class AdminController extends CustomersController
         $data['uuid'] = $userData['uuid'];
         $data['password'] = $userData['password'];
         $data['role'] = UserGroup::$GENERAL_CUSTOMER;
+        $data['group_id'] = $data['team'];
         $user=User::create($data);
         if($user){
-            $cats = $data['cat'];
-            UserCat::Persistent($user,$cats);
+            return redirect('admin/customers');
+        }else{
+            return back()->with('error','Something wrong!');
         }
-        return redirect('admin/customers');
     }
-
-
 }

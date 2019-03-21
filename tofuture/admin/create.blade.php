@@ -59,10 +59,12 @@
                                             <input required type="text" class="input {{ $errors->has('phone') ? 'text-danger' : '' }}" id="inputPhone" value="{{ old('phone') }}" name="phone" placeholder="0123458512">
                                         </div>
                                         <div class="form-group  col-md-12 col-sm-12">
-                                            <label >文件夹权限</label>
-                                                @foreach($cats as $cat)
-                                                <input type="checkbox" name="cat[]" value="{{$cat->id}}" />{{ $cat->name }}<br />
+                                            <label for="team" >User Group</label>
+                                            <select name="team" id="team">
+                                                @foreach($teams as $team)
+                                                    <option value="{{ $team->id }}">{{ $team->name.' expire at '.$team->expire->format('Y-m-d') }}</option>
                                                 @endforeach
+                                            </select>
                                         </div>
                                     </div>
                                     <button type="submit" id="general-customer-register-btn" class="btn-primary">

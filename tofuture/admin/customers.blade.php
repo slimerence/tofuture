@@ -24,7 +24,7 @@
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Phone</th>
-                                <th>Access</th>
+                                <th>Group</th>
                                 <th>Status</th>
                                 <th>Join Time</th>
                                 <th>Operate</th>
@@ -46,12 +46,7 @@
                                     <td>{{ $user->email }}</td>
                                     <td>{{ $user->phone }}</td>
                                     <td>
-                                        <?php $owncats= \Smartbro\Models\UserCat::GetOwnCat($user)?>
-                                        @foreach($owncats as $owncat)
-                                            @if($owncat->cat !== null)
-                                            {{ $owncat->cat->name }}&nbsp;
-                                            @endif
-                                        @endforeach
+                                        {{ \Smartbro\Models\Team::teamname($user->group_id)->name }}
                                     </td>
                                     <td>{{ $userstatus }}</td>
                                     <td class="center">{{ $user->created_at->format('F d, Y') }}</td>

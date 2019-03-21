@@ -10,6 +10,7 @@
         <div class="row">
 
             <div class="col-lg-8">
+                @include(_get_frontend_theme_path('pages.elements.alert'))
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         User Group Management
@@ -29,7 +30,6 @@
                             </thead>
                             <tbody>
                             @foreach($teams as $key=>$team)
-                                @if($key >0)
                                 <tr class="odd gradeX">
                                     <td>{{ $team->name }}</td>
                                     <td>
@@ -43,20 +43,23 @@
                                         @endforeach
                                     </td>
                                     <td>
-                                        {{ count($team->ownusers) }}
+                                        {{ $team->usercount() }}
                                     </td>
                                     <td>
-                                        {{ $team->checkstatus() }}
+                                        @if($team->checkstatus())
+                                            <span class="badge" style="background-color:#17a2b8;">Active</span>
+                                            @else
+                                            <span class="badge">Expired</span>
+                                        @endif
                                     </td>
                                     <td>
                                         {{ $team->expire }}
                                     </td>
                                     <td>
-                                        <a class="btn btn-danger" onclick="return confirm('确认删除此用户组么?')" href="{{ url('admin/team/delete/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
-                                        <a class="btn btn-primary" href="{{ url('admin/team/update/'.$cat->id) }}"><i class="fa fa-trash-o"></i> Update</a>
+                                        <a class="btn btn-danger" onclick="return confirm('确认删除此用户组么?')" href="{{ url('admin/team/delete/'.$team->id) }}"><i class="fa fa-trash-o"></i> Delete</a>
+                                        <a class="btn btn-primary" href="{{ url('admin/team/update/'.$team->id) }}"><i class="fa fa-trash-o"></i> Update</a>
                                     </td>
                                 </tr>
-                                @endif
                             @endforeach
                             </tbody>
                         </table>

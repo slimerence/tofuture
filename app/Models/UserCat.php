@@ -46,4 +46,13 @@ class UserCat extends Model
     public static function GetOwnCat($user){
         return self::where('user_id',$user->id)->get();
     }
+
+    public static function GetCat($user){
+        $cats =[];
+        $usercats = self::where('user_id',$user->id)->orderby('id','asc')->get();
+        foreach ($usercats as $usercat){
+            $cats[] = $usercat->cat_id;
+        }
+        return $cats;
+    }
 }

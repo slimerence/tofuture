@@ -15,8 +15,8 @@ class CreateTeamCatsTable extends Migration
     {
         Schema::create('team_cats', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('team_id');
-            $table->text('cat_id');
+            $table->integer('team_id');
+            $table->integer('cat_id');
             $table->timestamps();
         });
     }

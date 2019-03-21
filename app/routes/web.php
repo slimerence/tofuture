@@ -42,6 +42,7 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::get('/team/update/{id}', '\Smartbro\Controllers\backend\UserGroupController@teamupview');
     Route::post('/team/update', '\Smartbro\Controllers\backend\UserGroupController@teamup');
     Route::get('/team/delete/{id}', '\Smartbro\Controllers\backend\UserGroupController@teamd');
+    Route::get('/userfix','\Smartbro\Controllers\backend\UserGroupController@userfix');
 
     Route::get('/videos', '\Smartbro\Controllers\backend\VideoController@video');
     Route::get('/videos/delete/{id}', '\Smartbro\Controllers\backend\VideoController@videoDelete');
@@ -50,6 +51,7 @@ Route::prefix('admin')->middleware('auth')->group(function(){
     Route::get('/videos/update/{id}', '\Smartbro\Controllers\backend\VideoController@videoUpdateView');
     Route::post('/videos/update', '\Smartbro\Controllers\backend\VideoController@videoUpdate');
     Route::get('/videos/bugfix', '\Smartbro\Controllers\backend\VideoController@bugfix');
+
 });
 
 Route::get('/.well-known/pki-validation/92A2D1A931F1351ED21896D26C123E4A.txt','\Smartbro\Controllers\CustomPageController@verify');
