@@ -20,7 +20,8 @@
                 <div class="row">
                     <?php
                     $user = \App\User::where('id',session('user_data.id'))->first();
-                    $maincats = \Smartbro\Models\UserCat::GetOwnCat($user);
+                    $team = \Smartbro\Models\Team::find($user->group_id);
+                    $maincats = $team->owncats;
                     ?>
                     @if($menuName == 'listen')
                         <div class="col-12">

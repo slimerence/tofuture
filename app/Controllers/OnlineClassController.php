@@ -11,6 +11,7 @@ namespace Smartbro\Controllers;
 use App\Models\Customer\Wholesaler;
 use App\Models\Utils\JsonBuilder;
 use App\Models\Utils\UserGroup;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
@@ -21,6 +22,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\Newsletter\UserSubscribe;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Auth\CustomizedAuthenticatesUsers;
+use Smartbro\Models\Team;
 use Smartbro\Models\Video;
 use Smartbro\Models\Cat;
 use DB;
@@ -68,8 +70,17 @@ class OnlineClassController extends Controller
             ->where('role',UserGroupTool::$GENERAL_CUSTOMER)
             ->where('status',1)
             ->first();
+        
 
         if($user && Hash::check($request->get('password'), $user->password)){
+            $team = Team::find($user->group_id);
+            $today = Carbon::now();
+            if($team->expire < $today){
+                $errors = [$this->username() => 'Your account is expired!'];
+                return redirect()->back()
+                    ->withInput($request->only($this->username(), 'remember'))
+                    ->withErrors($errors);
+            }
             $this->_saveUserInSession($user);
 
             return redirect('/listen');
