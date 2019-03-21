@@ -69,7 +69,8 @@ class UserGroupController extends Controller
     
     public function teamd($id){
         User::where('group_id',$id)->update(['group_id'=>1]);
-        return self::where('id',$id)->delete();
+        Team::where('id',$id)->delete();
+        return redirect('admin/team');
     }
 
     /**
