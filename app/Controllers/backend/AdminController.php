@@ -109,13 +109,7 @@ class AdminController extends CustomersController
     }
     public function customerApply(Request $request){
         $data = $request->all();
-        if (!isset($data['cat'])) {
-            $data['cat'] = [''];
-        }
-        $users = User::orderby('id','desc')->get();
-        foreach ($users as $user){
-            UserCat::Persistent($user,$data['cat']);
-        }
+        User::orderby('id','desc')->update(['group_id'=>$data['team']]);
         return redirect('admin/customers');
     }
 

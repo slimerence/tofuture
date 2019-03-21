@@ -13,15 +13,15 @@
                     <input type="hidden" name="the_referer" value="{{ $the_referer }}">
                     <div class="row">
                         <div class="form-group  col-md-12 col-sm-12">
-                            <label >文件夹权限</label>
                             @php
-                            $cats = \Smartbro\Models\Cat::orderby('id','desc')->get();
+                            $teams = \Smartbro\Models\Team::orderby('id','desc')->get();
                             @endphp
-                            @foreach($cats as $cat)
-                                @if($cat->parent_id != 0)
-                                <input type="checkbox" name="cat[]" value="{{$cat->id}}">{{ $cat->name }}<br />
-                                @endif
-                            @endforeach
+                            <label for="team" >User Group</label>
+                            <select name="team" id="team">
+                                @foreach($teams as $team)
+                                    <option value="{{ $team->id }}">{{ $team->name.' expire at '.$team->expire->format('Y-m-d') }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-default btn-primary d-inline-block">Confirm</button>
