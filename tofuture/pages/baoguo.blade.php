@@ -3,7 +3,8 @@
     <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner.jpg') }}">
         <div class="container">
             <div class="title">
-                <h1 class="h2">CFA保过计划 | CFA 补习班 | CFA 课程</h1>
+                <h1 class="h2">CFA 补习班</h1>
+                <h2 class="h3">CFA保过计划 | CFA 补习班 | CFA 课程</h2>
                 <div class="row mt-5 mx-auto" style="max-width: 720px;">
                     <div class="col-12 col-md-4 mt-20">
                         <a class="btn-theme" href="https://wincareer.com.au/cfa/cfa考试">CFA科普</a>
@@ -60,7 +61,7 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-12 col-sm-12">
-                        <h4 class="ps-20" style="color: #000;text-shadow: 1px 1px 3px #c3c3c3;">参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。</h4>
+                        <h4 class="ps-20" style="color: #000;text-shadow: 1px 1px 3px #c3c3c3;">参加WinCareer的CFA保过计划，为您的CFA考试保驾护航。</h4>
                     </div>
 
                 </div>
@@ -70,9 +71,9 @@
     <section class="pt-60 pb-5">
         <div class="container">
             <div class="about-item">
-                <h2 class="text-center">WinCareer CFA</h2>
+                <h2 class="text-center">WinCareer CFA 补习班</h2>
                 <div class="whr"></div>
-                <p>WinCareer是澳洲未来教育集团旗下专注于职业培训的子品牌，未来教育作为墨尔本第一老牌商科辅导培训机构，累计服务超过50000名留学生，而WinCareer CFA正是整合了未来教育最强金融师资团队，根据各大高校商科课程以及澳洲考生特别编写了独家教材，结合最新考纲整理详细讲义，设置最科学的课程结构，推出了全澳最专业最负责的CFA一级保过课程。参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA补习班领航者。</p>
+                <p>WinCareer是澳洲未来教育集团旗下专注于职业培训的子品牌，未来教育作为墨尔本第一老牌商科辅导培训机构，累计服务超过50000名留学生，而WinCareer CFA 补习班正是整合了未来教育最强金融师资团队，根据各大高校商科课程以及澳洲考生特别编写了独家教材，结合最新考纲整理详细讲义，设置最科学的课程结构，推出了全澳最专业最负责的CFA一级保过课程。参加WinCareer的CFA保过计划，为您的CFA考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA补习班领航者。</p>
                 <div class="about-item">
                     <div class="row">
                         <div class="col-12 col-md-6">
@@ -96,14 +97,14 @@
                     <div class="row">
                         <div class="col-12 col-md-9">
                             <div class="box">
-                            <h3><i class="fa fa-caret-right" aria-hidden="true"></i>课程优势</h3>
+                            <h3><i class="fa fa-caret-right" aria-hidden="true"></i>CFA补习班课程优势</h3>
                             <ul>
-                                <li>科学的课程设置：我们结合澳洲考生特点设置了三大学习阶段，知识精讲班，冲刺串讲刷题班，全真模拟班。</li>
-                                <li>专业的导师团队</li>
-                                <li>独家编写的教材：我们根据澳洲各大高校商科课程特点撰写教材，详细阐释CFA所有考点</li>
+                                <li>我们结合澳洲考生特点设置了三大学习阶段，知识精讲班，冲刺串讲刷题班，全真模拟班。</li>
+                                <li>独家编写的教材：我们根据澳洲各大高校商科课程特点撰写教材，详细阐释CFA考试所有考点</li>
                                 <li>丰富的教学资源：我们提供线下课堂教学，线上课程视频，同学可以随时观看，以及CFA自习室帮助大家巩固所学知识</li>
-                                <li>两次全真模拟考试：考试高度还原真实考场，更有12年全真题目分享，多次测评找出自身的薄弱的环节，体验考试过程便于考生调整至最佳考试状态</li>
                                 <li>双重保过承诺：报名CFA课程的学员将签订贴心的保过协议，如果没有通过6月的考试，我们将全额支付你12月的考试费用，并赠送新的CFA课程的旁听资格</li>
+                                <li>两次全真模拟考试：考试高度还原真实考场，更有12年全真题目分享，多次测评找出自身的薄弱的环节，体验考试过程便于考生调整至最佳考试状态</li>
+                                <li>推出了全新的种子计划来助力学员学习，建立5位老师服务一位学员的教学模式，会根据每位同学的情况制定专属的CFA考试学习计划，复习期间老师随时为每位学员答疑</li>
                             </ul>
                             </div>
                         </div>
@@ -116,6 +117,7 @@
                             </div>
                         </div>
                     </div>
+
             </div>
 
         </div>
@@ -129,7 +131,7 @@
                         <img src="{{ asset('images/tofuture/course-bg.jpeg') }}" style="width: 100%;opacity: 0.85;" alt="">
                     </div>--}}
                     <div class="col-12 align-self-center text-center">
-                        <h2 class="text-center">课程安排</h2>
+                        <h2 class="text-center">CFA补习班课程安排</h2>
                         <div class="owl-carousel client-carousel o-flow-hidden text-left">
                             <div class="item">
                                 <div class="course-item">

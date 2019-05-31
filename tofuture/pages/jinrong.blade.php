@@ -3,7 +3,8 @@
     <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner.jpg') }}">
         <div class="container">
             <div class="row title">
-                <h1 class="h2">金融训练营 | CFA 考证 | 回国金融就业必备</h1>
+                <h1 class="h2">金融就业训练营</h1>
+                <h2 class="h3">金融训练营 | CFA考证 | 回国金融就业必备</h2>
             </div>
         </div>
     </section>
