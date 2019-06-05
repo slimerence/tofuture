@@ -3,7 +3,8 @@
     <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner.jpg') }}">
         <div class="container">
             <div class="row title">
-                <h1 class="h2">CFA考试 | 商科就业 | Fintech</h1>
+                <h1 class="h2">CFA考试</h1>
+                <h2 class="h3">商科就业 | Fintech</h2>
             </div>
         </div>
     </section>
@@ -45,10 +46,10 @@
     <section class="ptb-60 bg-lt">
         <div class="container">
             <div class="about-item">
-                <h2 class="text-center">1、考试结构和内容 </h2>
+                <h2 class="text-center">1、CFA考试结构和内容 </h2>
                 <div class="whr"></div>
                 <div class="d-flex mb-3 text-center">
-                    <p class="mx-auto">考试分为三个level, Level I,II,III<br/>
+                    <p class="mx-auto">CFA考试分为三个level, Level I,II,III<br/>
                         考试要求必须考过前一个等级才能进行下一等级的考试</p>
                 </div>
                 <hr class="mtb-15">
@@ -120,7 +121,7 @@
     <section class="ptb-60 bg-lt">
         <div class="container">
             <div class="about-item">
-                <h2 class="text-center">3、报名形式 </h2>
+                <h2 class="text-center">3、CFA考试报名形式 </h2>
                 <div class="whr"></div>
                 <div class="d-flex mb-3 text-center">
                     <section style="text-align: center;font-size: 13px;color: rgb(110, 110, 110);">
@@ -137,7 +138,7 @@
     <section class="ptb-60">
         <div class="container">
             <div class="about-item">
-                <h2 class="text-center">4、通过率 </h2>
+                <h2 class="text-center">4、CFA考试通过率 </h2>
                 <div class="whr"></div>
                 <div class="row">
                     <div class="col-md-6 col-sm-12"><p><span style="color: rgb(0, 0, 0);box-sizing: border-box;">2017年12月<strong style="box-sizing: border-box;"><span style="color: rgb(223, 75, 75);box-sizing: border-box;">CFA一级通过率为43%</span></strong>，总体还是比较理想的，如下图：</span><br style="box-sizing: border-box;"></p>
@@ -166,7 +167,7 @@
                         </section>
                         <section class="" style="text-align: justify;color: rgb(0, 0, 0);box-sizing: border-box;">
                             <p><span style="letter-spacing: 1.5px;box-sizing: border-box;"><br style="box-sizing: border-box;"></span></p>
-                            <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">CFA报名费中包含电子版教材和模考、习题等补充材料，需要购买纸质版教材的同学需要额外支付170美元（包含书本邮寄费用）。</span></p>
+                            <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">CFA考试报名费中包含电子版教材和模考、习题等补充材料，需要购买纸质版教材的同学需要额外支付170美元（包含书本邮寄费用）。</span></p>
                             <p><strong style="box-sizing: border-box;"><span style="letter-spacing: 1.5px;color: rgb(223, 75, 75);box-sizing: border-box;">CFA考试报名费用以美元结算，由三个部分构成：</span></strong></p>
                             <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">① 注册费(Enrollment Fee)：只需首先注册CFA考试时缴纳，CFA二级、三级考试无需再缴纳；</span></p>
                             <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">② 考试费(Registration Fee)：每次报考时都需要缴纳，考试费依据报名时间的早晚而不同。</span></p>
