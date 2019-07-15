@@ -24,16 +24,20 @@
 <script src="{{ url('js/all.js') }}" type="text/javascript"></script>
 <script language="javascript" type="text/javascript">
     jQuery(document).ready(function() {
-        $('#countdown').countDown({
-            targetDate: {
-                'day': 7,
-                'month': 12,
-                'year': 2019,
-                'hour': 12,
-                'min': 0,
-                'sec': 0
-            }
-        });
+        let count =  $('#countdown');
+        if(count.length >0){
+            count.countDown({
+                targetDate: {
+                    'day': 7,
+                    'month': 12,
+                    'year': 2019,
+                    'hour': 12,
+                    'min': 0,
+                    'sec': 0
+                }
+            });
+        }
+
     });
 </script>
 
