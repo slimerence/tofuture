@@ -1,4 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -18,8 +17,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
 <script src="{{ url('js/jquery.fs.tipper.min.js') }}" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.9/mediaelement-and-player.min.js"></script>
+
 <script src="{{ url('js/revolution-slider.js') }}" type="text/javascript"></script>
 <script src="{{ url('js/theme.js') }}" type="text/javascript"></script>
 <script src="{{ url('js/verify.js') }}" type="text/javascript"></script>
 <script src="{{ url('js/all.js') }}" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+    jQuery(document).ready(function() {
+        $('#countdown').countDown({
+            targetDate: {
+                'day': 7,
+                'month': 12,
+                'year': 2019,
+                'hour': 12,
+                'min': 0,
+                'sec': 0
+            }
+        });
+    });
+</script>
 

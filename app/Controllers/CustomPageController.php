@@ -77,9 +77,9 @@ class CustomPageController extends Controller
                     $this->dataForView['metaDescription'] = '通过CFA考试获得cfa资格有利于商科就业，尤其是海外留学生，更加收到各金融雇主的青睐。现在大热的Fintech也是CFA考试中重要的一项指标。';
                     break;
                 case 'baoguo':
-                    $this->dataForView['pageTitle'] = 'CFA保过计划 | CFA 补习班 | CFA 课程';
-                    $this->dataForView['metaKeywords'] = 'CFA保过计划 | CFA 补习班 | CFA 课程';
-                    $this->dataForView['metaDescription'] = '参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA补习班领航者。';
+                    $this->dataForView['pageTitle'] = 'CFA保过计划 | CFA 全托管式集训营 | CFA 课程';
+                    $this->dataForView['metaKeywords'] = 'CFA保过计划 | CFA 全托管式集训营 | CFA 课程';
+                    $this->dataForView['metaDescription'] = '参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA全托管式集训营领航者。';
                     $posts = Page::where('type',Page::$TYPE_BLOG)->orderBy('id','asc')->take(5)->get();
                     $this->dataForView['videos'] = Video::orderby('id','asc')->take(2)->get();
                     $this->dataForView['posts'] = $posts;

@@ -87,6 +87,16 @@ $(document).ready(function(){
 
     if($('#single_image').length>0){
         $("a#single_image").fancybox();
+
+    }
+    if($('.group').length>0) {
+        $("a.group").fancybox({
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic',
+            'speedIn': 600,
+            'speedOut': 200,
+            'overlayShow': false
+        });
     }
 
     if($('.slick-img').length > 0) {

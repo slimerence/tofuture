@@ -25,6 +25,8 @@
     <!-- SLIDER REVOLUTION CSS SETTINGS -->
     <link href="{{ url('demos/rs-plugin/css/settings.css') }}" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{ url('css/all.css') }}" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    <script src="{{ url('demos/rs-plugin/js/jquery.lwtCountdown-1.0.js') }}" type="text/javascript"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132581982-1"></script>
