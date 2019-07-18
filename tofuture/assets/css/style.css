@@ -2936,11 +2936,11 @@ form label.error {
     }
 
     .overlay-dark:before {
-        background-color: rgba(32,32,32,0.4);
+        background-color: rgba(32,32,32,0.2);
     }
 
     .overlay-dark80:before {
-        background-color: rgba(32,32,32,0.8);
+        background-color: rgba(32,32,32,0.6);
     }
 
     .overlay-light:before {

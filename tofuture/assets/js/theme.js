@@ -613,9 +613,9 @@ $(function () {
             //autoHeight: true,
             stopOnHover: true,
             singleItem: true,
-            slideSpeed: 350,
+            slideSpeed: 1200,
             pagination: true,  // Show pagination buttons
-            navigation: false,  // Show next and prev buttons
+            navigation: true,  // Show next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             responsive: true
         });

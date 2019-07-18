@@ -1,6 +1,6 @@
 @extends(_get_frontend_layout_path('frontend'))
 @section('content')
-    <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="{{ url('images/tofuture/full/absbanner3.jpg') }}">
+    <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner4.jpg') }}" style="background-size: cover;background-position: center bottom">
         <div class="container">
             <div class="title">
                 <h1 class="h2">CFA 全托管式集训营</h1>
@@ -56,7 +56,7 @@
                             <ul>
                                 @foreach($posts as $post)
                                  <li>
-                                     <i class="fa fa-caret-right fa-fw color-t" aria-hidden="true"></i><a href="{{ url('/page/'.$post->uri) }}">{{ $post->title }}</a>
+                                     <i class="fa fa-caret-right fa-fw color-t" aria-hidden="true"></i><a href="{{ url('/page'.$post->uri) }}">{{ $post->title }}</a>
                                  </li>
                                 @endforeach
                             </ul>
@@ -72,7 +72,7 @@
             <div class="container">
                 <div class="row text-center" id="timedown">
                     <div class="col-md-12 col-sm-12">
-                        <h4 class="ps-20" style="color: #000;text-shadow: 1px 1px 3px #c3c3c3;">距离2019年12月考试还有</h4>
+                        <h4 class="ps-20" style="color: #000;text-shadow: 1px 1px 3px #c3c3c3;">距离2019年12月7日考试还有</h4>
                         <div class="timer-box">
                             <div id="countdown">
                                 <div class="dash weeks_dash">
@@ -183,7 +183,7 @@
                                 <div class="course-item">
                                     <h3><i class="fa fa-caret-right" aria-hidden="true"></i>知识精讲</h3>
                                     <ul>
-                                        <li>16天96个小时习题精讲＋16个小时应用练习</li>
+                                        <li>30天，108个小时知识精讲+32个小时习题应用</li>
                                         <li>精讲CFA一级所有知识点</li>
                                         <li>旨在让同学们掌握所有reading框架</li>
                                         <li>及所有CFA考试细点与难点</li>
@@ -194,7 +194,7 @@
                                 <div class="course-item">
                                     <h3><i class="fa fa-caret-right" aria-hidden="true"></i>冲刺串讲刷题班</h3>
                                     <ul>
-                                        <li>5天30个小时串讲＋10个小时冲刺刷题</li>
+                                        <li>13天，51个小时知识串讲+应用</li>
                                         <li>凝练CFA所有考点并大量刷题巩固reading框架</li>
                                         <li>了解CFA考试难度加强做题技巧与时间把控能力</li>
                                         <li>加快做题速度提高正确率</li>
@@ -242,6 +242,7 @@
             <div class="about-item">
                 <h2 class="text-center">Wincareer最强师资团队</h2>
                 <div class="whr"></div>
+                @if(false)
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
                         <h3><i class="fa fa-caret-right" aria-hidden="true"></i>金牌导师Jasmine</h3>
@@ -268,7 +269,14 @@
                         </div>
                     </div>
                 </div>
-
+                @endif
+                <div class="client-carousel">
+                    @for($i=1;$i<7;$i++)
+                        <div class="team-item text-center" style="padding: 1em;">
+                            <img  src="{{ asset('images/tofuture/team/ps'.$i.'.jpg') }}" alt="{{ $i }}">
+                        </div>
+                    @endfor
+                </div>
             </div>
         </div>
     </section>
