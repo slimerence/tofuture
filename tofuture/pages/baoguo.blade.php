@@ -1,6 +1,6 @@
 @extends(_get_frontend_layout_path('frontend'))
 @section('content')
-    <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner4.jpg') }}" style="background-size: cover;background-position: center bottom">
+    <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner2.jpg') }}" style="background-size: cover;background-position: center bottom">
         <div class="container">
             <div class="title">
                 <h1 class="h2">CFA 全托管式集训营</h1>
@@ -68,7 +68,7 @@
         </div>
     </section>
     @if(true)
-        <section id="action-box" class="dark-bg ptb-150 bg-moving" style="background-image:url({{ asset('images/tofuture/bag-3.jpg') }});background-size: cover">
+        <section id="action-box" class="dark-bg ptb-150 bg-moving" style="background-image:url({{ asset('images/tofuture/full/absbanner5.jpg') }});background-size: cover;background-position: center center;">
             <div class="container">
                 <div class="row text-center" id="timedown">
                     <div class="col-md-12 col-sm-12">
@@ -140,10 +140,12 @@
                         </div>
                     </div>
                 </div>
+                @if(false)
                     <div class="row">
                         <div class="col-12 col-md-9  mt-10">
                             <div class="box full-height">
                             <h3><i class="fa fa-caret-right" aria-hidden="true"></i>CFA全托管式集训营课程优势</h3>
+
                             <ul class="resize-ul">
                                 <li>我们结合澳洲考生特点设置了 <span class="red-tag">三大学习阶段</span>，知识精讲班，冲刺串讲刷题班，全真模拟班。</li>
                                 <li> <span class="red-tag">独家编写的教材</span>：我们根据澳洲各大高校商科课程特点撰写教材</li>
@@ -152,6 +154,7 @@
                                 <li>两次全真模拟考试，考试高度<span class="red-tag">还原真实</span>考场</li>
                                 <li>全新的种子计划来助力学员学习，建立<span class="red-tag">5V1</span>的教学模式</li>
                             </ul>
+
                             </div>
                         </div>
                         <div class="col-12 col-md-3 mt-10">
@@ -163,12 +166,61 @@
                             </div>
                         </div>
                     </div>
-
+                @endif
             </div>
-
         </div>
     </section>
+    <section class="pt-15 pb-5">
+        <div class="container">
+            <div class="about-item">
+                <h2 class="text-center">CFA全托管式集训营课程优势</h2>
+                <div class="whr"></div>
+                <div class="row pt-40">
+                    <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        <h3>科学的课程设置</h3>
+                        <p>全澳最长课程时长200+小时，结合澳洲考生特点设置了知识精讲班，冲刺串讲刷题班，全真模拟班</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <h3>专业的导师团队</h3>
+                        <p>CFA持证教师+超过10年经验的金融培训老师</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <h3>独家编写的教材</h3>
+                        <p>我们根据澳洲各大高校商科课程特点撰写教材，详细阐释CFA所有考点</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
+                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                        <h3>丰富的教学资源</h3>
+                        <p>我们提供线下课堂教学，线上课程视频回看，线上视频直播，同学可以随时观看</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
+                        <i class="fa fa-diamond" aria-hidden="true"></i>
+                        <h3>一对五VIP服务</h3>
+                        <p>一位学生有4名老师加一名工作人员从开课服务到考试，每天帮您解答所有问题</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        <h3>送考贴心服务</h3>
+                        <p>从报名到打印准考证，文具，午饭让您无忧</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
+                        <i class="fa fa-server" aria-hidden="true"></i>
+                        <h3>三次全真模拟考试</h3>
+                        <p>考试高度还原真实考场，更有13年全真题目分享，体验考试过程便于考生调整至最佳考试状态</p>
+                    </div>
 
+                    <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
+                        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                        <h3>双重保过承诺</h3>
+                        <p>签订贴心的保过协议，如果没有通过考试，我们将全额支付你12月的考试费用，并赠送新的CFA课程的旁听资格</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="pt-15 ptb-80" style="background-image:url({{ asset('images/tofuture/course-bg2.jpg') }});background-size: cover;">
         <div class="container">
             <div class="about-item course">
