@@ -3,17 +3,17 @@
     <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner2.jpg') }}" style="background-size: cover;background-position: center bottom">
         <div class="container">
             <div class="title">
-                <h1 class="h2">CFA 全托管式集训营</h1>
+                <h1 class="h2" style="font-size: 2.4rem">CFA 全托管式集训营</h1>
                 <h2 class="h3">CFA保过计划 | CFA 全托管式集训营 | CFA 课程</h2>
                 <div class="row mt-5 mx-auto" style="max-width: 720px;">
                     <div class="col-12 col-md-4 mt-20">
                         <a class="btn-theme" href="https://wincareer.com.au/cfa/cfa考试">CFA科普</a>
                     </div>
                     <div class="col-12 col-md-4 mt-20">
-                        <a class="btn-theme" id="single_image" href="{{ asset('images/tofuture/qrcode1.jpg') }}">免费资料</a>
+                        <a class="btn-theme" id="single_image" href="{{ asset('images/tofuture/qrcode1.jpg') }}">扫描咨询</a>
                     </div>
                     <div class="col-12 col-md-4 mt-20">
-                        <a class="btn-theme" href="https://wincareer.com.au/cfa/baoming">报名指南</a>
+                        <a class="btn-theme" href="#shitin">在线试听</a>
                     </div>
                 </div>
             </div>
@@ -332,7 +332,7 @@
             </div>
         </div>
     </section>
-    <section class="ptb-60">
+    <section class="ptb-60" id="shitin">
         <div class="container">
             <div class="about-item">
                 <h2 class="text-center">Wincareer课程展示</h2>
