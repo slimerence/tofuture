@@ -3,7 +3,7 @@
     <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner2.jpg') }}" style="background-size: cover;background-position: center bottom">
         <div class="container">
             <div class="row title">
-                <h1 class="h2">CFA考试 特许金融分析师</h1>
+                <h1 class="h2" style="font-size: 2.4rem;margin-bottom: 40px;">CFA考试 特许金融分析师</h1>
                 <h2 class="h3">让我们为就业做最好的准备</h2>
             </div>
         </div>
