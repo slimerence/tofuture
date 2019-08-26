@@ -3,8 +3,8 @@
     <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner2.jpg') }}" style="background-size: cover;background-position: center bottom">
         <div class="container">
             <div class="title">
-                <h1 class="h2" style="font-size: 2.4rem">CFA 全托管式集训营</h1>
-                <h2 class="h3">CFA保过计划 | CFA 全托管式集训营 | CFA 课程</h2>
+                <h1 class="h2" style="font-size: 2.4rem">CFA考试 全托管式集训营</h1>
+                <h2 class="h3">CFA保过计划 | CFA 考试 | CFA 课程</h2>
                 <div class="row mt-5 mx-auto" style="max-width: 720px;">
                     <div class="col-12 col-md-4 mt-20">
                         <a class="btn-theme" href="https://wincareer.com.au/cfa/cfa考试">CFA科普</a>
@@ -72,7 +72,7 @@
             <div class="container">
                 <div class="row text-center" id="timedown">
                     <div class="col-md-12 col-sm-12">
-                        <h4 class="ps-20" style="color: #000;text-shadow: 1px 1px 3px #c3c3c3;">距离2019年12月7日考试还有</h4>
+                        <h4 class="ps-20" style="color: #000;text-shadow: 1px 1px 3px #c3c3c3;">距离2019年12月7日CFA 考试还有</h4>
                         <div class="timer-box">
                             <div id="countdown">
                                 <div class="dash weeks_dash">
@@ -173,7 +173,7 @@
     <section class="pt-15 pb-5">
         <div class="container">
             <div class="about-item">
-                <h2 class="text-center">CFA全托管式集训营课程优势</h2>
+                <h2 class="text-center">CFA考试全托管式集训营课程优势</h2>
                 <div class="whr"></div>
                 <div class="row pt-40">
                     <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
@@ -229,7 +229,7 @@
                         <img src="{{ asset('images/tofuture/course-bg.jpeg') }}" style="width: 100%;opacity: 0.85;" alt="">
                     </div>--}}
                     <div class="col-12 align-self-center text-center">
-                        <h2 class="text-center">CFA全托管式集训营课程安排</h2>
+                        <h2 class="text-center">CFA考试全托管式集训营课程安排</h2>
                         <div class="owl-carousel client-carousel o-flow-hidden text-left">
                             <div class="item">
                                 <div class="course-item">
