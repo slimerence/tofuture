@@ -3,7 +3,7 @@
     <div class="wow fadeInLeft container text-center">
         <h1 style="font-size: 27px">CFA 培训</h1>
         <div class="whr"></div>
-        <h2 style="font-size:22px">CFA 保过计划 | CFA 补习班</h2>
+        <h2 style="font-size:22px">CFA 培训保过计划 | CFA 补习班</h2>
         <p class="fs-16">CFA全称 Chartered Financial Analyst （特许金融分析师），1947年成立，CFA协会一直在全球范围内建立并倡导遵守⾄高行业准则，是全球投资业⾥较为严格与含金量高的资格认证，被业界称为“华尔街的入场券”。WinCareer职业培训平台为澳洲留学生提供优质CFA培训，及CPA培训。我们提供专业的CFA补习班，以及职业规划，帮助留学生对接本地企业，获得更多实习机会。</p>
         <div class="spacer-60"></div>
         <div class="row">
