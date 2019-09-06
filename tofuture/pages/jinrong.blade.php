@@ -20,7 +20,7 @@
                     <ul>
                         <li>金融行业初解析：金融就业趋势，竞争和机会</li>
                         <li>金融市场主要岗位分析- 毕业生／中级／高级岗位分析</li>
-                        <li>在金融行业规划你的职业发展</li>
+                        <li>在金融行业就业规划你的职业发展</li>
                         <li>岗位职责和要求深度分析</li>
                         <li>金融科技FinTech基本应用，大数据，人工智能等初认知</li>
                     </ul>
@@ -28,7 +28,7 @@
                 <hr class="mtb-15">
 
                 <div class="box">
-                <h3><i class="fa fa-caret-right" aria-hidden="true"></i>第二天 金融行业进入指南及脱颖而出的必备条件</h3>
+                <h3><i class="fa fa-caret-right" aria-hidden="true"></i>第二天 金融就业指南及脱颖而出的必备条件</h3>
                 <ul>
                     <li>LinkedIn资料建立和完善</li>
                     <li>LinkedIn使用技巧，如何让自己脱颖而出</li>
