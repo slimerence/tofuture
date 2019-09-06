@@ -1,6 +1,6 @@
 @extends(_get_frontend_layout_path('frontend'))
 @section('content')
-    <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner9.jpg') }}" style="background-size: cover;background-position: center center">
+    <section class="inner-intro dark-bg bg-image overlay-dark40 " data-background-img="{{ url('images/tofuture/full/absbanner9.jpg') }}" style="background-size: cover;background-position: center center">
         <div class="container">
             <div class="title">
                 <h2 class="h2" style="font-size: 3rem;text-shadow: 2px 2px 4px #000c;">CFA 全托管式集训营</h2>
