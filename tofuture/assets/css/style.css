@@ -2925,7 +2925,7 @@ form label.error {
     z-index: 1;
 }
 
-    .overlay-dark:before, .overlay-dark80:before, .overlay-light:before, .overlay-light80:before {
+    .overlay-dark:before, .overlay-dark80:before, .overlay-dark40 .overlay-light:before, .overlay-light80:before {
         left: 0;
         top: 0;
         position: absolute;
@@ -2937,6 +2937,9 @@ form label.error {
 
     .overlay-dark:before {
         background-color: rgba(32,32,32,0.2);
+    }
+    .overlay-dark40:before {
+        background-color: rgba(32,32,32,0.4);
     }
 
     .overlay-dark80:before {

@@ -8,6 +8,7 @@
             </div>
         </div>
         <div class="spacer-60"></div>
+        @if(false)
         <div class="row">
             <!-- Team Box -->
             <div class="owl-carousel item4-carousel nf-carousel-theme o-flow-hidden">
@@ -100,6 +101,18 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+        @endif
+        <div class="about-item">
+            <h2 class="text-center">Wincareer最强师资团队</h2>
+            <div class="whr"></div>
+            <div class="client-carousel">
+                @for($i=1;$i<7;$i++)
+                    <div class="team-item text-center" style="padding: 1em;">
+                        <img  src="{{ asset('images/tofuture/team/ps'.$i.'.jpg') }}" alt="{{ $i }}">
+                    </div>
+                @endfor
             </div>
         </div>
     </div>

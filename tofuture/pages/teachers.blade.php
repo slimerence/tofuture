@@ -1,9 +1,9 @@
 @extends(_get_frontend_layout_path('frontend'))
 @section('content')
-    <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner2.jpg') }}" style="background-size: cover;background-position: center bottom">
+    <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner9.jpg') }}" style="background-size: cover;background-position: center center">
         <div class="container">
             <div class="row title">
-                <h2 class="h2">师资力量</h2>
+                <h1 class="h2" style="font-size: 3em;text-shadow: 2px 2px 4px #000c;">师资力量</h1>
             </div>
         </div>
     </section>

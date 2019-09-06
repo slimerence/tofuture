@@ -1,10 +1,10 @@
 @extends(_get_frontend_layout_path('frontend'))
 @section('content')
-    <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner2.jpg') }}" style="background-size: cover;background-position: center bottom">
+    <section class="inner-intro dark-bg bg-image overlay-dark40 " data-background-img="{{ url('images/tofuture/full/absbanner8.jpg') }}" style="background-size: cover;background-position: center center">
         <div class="container">
             <div class="title">
-                <h1 class="h2" style="font-size: 2.4rem">CFA 全托管式集训营</h1>
-                <h2 class="h3">CFA保过计划 | CFA 全托管式集训营 | CFA 课程</h2>
+                <h1 class="h2" style="font-size: 3rem;text-shadow: 2px 2px 4px #000c;">CFA 全托管式集训营</h1>
+                <h2 class="h3" style="text-shadow: 2px 2px 4px #000c;">CFA保过计划 | CFA 全托管式集训营 | CFA 课程</h2>
                 <div class="row mt-5 mx-auto" style="max-width: 720px;">
                     <div class="col-12 col-md-4 mt-20">
                         <a class="btn-theme" href="https://wincareer.com.au/cfa/cfa考试">CFA科普</a>

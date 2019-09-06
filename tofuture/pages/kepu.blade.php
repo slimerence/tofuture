@@ -1,9 +1,9 @@
 @extends(_get_frontend_layout_path('frontend'))
 @section('content')
-    <section class="inner-intro dark-bg bg-image overlay-dark " data-background-img="{{ url('images/tofuture/full/absbanner2.jpg') }}" style="background-size: cover;background-position: center bottom">
+    <section class="inner-intro dark-bg bg-image overlay-dark40 " data-background-img="{{ url('images/tofuture/full/absbanner8.jpg') }}" style="background-size: cover;background-position: center center">
         <div class="container">
             <div class="row title">
-                <h1 class="h2">CFA 考试 | 商科就业 | Fintech</h1>
+                <h1 class="h2" style="text-shadow: 2px 2px 4px #000c;">CFA 考试 | 商科就业 | Fintech</h1>
             </div>
         </div>
     </section>
