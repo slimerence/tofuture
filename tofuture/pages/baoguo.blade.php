@@ -68,7 +68,7 @@
         </div>
     </section>
     @if(true)
-        <section id="action-box" class="dark-bg ptb-150 bg-moving" style="background-image:url({{ asset('images/tofuture/full/absbanner5.jpg') }});background-size: cover;background-position: center center;">
+        <section id="action-box" class="dark-bg ptb-150 bg-moving" style="background-image:url({{ asset('images/tofuture/full/absbanner7.jpg') }});background-size: cover;background-position: center center;">
             <div class="container">
                 <div class="row text-center" id="timedown">
                     <div class="col-md-12 col-sm-12">
