@@ -8,12 +8,10 @@
 
 namespace Smartbro\Controllers;
 
-
 use App\Http\Controllers\Controller;
 use App\Models\Page;
 use Illuminate\Http\Request;
 use Smartbro\Models\Video;
-
 
 class CustomPageController extends Controller
 {
@@ -67,6 +65,7 @@ class CustomPageController extends Controller
             $this->dataForView
         );
     }
+
     public function cfa($pageUri){
         $filename = resource_path('views/frontend/').str_replace('.','/',_get_frontend_theme_prefix()).'/pages/'.str_replace('.','/',$pageUri).'.blade.php';
         if(file_exists($filename)){
@@ -80,6 +79,8 @@ class CustomPageController extends Controller
                     $this->dataForView['pageTitle'] = 'CFA 考试 | CFA保过计划 | CFA 全托管式集训营 | CFA 课程';
                     $this->dataForView['metaKeywords'] = 'CFA 考试 | CFA保过计划 | CFA 全托管式集训营 | CFA 课程';
                     $this->dataForView['metaDescription'] = '参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA全托管式集训营领航者。';
+                    $this->dataForView['gtag_head'] = true;
+                    $this->dataForView['gtag_body'] = true;
                     $posts = Page::where('type',Page::$TYPE_BLOG)->orderBy('id','asc')->take(5)->get();
                     $this->dataForView['videos'] = Video::orderby('id','asc')->take(2)->get();
                     $this->dataForView['posts'] = $posts;
