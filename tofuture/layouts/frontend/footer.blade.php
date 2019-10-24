@@ -13,8 +13,8 @@
                                 &nbsp&nbsp&nbsp&nbsp Burwood Office: Suite A, 140 Burwood Hwy, Burwood VIC 3125<br/>
                                 &nbsp&nbsp&nbsp&nbsp City Office: Level 7, 168 Lonsdale Street, Melbourne VIC 3000</li>
                             <li class="fs-14">广州：广州市天河区海乐路12号合景睿峰3707</li>
-                            <li class="fs-14">服务电话：<a href="tel:+610398908535">+61 3 9890 8535</a></li>
-                            <li class="fs-14">咨询邮箱：<a href="mailto:admin@tofuture.org">admin@tofuture.org</a></li>
+                            <li class="fs-14">服务电话：<a style="color:#fff;" href="tel:+610398908535">+61 3 9890 8535</a></li>
+                            <li class="fs-14">咨询邮箱：<a style="color:#fff;" href="mailto:admin@tofuture.org">admin@tofuture.org</a></li>
                         </ul>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
     <section class="copyright">
         <div class="container">
             <p class="fs-14 light-color">
-                © 2019 <b>Wincareer</b>. Powered by <a target="_blank" href="https://kongfuseo.com.au/">Kongfuseo</a>.
+                © 2019 <b>Wincareer</b>. Powered by <a style="color:#fff;" target="_blank" href="https://kongfuseo.com.au/">Kongfuseo</a>.
             </p>
         </div>
     </section>
