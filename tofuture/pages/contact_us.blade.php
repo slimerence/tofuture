@@ -25,7 +25,7 @@
                             </ul>
                         </div>
                         <a href="mailto:yourname@domain.com"><i class="fa fa-envelope-o left"></i>admin@tofuture.org</a><br />
-                        <a><i class="fa fa-phone left"></i>+61 3 9890 8535</a>
+                        <a href="tel:+610398908535"><i class="fa fa-phone left"></i>+61 3 9890 8535</a>
                     </div>
                     <div class="contact-box-left mb-45">
                         <div class="contact-icon-left"><i class="ion ion-ios-clock"></i></div>
