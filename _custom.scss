@@ -481,3 +481,34 @@ a {
   }
 
 }
+.steps{
+  padding: 20px;
+  .step{
+    background-color: $themecolor;
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    border-radius: 1.5em;
+    box-shadow: 2px 2px 20px 0px #525252;
+    h4{
+      color:#fff;
+      margin:0;
+      font-size:16px;
+    }
+  }
+}
+
+.cpa-list{
+  ul{
+    margin-bottom: 0;
+    li{
+      margin-bottom: 0.4em;
+    }
+  }
+}
+.cpa-text{
+  padding: 2em;
+  border: 1px solid #e0e0e0;
+  height: 100%;
+}

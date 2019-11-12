@@ -543,6 +543,7 @@ $(function () {
             autoPlay: 2500,
             stopOnHover: true,
             items: 2,
+            loop: true,
             itemsDesktop: [1170, 4],
             itemsDesktopSmall: [1024, 3],
             itemsTabletSmall: [768, 2],
@@ -558,7 +559,7 @@ $(function () {
             autoHeight: true,
             stopOnHover: true,
             singleItem: true,
-            slideSpeed: 1500,
+            slideSpeed: 3000,
             pagination: false,  // Hide pagination buttons
             navigation: true,   // Show next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],

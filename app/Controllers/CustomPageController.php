@@ -66,6 +66,13 @@ class CustomPageController extends Controller
         );
     }
 
+    public function cpa(Request $request){
+        $this->dataForView['pageTitle'] = 'CPA保过计划';
+        $this->dataForView['metaKeywords'] = 'CPA保过计划';
+        $this->dataForView['metaDescription'] = 'Win career 职业职称培训，是全澳最大的华人高等教育培训机构未来教育（tofuture education ）旗下品牌。专注为海外华人/留学生提供专业的高等教育培训服务，金融/财务专业职称考试培训，国内实习和海外人才猎头服务。';
+        return view(_get_frontend_theme_path('pages.cpa'),$this->dataForView);
+    }
+
     public function cfa($pageUri){
         $filename = resource_path('views/frontend/').str_replace('.','/',_get_frontend_theme_prefix()).'/pages/'.str_replace('.','/',$pageUri).'.blade.php';
         if(file_exists($filename)){
@@ -81,7 +88,7 @@ class CustomPageController extends Controller
                     $this->dataForView['metaDescription'] = '参加WinCareer的CFA保过计划，为您的cfa考试保驾护航。我们的具有科学的CFA课程安排，专业的导师团队，以及丰富的教学资源。是墨尔本CFA全托管式集训营领航者。';
                     $this->dataForView['gtag_head'] = true;
                     $this->dataForView['gtag_body'] = true;
-                    $posts = Page::where('type',Page::$TYPE_BLOG)->orderBy('id','asc')->take(5)->get();
+                    $posts = Page::where('type',Page::$TYPE_BLOG)->orderBy('id','desc')->take(5)->get();
                     $this->dataForView['videos'] = Video::orderby('id','asc')->take(2)->get();
                     $this->dataForView['posts'] = $posts;
                     //dd($posts);
@@ -112,6 +119,7 @@ class CustomPageController extends Controller
             return view(_get_frontend_theme_path('templates.static'), $this->dataForView);
         }
     }
+
 
     public function teachers(){
         $this->dataForView['pageTitle'] = 'WIN CAREER - 专业师资';

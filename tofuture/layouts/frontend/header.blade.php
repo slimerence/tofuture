@@ -46,8 +46,9 @@
                                     <li><a href="{{ url('/listen') }}">线上讲堂</a></li>
                                 </ul>
                             </div>
-
-
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="{{ url('cpa/cpa保过') }}">CPA</a>
                         </li>
                         <li class="nav-menu-item">
                             <a href="{{ url('/teachers') }}">专业师资</a>
