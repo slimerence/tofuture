@@ -13,6 +13,7 @@ Route::get('/jinrong', '\Smartbro\Controllers\CustomPageController@jinrong')->na
 
 Route::get('/cfa/{uri}', '\Smartbro\Controllers\CustomPageController@cfa');
 Route::get('/cpa/cpa保过', '\Smartbro\Controllers\CustomPageController@cpa');
+Route::get('/cpa/cpa科普', '\Smartbro\Controllers\CustomPageController@cpa_kepu');
 Route::get('/teachers', '\Smartbro\Controllers\CustomPageController@teachers');
 
 Route::get('/listen', '\Smartbro\Controllers\OnlineClassController@listen');

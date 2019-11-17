@@ -48,7 +48,13 @@
                             </div>
                         </li>
                         <li class="nav-menu-item">
-                            <a href="{{ url('cpa/cpa保过') }}">CPA</a>
+                            <a href="#">CPA</a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li><a href="{{ url('/cpa/cpa科普') }}">CPA科普</a></li>
+                                    <li><a href="{{ url('/cpa/cpa保过') }}">CPA保过计划</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-menu-item">
                             <a href="{{ url('/teachers') }}">专业师资</a>

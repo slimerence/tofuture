@@ -72,6 +72,12 @@ class CustomPageController extends Controller
         $this->dataForView['metaDescription'] = 'Win career 职业职称培训，是全澳最大的华人高等教育培训机构未来教育（tofuture education ）旗下品牌。专注为海外华人/留学生提供专业的高等教育培训服务，金融/财务专业职称考试培训，国内实习和海外人才猎头服务。';
         return view(_get_frontend_theme_path('pages.cpa'),$this->dataForView);
     }
+    public function cpa_kepu(Request $request){
+        $this->dataForView['pageTitle'] = 'CPA科普';
+        $this->dataForView['metaKeywords'] = 'CPA科普';
+        $this->dataForView['metaDescription'] = 'Win career 职业职称培训，是全澳最大的华人高等教育培训机构未来教育（tofuture education ）旗下品牌。专注为海外华人/留学生提供专业的高等教育培训服务，金融/财务专业职称考试培训，国内实习和海外人才猎头服务。';
+        return view(_get_frontend_theme_path('pages.cpa_kepu'),$this->dataForView);
+    }
 
     public function cfa($pageUri){
         $filename = resource_path('views/frontend/').str_replace('.','/',_get_frontend_theme_prefix()).'/pages/'.str_replace('.','/',$pageUri).'.blade.php';
