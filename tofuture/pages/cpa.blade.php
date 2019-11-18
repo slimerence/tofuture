@@ -228,7 +228,7 @@
                 <div class="row mt-3">
                     @for($i=1;$i<4;$i++)
                         <div class="col-12 col-md-4 col-lg-4 mb-3">
-                            <a class="group" rel="group-gallery" href="{{ asset('images/tofuture/cpa/k'.$i.'.jpg') }}"><img src="{{ asset('images/tofuture/'.$i.'.jpg') }}" alt="{{ $i }}"></a>
+                            <a class="group" rel="group-gallery" href="{{ asset('images/tofuture/cpa/k'.$i.'.jpg') }}"><img src="{{ asset('images/tofuture/cpa/k'.$i.'.jpg') }}" alt="{{ $i }}"></a>
                         </div>
                     @endfor
                 </div>
