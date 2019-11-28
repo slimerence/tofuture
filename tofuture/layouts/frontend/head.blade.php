@@ -28,15 +28,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
     <script src="{{ url('demos/rs-plugin/js/jquery.lwtCountdown-1.0.js') }}" type="text/javascript"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132581982-1"></script>
+    <!-- Global site tag (gtag.js) - Google Ads: 767960925 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-767960925"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-132581982-1');
+
+        gtag('config', 'AW-767960925');
     </script>
+        <script>
+            gtag('config', 'AW-767960925/5bZpCI3Jw7UBEN3OmO4C', {
+                'phone_conversion_number': '+61 3 9890 8535'
+            });
+        </script>
         <!-- Google Tag Manager -->
             <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
