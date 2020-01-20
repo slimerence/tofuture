@@ -23,7 +23,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .sass('resources/views/frontend/custom/tofuture/admin/css/dataTables.responsive.scss','public/css')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .sass('resources/views/frontend/custom/_custom.scss', 'public/css');
-//
+
 mix.styles([
     'resources/views/frontend/custom/tofuture/assets/css/plugin/colorbox.css',
     'resources/views/frontend/custom/tofuture/assets/css/plugin/jquery.fs.tipper.css',

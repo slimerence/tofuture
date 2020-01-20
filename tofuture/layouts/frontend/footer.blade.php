@@ -45,7 +45,7 @@
     <section class="copyright">
         <div class="container">
             <p class="fs-14 light-color" style="margin: 0;">
-                © 2019 <b>Wincareer</b>. Powered by <a style="color:#fff;" target="_blank" href="https://kongfuseo.com.au/">Kongfuseo</a>.
+                © 2020 <b>Wincareer</b>. Powered by <a style="color:#fff;" target="_blank" href="https://kongfuseo.com.au/">Kongfuseo</a>.
             </p>
         </div>
     </section>

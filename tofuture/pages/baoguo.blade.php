@@ -72,7 +72,7 @@
             <div class="container">
                 <div class="row text-center" id="timedown">
                     <div class="col-md-12 col-sm-12">
-                        <h4 class="ps-20" style="color: #000;text-shadow: 1px 1px 3px #c3c3c3;">距离2019年12月7日CFA 考试还有</h4>
+                        <h4 class="ps-20" style="color: #000;text-shadow: 1px 1px 3px #c3c3c3;">距离2020年6月6日CFA 考试还有</h4>
                         <div class="timer-box">
                             <div id="countdown">
                                 <div class="dash weeks_dash">
@@ -215,7 +215,7 @@
                     <div class="col-md-3 col-sm-12 text-center adv-box mt-4">
                         <i class="fa fa-handshake-o" aria-hidden="true"></i>
                         <h3>双重保过承诺</h3>
-                        <p>签订贴心的保过协议，如果没有通过考试，我们将全额支付你12月的考试费用，并赠送新的CFA课程的旁听资格</p>
+                        <p>签订贴心的保过协议，如果没有通过考试，我们将全额支付 CFA 下一次考试报名费用，并全额全还培训费用或免费重上下一次 Win career CFA 培训课程</p>
                     </div>
                 </div>
             </div>
@@ -269,18 +269,18 @@
                                     <h3><i class="fa fa-caret-right" aria-hidden="true"></i>双重保过</h3>
                                     <p>保过协议</p>
                                     <ul>
-                                        <li>缺勤小于三次</li>
-                                        <li>通过一次模拟考试</li>
+                                        <li>出勤率不能小于70%</li>
+                                        <li>通过1次模拟考试 (67%)</li>
                                     </ul>
-                                    <p>若满足以上条件：</p>
+                                    <p>满足以上条件：</p>
                                     <ul>
-                                        <li>赠送下一期WinCareerCFA课程</li>
-                                        <li>免除学生下一次的考试报名费用</li>
+                                        <li>赠送下一次 CFA 考试报名费用</li>
+                                        <li>全额退还培训费或免除下一期培训培训所有费用</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <a class="btn-theme mx-auto mb-5" target="_blank" href="{{ asset('images/tofuture/update/2019年12月课表.pdf') }}">下载CFA培训时间表</a>
+                        <a class="btn-theme mx-auto mb-5" target="_blank" href="{{ asset('images/tofuture/update/2020年6月课表.pdf') }}">下载CFA培训时间表</a>
                     </div>
                 </div>
 

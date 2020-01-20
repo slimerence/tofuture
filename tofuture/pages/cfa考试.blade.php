@@ -159,9 +159,9 @@
                         <section class="" style="margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
                             <section class="" style="border-top: 5px solid rgb(42, 118, 162);border-bottom: 5px solid rgb(223, 75, 75);padding: 5px 0px;width: 100%;box-sizing: border-box;">
                                 <section class="" style="box-sizing: border-box;">
-                                    <p style="box-sizing: border-box;">2019年6月第一阶段报名时间：2018年8月中旬开始，截止到2018年10月10日截止（650美元）；</p>
-                                    <p style="box-sizing: border-box;">2019年6月第二阶段报名截止时间：2019年2月13日（950美元）；</p>
-                                    <p style="box-sizing: border-box;">2019年6月第三阶段报名截止时间：2019年3月13日（1380美元）</p>
+                                    <p style="box-sizing: border-box;">2020年6月第一阶段报名时间: 2019年8月8日开始截止到2019年10月2日 (700 美金)；</p>
+                                    <p style="box-sizing: border-box;">2020年6月第二阶段报名截止时间: 2020年2月12日 (1000 美金)；</p>
+                                    <p style="box-sizing: border-box;">2020年6月第三阶段报名截止时间: 2020年3月11日 (1450 美金)</p>
                                 </section>
                             </section>
                         </section>
