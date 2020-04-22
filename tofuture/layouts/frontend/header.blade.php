@@ -4,13 +4,17 @@
     <nav id="navigation" class="header-nav">
         <div class="container">
             <div class="row d-flex flex-md-row align-items-center">
-                <div class="logo mr-auto">
+                <div class="logo">
                     <!--logo-->
                     <a href="{{url('/')}}">
                         <img class="logo-dark" src="{{ asset('images/tofuture/logo-dark.png') }}" alt="Mazel" />
                         <img class="logo-light" src="{{ asset('images/tofuture/logo-light.png') }}" alt="Mazel" />
                     </a>
                     <!--End logo-->
+                </div>
+
+                <div class="mr-auto" style="display: inline-block;position: relative;">
+                        <img style="padding-left: 1.5em;text-align: center;width:140px;" src="{{ asset('images/tofuture/ACCA.png') }}" alt="Mazel" />
                 </div>
 
                 <div class="nav-menu ml-auto">
@@ -43,7 +47,7 @@
                                     <li><a href="{{ url('/cfa/cfa考试') }}">CFA科普</a></li>
                                     <li><a href="{{ url('/cfa/baoming') }}">CFA报名指南</a></li>
                                     <li><a href="{{ url('/cfa/baoguo') }}">CFA保过计划</a></li>
-                                    <li><a href="{{ url('/listen') }}">线上讲堂</a></li>
+                                    <li><a href="{{ url('/cfa/cfa网课') }}">线上讲堂</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -56,6 +60,17 @@
                                 </ul>
                             </div>
                         </li>
+
+                        <li class="nav-menu-item">
+                            <a href="#">ACCA</a>
+                            <div class="nav-dropdown">
+                                <ul>
+                                    <li><a href="{{ url('/acca/acca科普') }}">ACCA科普</a></li>
+                                    <li><a href="{{ url('/acca/acca课程') }}">ACCA课程</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
                         <li class="nav-menu-item">
                             <a href="{{ url('/teachers') }}">专业师资</a>
                         </li>
@@ -68,6 +83,7 @@
                         <li class="nav-menu-item">
                             <a href="{{ url('/contact-us') }}">联系我们</a>
                         </li>
+
                     </ul>
                 </div>
                 <div class="nav-icons">

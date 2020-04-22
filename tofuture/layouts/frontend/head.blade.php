@@ -12,6 +12,7 @@
     <link rel="apple-touch-icon" href="{{ asset('images/tofuture/logo-small.png') }}">
 
     <!-- CSS -->
+{{--    <link href="{{ url('css/bootstrap.css') }}" rel="stylesheet" type="text/css" />--}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider-min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" />

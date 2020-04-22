@@ -1188,6 +1188,9 @@ form label.error {
 }
 
 @media all and (min-width: 767px) {
+    img#acca_title{
+        padding-top:1.5em;
+    }
 }
 
 /*------------------------------------------------------------
@@ -1388,6 +1391,12 @@ form label.error {
 .header--sticky.fixed.sticky--on .header-nav {
     position: fixed !important;
     top: 0 !important;
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        max-width: 1300px !important;
+    }
 }
 
 @media all and (min-width: 992px) {

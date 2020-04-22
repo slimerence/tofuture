@@ -28,8 +28,8 @@
         if(count.length >0){
             count.countDown({
                 targetDate: {
-                    'day': 6,
-                    'month': 6,
+                    'day': 5,
+                    'month': 12,
                     'year': 2020,
                     'hour': 0,
                     'min': 0,

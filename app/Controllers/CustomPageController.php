@@ -79,6 +79,19 @@ class CustomPageController extends Controller
         return view(_get_frontend_theme_path('pages.cpa_kepu'),$this->dataForView);
     }
 
+    public function acca_kecheng(Request $request){
+        $this->dataForView['pageTitle'] = 'ACCA课程';
+        $this->dataForView['metaKeywords'] = 'ACCA课程';
+        $this->dataForView['metaDescription'] = 'Win career 职业职称培训，是全澳最大的华人高等教育培训机构未来教育（tofuture education ）旗下品牌。专注为海外华人/留学生提供专业的高等教育培训服务，金融/财务专业职称考试培训，国内实习和海外人才猎头服务。';
+        return view(_get_frontend_theme_path('pages.acca_kecheng'),$this->dataForView);
+    }
+    public function acca_kepu(Request $request){
+        $this->dataForView['pageTitle'] = 'ACCA科普';
+        $this->dataForView['metaKeywords'] = 'ACCA科普';
+        $this->dataForView['metaDescription'] = 'Win career 职业职称培训，是全澳最大的华人高等教育培训机构未来教育（tofuture education ）旗下品牌。专注为海外华人/留学生提供专业的高等教育培训服务，金融/财务专业职称考试培训，国内实习和海外人才猎头服务。';
+        return view(_get_frontend_theme_path('pages.acca_kepu'),$this->dataForView);
+    }
+
     public function cfa($pageUri){
         $filename = resource_path('views/frontend/').str_replace('.','/',_get_frontend_theme_prefix()).'/pages/'.str_replace('.','/',$pageUri).'.blade.php';
         if(file_exists($filename)){
@@ -100,6 +113,11 @@ class CustomPageController extends Controller
                     //dd($posts);
                     break;
                 case 'baoming':
+                    $this->dataForView['pageTitle'] = 'CFA 报名 | CFA考证 | CFA代报名';
+                    $this->dataForView['metaKeywords'] = 'CFA 报名 | CFA考证 | CFA代报名';
+                    $this->dataForView['metaDescription'] = '想了解CFA考证各项事宜，请参阅CFA报名流程详解。如果在WinCareer报名CFA保过班，我们免费提供CFA代报名服务。';
+                    break;
+                case 'cfa网课':
                     $this->dataForView['pageTitle'] = 'CFA 报名 | CFA考证 | CFA代报名';
                     $this->dataForView['metaKeywords'] = 'CFA 报名 | CFA考证 | CFA代报名';
                     $this->dataForView['metaDescription'] = '想了解CFA考证各项事宜，请参阅CFA报名流程详解。如果在WinCareer报名CFA保过班，我们免费提供CFA代报名服务。';
