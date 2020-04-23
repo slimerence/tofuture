@@ -1189,7 +1189,7 @@ form label.error {
 
 @media all and (min-width: 767px) {
     img#acca_title{
-        padding-top:1.5em;
+        padding-top:1.5em !important;
     }
 }
 
