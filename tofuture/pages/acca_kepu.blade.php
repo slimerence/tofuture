@@ -293,12 +293,10 @@
                                         <thead>
                                         <tr>
                                             <th></th>
-{{--                                            <th scope="col" colspan="2">--}}
-{{--                                                SEMESTER 1 2020--}}
-{{--                                            </th>--}}
                                             <th>Early exam entry deadline date</th>
                                             <th>Standard exam entry deadline</th>
                                             <th>Late exam entry deadline</th>
+                                            <th>Exam dates</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -307,18 +305,21 @@
                                             <td>10/02/2020</td>
                                             <td>27/04/2020</td>
                                             <td>04/05/2020</td>
+                                            <td>01/06/2020--05/06/2020</td>
                                         </tr>
                                         <tr>
                                             <th>2020年9月</th>
                                             <td>11/05/2020</td>
                                             <td>27/07/2020</td>
                                             <td>03/08/2020</td>
+                                            <td>007/09/2020--11/09/2020</td>
                                         </tr>
                                         <tr>
                                             <th>2020年12月</th>
                                             <td>10/08/2020</td>
                                             <td>02/11/2020</td>
                                             <td>09/11/2020</td>
+                                            <td>07/12/2020--11/12/2020</td>
                                         </tr>
                                         </tbody>
                                     </table>

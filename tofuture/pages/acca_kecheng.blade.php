@@ -7,7 +7,7 @@
                 <h1 class="h3" style="text-shadow: 2px 2px 4px #000c;">ACCA 考试 | ACCA保过计划 | ACCA 课程</h1>
                 <div class="row mt-5 mx-auto" style="max-width: 720px;">
                     <div class="col-12 col-md-6 mt-20">
-                        <img class="logo-light" id="acca_title" src="{{ asset('images/tofuture/logo-light.png') }}" alt="Mazel" />
+                        <img class="logo" id="acca_title" src="{{ asset('images/tofuture/logo-light.png') }}" alt="Mazel" />
                     </div>
                     <div class="col-12 col-md-6 mt-20">
                         <img class="logo-light" src="{{ asset('images/tofuture/ACCA.png') }}" alt="Mazel" />
@@ -69,7 +69,7 @@
                     <section class="" style="margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
                         <section class="" style="border-top: 5px solid rgb(42, 118, 162);border-bottom: 5px solid rgb(223, 75, 75);padding: 5px 0px;width: 100%;box-sizing: border-box;">
                             <section class="" style="box-sizing: border-box;text-align: center;">
-                                <p><strong style="box-sizing: border-box;"><span style="letter-spacing: 1.5px;color: rgb(223, 75, 75);box-sizing: border-box;">CFA考试报名费用以美元结算，由三个部分构成：</span></strong></p>
+                                <p><strong style="box-sizing: border-box;"><span style="letter-spacing: 1.5px;color: rgb(223, 75, 75);box-sizing: border-box;">P阶段课程结构：（套餐享受优惠价格$3999)</span></strong></p>
                                 <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">① SBL：基础模块70小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考（$1299）</span></p>
                                 <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">② SBR：基础模块60小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考（$1199）</span></p>
                                 <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">③ AFM：基础模块60小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考（$1199）</span></p>
