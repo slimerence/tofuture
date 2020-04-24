@@ -98,7 +98,7 @@
     <section class="pt-60 mb-60">
         <div class="container">
             <div class="about-item">
-                <h2 class="text-center">Wincareer CPA讲师的介绍</h2>
+                <h2 class="text-center">Wincareer ACCA讲师的介绍</h2>
                 <div class="whr"></div>
                 <div class="team-item text-center" style="padding: 1em;">
                     <img src="{{ asset('images/tofuture/team/ps7.png') }}" style="max-width:50%;">
