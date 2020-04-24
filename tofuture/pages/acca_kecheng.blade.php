@@ -69,11 +69,11 @@
                     <section class="" style="margin-top: 10px;margin-bottom: 10px;box-sizing: border-box;">
                         <section class="" style="border-top: 5px solid rgb(42, 118, 162);border-bottom: 5px solid rgb(223, 75, 75);padding: 5px 0px;width: 100%;box-sizing: border-box;">
                             <section class="" style="box-sizing: border-box;text-align: center;">
-                                <p><strong style="box-sizing: border-box;"><span style="letter-spacing: 1.5px;color: rgb(223, 75, 75);box-sizing: border-box;">P阶段课程结构：（套餐享受优惠价格$3999)</span></strong></p>
-                                <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">① SBL：基础模块70小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考（$1299）</span></p>
-                                <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">② SBR：基础模块60小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考（$1199）</span></p>
-                                <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">③ AFM：基础模块60小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考（$1199）</span></p>
-                                <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">④ AAA：基础模块60小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考（$1199）</span></p>
+                                <p><strong style="box-sizing: border-box;"><span style="letter-spacing: 1.5px;color: rgb(223, 75, 75);box-sizing: border-box;">P阶段课程结构：</span></strong></p>
+                                <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">① SBL：基础模块70小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考</span></p>
+                                <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">② SBR：基础模块60小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考</span></p>
+                                <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">③ AFM：基础模块60小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考</span></p>
+                                <p><span style="letter-spacing: 1.5px;box-sizing: border-box;">④ AAA：基础模块60小时+习题模块15小时+冲刺模块2小时+考前20天每日一题+期中期末考</span></p>
                             </section>
                         </section>
                     </section>
@@ -86,10 +86,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-8">
-                    <h4 class="">想要了解更多？</h4>
+                    <p style="font-size:28px;">想要了解更多？</p>
                 </div>
                 <div class="col-md-4 col-sm-4">
-                    <a class="btn btn-md btn-white float-right float-none-xs text-dark" href="{{ url('contact-us') }}">联系我们</a>
+                    <a class="btn btn-md btn-white float-right float-none-xs text-dark" href="{{ url('contact-us') }}" style="font-size:28px;">联系我们</a>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                 <h2 class="text-center">Wincareer CPA讲师的介绍</h2>
                 <div class="whr"></div>
                 <div class="team-item text-center" style="padding: 1em;">
-                    <img src="{{ asset('images/tofuture/team/ps5.jpg') }}" style="max-width:50%;">
+                    <img src="{{ asset('images/tofuture/team/ps7.png') }}" style="max-width:50%;">
                 </div>
             </div>
         </div>

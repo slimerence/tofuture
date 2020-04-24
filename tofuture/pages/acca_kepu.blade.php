@@ -88,7 +88,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-12 col-sm-12">
-                    <h4 class="ps-20">Wincareer专注提高海外华人/留学生就业竞争力</h4>
+                    <p class="ps-20" style="font-size:28px;">Wincareer专注提高海外华人/留学生就业竞争力</p>
                 </div>
             </div>
         </div>
@@ -141,10 +141,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-8">
-                    <h4 class="">想要了解更多？</h4>
+                    <p style="font-size:28px;">想要了解更多？</p>
                 </div>
                 <div class="col-md-4 col-sm-4">
-                    <a class="btn btn-md btn-white float-right float-none-xs text-dark" href="{{ url('contact-us') }}">联系我们</a>
+                    <a class="btn btn-md btn-white float-right float-none-xs text-dark" href="{{ url('contact-us') }}" style="font-size:28px;">联系我们</a>
                 </div>
             </div>
         </div>
